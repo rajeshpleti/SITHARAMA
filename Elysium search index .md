@@ -45,13 +45,12 @@ You *can* start Kibana using `docker run` after [creating a Docker network](http
 The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
 By placing cursor in the Search field, It will give suggestions to retrive the data as per Index pattern.
 
-![kibanasearchsample](kql-autocomplete.png "Elysium search sample")
 
 ![Demo CountPages alpha](https://www.youtube.com/watch?v=ek1j272iAmc)
 
 [![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
-![Demo CountPages alpha](https://www.youtube.com/watch?v=ek1j272iAmc)
+![Game Process](https://github.com/Faizun-Faria/Thief_Police_Game/blob/main/Preview/GameVideo.gif)
 
 #image 
 
