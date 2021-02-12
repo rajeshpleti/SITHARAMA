@@ -47,7 +47,7 @@ By placing cursor in the Search field, It will give suggestions to retrive the d
 
 ![kibanasearchsample](kql-autocomplete.png "Elysium search sample")
 
-
+![Demo CountPages alpha](https://www.youtube.com/watch?v=ek1j272iAmc)
 
 [![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
