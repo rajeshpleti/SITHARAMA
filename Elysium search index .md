@@ -51,13 +51,7 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
-General Search Examples
 
----
-Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
-Look for errors in sshd logs: sshd AND (fail* OR error OR allowed OR identity)
-Look for general authorization failures excluding router messages: auth* AND (fail* OR error?) NOT _sourceCategory=routers
----
 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
 
@@ -313,3 +307,11 @@ Metadata is typically from your system or environment, and adds context about wh
 Log metadata - In addition to having more data to reference in query operations, this allows you to define a more specific scope of data in search expressions, improving search performance, and allows more specific search filters in Roles and routing expressions in Partitions.
 
 Metric metadata - Elysium provides a number of features you can use to enrich the metrics you collect with metadata. Metric metadata provides considerable benefits when you query your metrics: you can scope your metric queries to return only the metrics of interest. 
+
+## General Search Examples
+
+---
+Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
+Look for errors in sshd logs: sshd AND (fail* OR error OR allowed OR identity)
+Look for general authorization failures excluding router messages: auth* AND (fail* OR error?) NOT _sourceCategory=routers
+---
