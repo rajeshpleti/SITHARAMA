@@ -57,6 +57,13 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
+## General Search Examples
+---
+Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
+Look for errors in sshd logs:	sshd AND (fail* OR error OR allowed OR identity)
+Look for general authorization failures excluding router messages:	auth* AND (fail* OR error?) NOT _sourceCategory=routers
+---
+
 
 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
