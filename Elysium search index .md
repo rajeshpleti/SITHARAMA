@@ -12,17 +12,52 @@ has_toc: false
 2.	Export/Import search data
 3.	Optimize Search Performance
 4.	Index Management
-5.	Search query language
+5.	Search query language (KQL)
 6.	Search Cheat Sheets
 7.	TIME Compare
 8.	Subqueries
 9.	Lookup Tables
 
 
-Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for the Open Distro for Elasticsearch [security](../security/configuration/), [alerting](../alerting/), and [Index State Management](../ism/) plugins.
+Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
 ## Search basics
+
+To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, you’ll use Kibana’s standard query language (KQL), which features autocomplete and a simple, easy-to-use syntax.
+
+### About Search Basics
+Elysium search syntax is based on "pipeline" concept and it uses logical and familiar operators letting you to create ad hoc queries quickly.
+### Built-in Metadata
+Metadata tags are attached to your log messages at ingest, which is very useful when you're searching log data.
+### Chart Search Results
+In the Aggregates tab, in addition to the standard table view, you can view search results as a chart, such as a bar or column chart.
+### Comments in Search Queries
+You can add comments to a search query, or even comment out lines of your search query using comment formatting.
+### Export Search Results
+Up to 100,000 rows can be exported  as a CSV (comma-separated values) text file.
+### Pause or Cancel a Search
+When a search is in progress, the options to Cancel or Pause the search appear.
+### Quick Search for Collectors and Sources
+You can quickly start a search for a Collector, Source, or Source Category from the Manage Collection page.
+### Reference a Field with Special Characters
+Solution to reference a field name that contains a special character
+### Save a Search
+Whether you are running ad hoc searches during a forensic investigation or running standard searches for health checks, you can save any search to run later.
+### Search Autocomplete
+On the Search page, as you begin typing to enter a query in the search text box, the search autocomplete drop-down dialog opens to offer suggestions to make query writing easier.
+### Search Large Messages
+When collecting log messages or event logs that are larger than 64KB in size, Elysium slices the messages into a stream of smaller message chunks.
+ ### Search Surrounding Messages
+Surrounding messages allow you to investigate events surrounding a message.
+### Share a Link to a Search
+Copy and paste the a link to share a search via email or IM.
+### Time Range Expressions
+When you are building a search query, you have the option to add a time range expression in the time range field.
+### View Search Results for JSON Logs
+If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
+
+
 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
 
@@ -50,7 +85,6 @@ By placing cursor in the Search field, It will give suggestions to retrive the d
 
 [![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
-![Game Process](https://github.com/Faizun-Faria/Thief_Police_Game/blob/main/Preview/GameVideo.gif)
 
 #image 
 
@@ -253,3 +287,29 @@ machine.os*:windows 10
 The query checks machine.os and machine.os.keyword for the term windows 10.
 
 ### Nested field queries
+
+
+## Optimize Search Performance
+
+Search optimization tools speed the search process, delivering query results in less time and improving productivity for forensic analysis and log management.
+
+Search speed generally depends on the amount of data and the type of query run against the data. Search optimization tools segment the data and queue it up for quick results.
+
+An index, or proper subset of the data, is central to search optimization. When you run a search against an index, search results are returned more quickly and efficiently because the search is run against a smaller data set.
+
+Elysium supports index-based and field-based methods for search optimization.
+
+## Index-based methods
+
+Partitions route unstructured data into an index. See how to Optimize Your Search with Partitions.
+
+Scheduled Views pre-aggregate data and then index it.
+## Metadata methods
+
+With metadata tags assigned to your logs you can reference them in the scope (keyword search expression) of queries to drastically increase search performance.
+
+Metadata is typically from your system or environment, and adds context about what or where the data came from and any associated services or apps. Logs and metrics use metadata that can be customized to anything you need.
+
+Log metadata - In addition to having more data to reference in query operations, this allows you to define a more specific scope of data in search expressions, improving search performance, and allows more specific search filters in Roles and routing expressions in Partitions.
+
+Metric metadata - Elysium provides a number of features you can use to enrich the metrics you collect with metadata. Metric metadata provides considerable benefits when you query your metrics: you can scope your metric queries to return only the metrics of interest. 
