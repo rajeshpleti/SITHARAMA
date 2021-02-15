@@ -315,3 +315,8 @@ Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
 Look for errors in sshd logs: sshd AND (fail* OR error OR allowed OR identity)
 Look for general authorization failures excluding router messages: auth* AND (fail* OR error?) NOT _sourceCategory=routers
 ---
+
+|Name |Quantity|
+|-----|--------|
+|Apple|3       |
+|Egg  |12      |
