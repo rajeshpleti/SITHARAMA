@@ -3,14 +3,31 @@
 # Elysium Search User Guide
 ## Overview
 1.	Search basics
-2.	Export/Import search data
+2.	Search query language (KQL)
+	* KQL Introduction
+	* Search multiple fields
+	* Grouped together
+	* Terms query
+	* Boolean queries
+	* Range queries
+	* Date range queries
+	* Exist queries
+	* Wildcard queries
+	* Nested field queries (Subqueries)
 3.	Optimize Search Performance
+4.	General Search Examples
+5.	
+	
+	
+
+	
+
+Export/Import search data
+3.	
 4.	Index Management
-5.	Search query language (KQL)
 6.	Search Cheat Sheets
 7.	TIME Compare
-8.	Subqueries
-9.	Lookup Tables
+8	Lookup Tables
 
 
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
@@ -51,48 +68,57 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
-
-
-You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
-
-1. Run `docker pull amazon/opendistro-for-elasticsearch-kibana:{{site.odfe_version}}`.
-
-1. Create a [`docker-compose.yml`](https://docs.docker.com/compose/compose-file/) file appropriate for your environment. A sample file that includes Kibana is available on the Open Distro for Elasticsearch [Docker installation page](../install/docker/#sample-docker-compose-file).
-
-   Just like `elasticsearch.yml`, you can pass a custom `kibana.yml` to the container in the Docker Compose file.
-   {: .tip }
-
-1. Run `docker-compose up`.
-
-   Wait for the containers to start. Then see [Get started with Kibana](#get-started-with-kibana).
-
-1. When finished, run `docker-compose down`.
-
-
 ## Kibana Query Language
+### KQL Introduction
 
 The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
 By placing cursor in the Search field, It will give suggestions to retrive the data as per Index pattern.
 
+Supports wildcards, Logical Operations, Dates, Ranges, an upper and lower bound values, not case sensitive, _exists_(searching fo existing of a field), autocomplete feature suggests search syntax
 
-![Demo CountPages alpha](https://www.youtube.com/watch?v=ek1j272iAmc)
-
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+```bash
+Field:value
+```
+```bash
+geoip.continent_name :"Asia" and email : * ra
+Dest:"Zurich Airport"   and Cancelled:true
+```
+When adding attributes to query list it shows the top five most values corresponding to attribute based on their data type values (Statistical analysis on each attribute is pre calculated while storing the Index values)
 
 ![Search](kql-autocomplete.png)
-#image 
 
-1. If you haven't already, add the `yum` repositories specified in steps 1--2 in [RPM](../install/rpm) or the `apt` repositories in steps 2--3 of [Debian package](../install/deb).
-1. `sudo yum install opendistroforelasticsearch-kibana` or `sudo apt install opendistroforelasticsearch-kibana`
-1. Modify `/etc/kibana/kibana.yml` to use `elasticsearch.hosts` rather than `elasticsearch.url`.
-1. `sudo systemctl start kibana.service`
-1. To stop Kibana:
+Kibana Query Language (KQL) also supports parentheses to group sub-queries.
+INSERT or UPDATE queries with a response time greater than or equal to 30ms:
+```bash
+(method: INSERT OR method: UPDATE) AND event.duration >= 30000000
+```
+### Search multiple fields
 
-   ```bash
-   sudo systemctl stop kibana.service
-   ```
+The idea of running the query_string query against multiple fields is to expand each query term to an OR clause like this
 
+ ```bash
+field1:query_term OR field2:query_term | ...
+GET /_search
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["field1", " field2"],
+            "query" : "value1" AND "valu2*"
+        }
+    }
+}
+ ```
 
+It is also same as:
+ 
+ ```bash
+"query": "(field1:valu1 OR field2:valu1) AND (field1:Value2 OR field2:value2)"
+ ```
+### Grouped together
+Multiple terms or clauses can be grouped together with parentheses, to form sub-queries: 
+ ```bash
+ (value1 OR value2) AND value3
+  ```
 ### Terms query
 
 Terms query matches documents that contain one or more exact terms in a field.
@@ -110,10 +136,6 @@ message:"quick brown fox"
 ```
 * Note: If a default field is not set, terms are matched against all fields. 
 For example, a query for response:200 searches for the value 200 in the response field, but a query for just 200 searches for 200 across all fields in your index
-
-
-You can also modify the values in `/etc/kibana/kibana.yml`.
-
 
 ### Boolean queries
 KQL supports or, and, and not. By default, and has a higher precedence than or. To override the default precedence, group operators in parentheses.
@@ -162,47 +184,6 @@ tags:(success and info and security)
 ```bash
 message:"quick brown fox"
 ```
-
-1. Download the tarball:
-
-   ```bash
-   curl https://d3g5vo6xdbdb9a.cloudfront.net/tarball/opendistroforelasticsearch-kibana/opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz -o opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz
-   ```
-
-1. Download the checksum:
-
-   ```bash
-   curl https://d3g5vo6xdbdb9a.cloudfront.net/tarball/opendistroforelasticsearch-kibana/opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz.sha512 -o opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz.sha512
-   ```
-
-1. Verify the tarball against the checksum:
-
-   ```bash
-   shasum -a 512 -c opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz.sha512
-   ```
-
-   On CentOS, you might not have `shasum`. Install this package:
-
-   ```bash
-   sudo yum install perl-Digest-SHA
-   ```
-
-1. Extract the TAR file to a directory and change to that directory:
-
-   ```bash
-   tar -zxf opendistroforelasticsearch-kibana-{{site.odfe_version}}.tar.gz
-   cd opendistroforelasticsearch-kibana
-   ```
-
-1. If desired, modify `config/kibana.yml`.
-
-1. Run Kibana:
-
-   ```bash
-   ./bin/kibana
-   ```
-
-
 ### Range queries
 
 KQL supports >, >=, <, and ⇐ on numeric and date types.
@@ -211,60 +192,25 @@ KQL supports >, >=, <, and ⇐ on numeric and date types.
 account_number >= 100 and items_sold <= 200
 ```
 
-1. Download the ZIP.
-
-1. Extract [the ZIP file](https://d3g5vo6xdbdb9a.cloudfront.net/downloads/odfe-windows/ode-windows-zip/odfe-{{site.odfe_version}}-kibana.zip) to a directory and open that directory at the command prompt.
-
-1. If desired, modify `config/kibana.yml`.
-
-1. Run Kibana:
-
-   ```
-   .\bin\kibana.bat
-   ```
-
-
 ### Date range queries
 
 Typically, Kibana’s time filter is sufficient for setting a time range, but in some cases you might need to search on dates. Include the date range in quotes.
 
-	```
-	@timestamp < "2021-01-02T21:55:59"
-	```
-	```
-	@timestamp < "2021-01"
-	```
-	```
-	@timestamp < "2021
-	```
-
-
-1. Download [the EXE file](https://d3g5vo6xdbdb9a.cloudfront.net/downloads/odfe-windows/odfe-executables/Open_Distro_For_Elasticsearch_Kibana_{{site.odfe_version}}.exe), run it, and click through the steps.
-
-1. Open the command prompt.
-
-1. Navigate to the Kibana install directory.
-
-1. If desired, modify `config/kibana.yml`.
-
-1. Run Kibana:
-
-   ```
-   .\bin\kibana.bat
-   ```
-
-
+```bash
+@timestamp < "2021-01-02T21:55:59"
+```
+```bash
+@timestamp < "2021-01"
+```
+```bash
+@timestamp < "2021
+```
 ### Exist queries
 An exist query matches documents that contain a value for a field, in this case, response:
 
 ```
 response:*
 ```
-1. After starting Kibana, you can access it at port 5601. For example, http://localhost:5601.
-1. Log in with the default username `admin` and password `admin`.
-1. Choose **Try our sample data** and add the sample flight data.
-1. Choose **Discover** and search for a few flights.
-1. Choose **Dashboard**, **[Flights] Global Flight Dashboard**, and wait for the dashboard to load.
 
 ### Wildcard queries
 
@@ -281,6 +227,20 @@ machine.os*:windows 10
 The query checks machine.os and machine.os.keyword for the term windows 10.
 
 ### Nested field queries
+1. Match a single nested document
+```bash
+items:{ filed1:v1 and field2 > v2 }
+ ```
+2.Match different nested documents
+```bash
+items:{ filed1:v1 } and items:{field2:v2 }
+```
+3. Nested fields inside other nested fields
+level1 and level2 are both nested fields:
+```bash
+http.response.status_code: 302.
+level1.level2:{ field1:v1 and filed2:v2 }
+```
 
 
 ## Optimize Search Performance
@@ -317,3 +277,79 @@ Metric metadata - Elysium provides a number of features you can use to enrich th
 |Look for failed attempts to su or sudo to root| (suORsudo) AND (fail* OR error)  |
 | Look for errors in sshd logs|sshd AND (fail* OR error OR allowed OR identity)     |
 | Look for general authorization failures excluding router messages|auth* AND (fail* OR error?) NOT _sourceCategory=routers|
+
+
+
+
+
+
+
+
+
+# Rough 
+You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
+
+1. Run `docker pull amazon/opendistro-for-elasticsearch-kibana:{{site.odfe_version}}`.
+
+1. Create a [`docker-compose.yml`](https://docs.docker.com/compose/compose-file/) file appropriate for your environment. A sample file that includes Kibana is available on the Open Distro for Elasticsearch [Docker installation page](../install/docker/#sample-docker-compose-file).
+
+   Just like `elasticsearch.yml`, you can pass a custom `kibana.yml` to the container in the Docker Compose file.
+   {: .tip }
+
+1. Run `docker-compose up`.
+
+   Wait for the containers to start. Then see [Get started with Kibana](#get-started-with-kibana).
+
+1. When finished, run `docker-compose down`.
+
+
+1. After starting Kibana, you can access it at port 5601. For example, http://localhost:5601.
+1. Log in with the default username `admin` and password `admin`.
+1. Choose **Try our sample data** and add the sample flight data.
+1. Choose **Discover** and search for a few flights.
+1. Choose **Dashboard**, **[Flights] Global Flight Dashboard**, and wait for the dashboard to load.
+
+
+![Demo CountPages alpha](https://www.youtube.com/watch?v=ek1j272iAmc)
+
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+
+1. If you haven't already, add the `yum` repositories specified in steps 1--2 in [RPM](../install/rpm) or the `apt` repositories in steps 2--3 of [Debian package](../install/deb).
+1. `sudo yum install opendistroforelasticsearch-kibana` or `sudo apt install opendistroforelasticsearch-kibana`
+1. Modify `/etc/kibana/kibana.yml` to use `elasticsearch.hosts` rather than `elasticsearch.url`.
+1. `sudo systemctl start kibana.service`
+1. To stop Kibana:
+
+   ```bash
+   sudo systemctl stop kibana.service
+   ```
+   
+   You can also modify the values in `/etc/kibana/kibana.yml`.
+   
+   
+1. Download the ZIP.
+
+1. Extract [the ZIP file](https://d3g5vo6xdbdb9a.cloudfront.net/downloads/odfe-windows/ode-windows-zip/odfe-{{site.odfe_version}}-kibana.zip) to a directory and open that directory at the command prompt.
+
+1. If desired, modify `config/kibana.yml`.
+
+1. Run Kibana:
+
+   ```
+   .\bin\kibana.bat
+   ```
+   
+   
+1. Download [the EXE file](https://d3g5vo6xdbdb9a.cloudfront.net/downloads/odfe-windows/odfe-executables/Open_Distro_For_Elasticsearch_Kibana_{{site.odfe_version}}.exe), run it, and click through the steps.
+
+1. Open the command prompt.
+
+1. Navigate to the Kibana install directory.
+
+1. If desired, modify `config/kibana.yml`.
+
+1. Run Kibana:
+
+   ```
+   .\bin\kibana.bat
+   ```
