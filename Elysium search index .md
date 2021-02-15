@@ -227,15 +227,15 @@ machine.os*:windows 10
 The query checks machine.os and machine.os.keyword for the term windows 10.
 
 ### Nested field queries
-1. Match a single nested document
+Match a single nested document
 ```bash
 items:{ filed1:v1 and field2 > v2 }
  ```
-2.Match different nested documents
+Match different nested documents
 ```bash
 items:{ filed1:v1 } and items:{field2:v2 }
 ```
-3. Nested fields inside other nested fields
+Nested fields inside other nested fields
 level1 and level2 are both nested fields:
 ```bash
 http.response.status_code: 302.
