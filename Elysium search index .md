@@ -4,6 +4,9 @@ title: Elysium Search Kibana
 nav_order: 11
 has_children: true
 has_toc: false
+Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
+Look for errors in sshd logs: sshd AND (fail* OR error OR allowed OR identity)
+Look for general authorization failures excluding router messages: auth* AND (fail* OR error?) NOT _sourceCategory=routers
 ---
 
 # Elysium Search User Guide
@@ -59,9 +62,7 @@ If your search results contain JSON logs, you can expand or collapse the view on
 
 ## General Search Examples
 ---
-Look for failed attempts to su or sudo to root:	(suORsudo) AND (fail* OR error)
-Look for errors in sshd logs: sshd AND (fail* OR error OR allowed OR identity)
-Look for general authorization failures excluding router messages: auth* AND (fail* OR error?) NOT _sourceCategory=routers
+
 ---
 
 
