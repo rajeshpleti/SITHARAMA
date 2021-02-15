@@ -85,7 +85,7 @@ By placing cursor in the Search field, It will give suggestions to retrive the d
 
 [![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
-
+![Search](kql-autocomplete.png)
 #image 
 
 1. If you haven't already, add the `yum` repositories specified in steps 1--2 in [RPM](../install/rpm) or the `apt` repositories in steps 2--3 of [Debian package](../install/deb).
