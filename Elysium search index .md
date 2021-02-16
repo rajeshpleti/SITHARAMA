@@ -35,9 +35,9 @@ Export/Import search data
 
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
-
-##  Search basics
 ```diff
+##  Search basics in red
+
 - text in red
 + text in green
 ! text in orange
