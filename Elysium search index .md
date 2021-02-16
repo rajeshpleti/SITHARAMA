@@ -17,7 +17,7 @@
 3.	Optimize Search Performance
 4.	General Search Examples
 5.	Supported Logs
-6. 	Standard Fields
+6. 	Standard Fields (ODM) 
 7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
 
 	
@@ -36,7 +36,7 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
-## Search basics
+## <span style="color: red;">Search basics</span> 
 
 To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, you’ll use Kibana’s standard query language (KQL), which features autocomplete and a simple, easy-to-use syntax.
 
@@ -383,17 +383,26 @@ Metric metadata - Elysium provides a number of features you can use to enrich th
 Elysium log analysis applies normalization fields (IPs, domains, etc) to all log records. These fields provide standard names for attributes across all data sources enabling fast and easy data correlation.
 For example, each data source has a time that an event occurred, but each data source will likely not name the attribute the same, nor is it guaranteed that the associated time has a timezone consistent with other data sources.
 
-|Field Name| Type| Description|
+|Field Name| Type|Description|
 |---------|--------|
+|	|	|
+|	|	|
 
 
 ## Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
 
 
+Elysium can be configured to write processed log data to an AWS-based Snowflake database cluster.
 
+snowflake integration, SQL Opendistro query support tailored to your Business Intelligence operations and to make dashboards. In addition, it process business data, enabling assessment of your security posture with respect to your organization, sending alerts.
 
+For example, you can tally alerts by organizational division (e.g., Human Resources) or by infrastructure (e.g., Development, Test, Production).
 
-
+Monitor Database
+1.  Pipe status monitoring table
+2.  File load status monitoring table
+3.  Data source table history
+4.  Monitoring history, tracking any load errors encountered 
 
 # Rough 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
