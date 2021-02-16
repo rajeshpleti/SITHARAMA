@@ -37,7 +37,13 @@ Kibana is the default visualization tool for data in Elasticsearch. It also serv
 
 
 ##  Search basics
-<span style="color: red;">Search basics</span> 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, you’ll use Kibana’s standard query language (KQL), which features autocomplete and a simple, easy-to-use syntax.
 
