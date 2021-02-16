@@ -19,7 +19,7 @@
 5.	Supported Logs
 6. 	Standard Fields (ODM) 
 7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
-8.	Save query 
+8.	Save query, search
 
 	
 	
@@ -36,9 +36,10 @@ Export/Import search data
 
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
-```diff
+
 ##  Search basics in red
 
+```diff
 - text in red
 + text in green
 ! text in orange
@@ -392,9 +393,9 @@ Elysium log analysis applies normalization fields (IPs, domains, etc) to all log
 For example, each data source has a time that an event occurred, but each data source will likely not name the attribute the same, nor is it guaranteed that the associated time has a timezone consistent with other data sources.
 
 |Field Name| Type|Description|
-|---------|--------|
-|	a|b	|
-|	c|d	|
+|---------|--------|------------|
+|	a|b	|  |
+|	c|d	| |
 
 
 ## Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
@@ -467,6 +468,43 @@ To completely delete a query:
 1. Click # in the search bar, next to the query text input.
 2. Hover over the query you want to delete.
 3. Click the trash can icon.
+
+### Save Search 
+A saved search persists your current view of Discover for later retrieval and reuse. You can reload a saved search into Discover, add it to a dashboard, and use it as the basis for a visualization.
+
+A saved search includes the query text, filters, and optionally, the time filter. A saved search also includes the selected columns in the document table, the sort order, and the current index pattern.
+
+To save the current search:
+
+1. Click Save in the Kibana toolbar.
+2. Enter a name for the search and click Save.
+
+To import, export, and delete saved searches, open the main menu, then click Stack Management > Saved Objects.
+
+### Open a saved search
+
+To load a saved search into Discover:
+
+1. Click Open in the Kibana toolbar.
+2. Select the search you want to open.
+If the saved search is associated with a different index pattern than is currently selected, opening the saved search changes the selected index pattern. The query language used for the saved search will also be automatically selected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Rough 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
