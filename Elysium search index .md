@@ -16,7 +16,10 @@
 	* Nested field queries (Subqueries)
 3.	Optimize Search Performance
 4.	General Search Examples
-5.	
+5.	Supported Logs
+6. 	Standard Fields
+7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
+
 	
 	
 
@@ -279,6 +282,112 @@ Metric metadata - Elysium provides a number of features you can use to enrich th
 | Look for general authorization failures excluding router messages|auth* AND (fail* OR error?) NOT _sourceCategory=routers|
 
 
+
+
+
+## Supported Logs
+
+1. AWS
+	ALB
+	AuroraMySQLAudit
+	CloudTrail
+	CloudTrailDigest
+	CloudTrailInsight
+	CloudWatchEvents
+	GuardDuty
+	S3ServerAccess
+	VPCDns
+	VPCFlow
+1. Apache
+	AccessCombined
+	AccessCommon
+1. Box
+	Event
+1. CiscoUmbrella
+	CloudFirewall
+	DNS
+	IP
+	Proxy
+1. Cloudflare
+	Firewall
+	HttpRequest
+	Spectrum
+1. Crowdstrike
+	DNSRequest
+	NetworkConnect
+	NetworkListen
+	ProcessRollup2
+	SyntheticProcessRollup2
+	
+1. Duo
+	Administrator
+	Authentication
+	OfflineEnrollment
+	Telephony
+1. Fastly
+	Access
+1. Fluentd
+	Syslog3164
+	Syslog5424
+1. GCP
+	AuditLog
+1. GSuite
+	Reports
+1. GitLab
+	API
+	Audit
+	Exceptions
+	Git
+	Integrations
+	Production
+1. Gravitational
+	TeleportAudit
+1. Juniper
+	Access
+	Audit
+	Firewall
+	MWS
+	Postgres
+	Security
+1. Lacework
+	Events
+1. Nginx
+	Access
+1. OSSEC
+	EventInfo
+1. Okta
+	SystemLog
+1. OneLogin
+	Events
+1. Osquery
+	Batch
+	Differential
+	Snapshot
+	Status
+1. Slack
+	AccessLogs
+	AuditLogs
+1. Sophos
+	Central
+1. Suricata
+	Anomaly
+	DNS
+1. Syslog
+	RFC3164
+	RFC5424
+1. Zeek
+	DNS
+
+
+## Standard Fields (ODM VIEW)
+Elysium log analysis applies normalization fields (IPs, domains, etc) to all log records. These fields provide standard names for attributes across all data sources enabling fast and easy data correlation.
+For example, each data source has a time that an event occurred, but each data source will likely not name the attribute the same, nor is it guaranteed that the associated time has a timezone consistent with other data sources.
+|Field Name| Type| Description|
+|		|	|
+|		|	|
+
+
+## Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
 
 
 
