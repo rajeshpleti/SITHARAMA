@@ -36,7 +36,8 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
-## <span style="color: red;">Search basics</span> 
+##  Search basics
+<span style="color: red;">Search basics</span> 
 
 To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, you’ll use Kibana’s standard query language (KQL), which features autocomplete and a simple, easy-to-use syntax.
 
