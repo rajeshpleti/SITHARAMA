@@ -19,6 +19,7 @@
 5.	Supported Logs
 6. 	Standard Fields (ODM) 
 7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
+8.	Save query 
 
 	
 	
@@ -392,8 +393,8 @@ For example, each data source has a time that an event occurred, but each data s
 
 |Field Name| Type|Description|
 |---------|--------|
-|	|	|
-|	|	|
+|	a|b	|
+|	c|d	|
 
 
 ## Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
@@ -410,6 +411,62 @@ Monitor Database
 2.  File load status monitoring table
 3.  Data source table history
 4.  Monitoring history, tracking any load errors encountered 
+
+
+## Save Query
+
+A saved query is a portable collection of query text and filters that you can reuse in Kiban Discover and Dashboard. Save a query when you want to:
+
+	* Retrieve results from the same query at a later time without having to reenter the query text, add the filters or set the time filter 
+	* View the results of the same 	query in multiple apps
+	* Share your query
+Saved queries don’t include information specific to Discover, such as the currently selected columns in the document table, the sort order, and the index pattern. If you want to save your current view of Discover for later retrieval and reuse, create a saved search instead.
+
+* Note: Granting Access to Kibana, If you have insufficient privileges to save queries, the Save current query button isn’t visible in the saved query management popover
+
+To save the current query text, filters, and time filter:
+
+1. Click # in the search bar, next to the query text input.
+2. Click Save current query in the popover.
+
+![Search](saved-query-management-component-all-privileges.png)
+
+3. Enter a name, a description, and then select the filter options that you want to include. By default, filters are automatically included, but the time filter is not.
+
+![query save](saved-query-save-form-default-filters.png)
+
+4. Click Save.
+
+### Load Query
+To load a saved query into Discover or Dashboard:
+
+1. Click # in the search bar, next to the query text input.
+2. Select the query you want to load. You might need to scroll down to find the query you are looking for.
+###  Save chnages to New query 
+
+If you load a query and then make changes to the query text, the filters, or the time filter, you can save the changes as a new query or update the existing query.
+
+To save the changes as a new query:
+
+1. Click # in the search bar, next to the query text input.
+1. Click Save as new in the popover.
+1. Enter a name and a description, and then select the filter options that you want to include.
+1. Click Save.
+
+![save changes](saved-query-management-component-save-as-new-query.png)
+
+###  Clear a Query
+To clear a query that is currently loaded in an application:
+
+1. Click # in the search bar.
+2. Click Clear in the popover.
+
+###  Delete Query
+To completely delete a query:
+
+1. Click # in the search bar, next to the query text input.
+2. Hover over the query you want to delete.
+3. Click the trash can icon.
 
 # Rough 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
