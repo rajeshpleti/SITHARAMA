@@ -2,7 +2,7 @@
 
 # Elysium Search User Guide
 ## Overview
-1.	[Search basics](#Search basics)
+1.	[Search basics](#Searchbasics)
 2.	[Search query language (KQL)](#KQL)
 	* KQL Introduction
 	* Search multiple fields
@@ -54,7 +54,7 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
-<div id="Search basics"></div>
+<div id="Searchbasics"></div>
 ##  Search basics 
 
 ```diff
