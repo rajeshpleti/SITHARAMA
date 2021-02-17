@@ -20,6 +20,7 @@
 6. 	Standard Fields (ODM) 
 7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
 8.	Save query, search
+9.	Index Management 
 
 	
 	
@@ -37,7 +38,7 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
-##  Search basics in red
+##  Search basics 
 
 ```diff
 - text in red
@@ -490,10 +491,22 @@ To load a saved search into Discover:
 If the saved search is associated with a different index pattern than is currently selected, opening the saved search changes the selected index pattern. The query language used for the saved search will also be automatically selected.
 
 
+## 9. Index Management 
 
+Kibana requires an index pattern to access the Elasticsearch data that you want to explore. An index pattern selects the data to use and allows you to define properties of the fields.
+	* Create an index pattern
+	* Explore and configure the data fields
+	* Set the default index pattern
+	* Delete an index pattern
 
+** To access the Index Patterns view, you must have the Kibana privilege Index Pattern Management. To create an index pattern, you must have the Elasticsearch privilege view_index_metadata. To add the privileges, open the main menu, then click Stack Management > Roles.
+** If a read-only indicator appears in Kibana, you have insufficient privileges to create or save index patterns. The buttons to create new index patterns or save existing index patterns are not visible. For more information, refer to Granting access to Kibana.
 
+### Create an index pattern
+If you collected data using one of the Kibana ingest options, uploaded a file, or added sample data, you get an index pattern for free, and can start exploring your data. If you loaded your own data, follow these steps to create an index pattern.
 
+1. Open the main menu, then click to Stack Management > Index Patterns.
+2. Click Create index pattern.
 
 
 
