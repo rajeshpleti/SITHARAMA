@@ -4,23 +4,23 @@
 ## Overview
 1.	[Search basics](#Searchbasics)
 2.	[Search query language (KQL)](#KQL)
-	* KQL Introduction
-	* Search multiple fields
-	* Grouped together
-	* Terms query
-	* Boolean queries
-	* Range queries
-	* Date range queries
-	* Exist queries
-	* Wildcard queries
-	* Nested field queries (Subqueries)
-3.	Optimize Search Performance
-4.	General Search Examples
-5.	Supported Logs
-6. 	Standard Fields (ODM) 
-7.	Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
-8.	Save query, search
-9.	Index Management 
+	* [KQL Introduction](#kqlintroduction)
+	* [Search multiple fields](#Searchmutiplefields)
+	* [Grouped together](#groupedtogether)
+	* [Terms query](#termquery)
+	* [Boolean queries](#booleanqueries)
+	* [Range queries](#rangequeries)
+	* [Date range queries](#daterangequeries)
+	* [Exist queries](#existqueries)
+	* [Wildcard queries](#wildcardqueries)
+	* [Nested field queries (Subqueries)](#nestedfieldqueries)
+3.	[Optimize Search Performance](#optimizesearchperformance)
+4.	[General Search Examples](#generalsearchexamples)
+5.	[Supported Logs](#supportedlogs)
+6. 	[Standard Fields (ODM)](#standardfields)
+7.	[Backend snowflake integration, SQL Opendistro query support for Elysium kibana search](#snowflake)
+8.	[Save query, search](#savequerysearch)
+9.	[Index Management](#indexmanagement)
 
 	
 	
@@ -54,8 +54,8 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
-<div id="Searchbasics"></div>
-##  Search basics 
+
+## 1.  Search basics  <span id="Searchbasics"><span>
 
 ```diff
 - text in red
@@ -98,8 +98,8 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
-## Kibana Query Language <span id="KQL"><span>
-### KQL Introduction
+##2.  Kibana Query Language <span id="KQL"><span>
+### KQL Introduction <span id="kqlintroduction"><span>
 
 The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
 By placing cursor in the Search field, It will give suggestions to retrive the data as per Index pattern.
@@ -122,7 +122,7 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 ```bash
 (method: INSERT OR method: UPDATE) AND event.duration >= 30000000
 ```
-### Search multiple fields
+### Search multiple fields <span id="Searchmutiplefields"><span>
 
 The idea of running the query_string query against multiple fields is to expand each query term to an OR clause like this
 
@@ -144,12 +144,13 @@ It is also same as:
  ```bash
 "query": "(field1:valu1 OR field2:valu1) AND (field1:Value2 OR field2:value2)"
  ```
-### Grouped together
+### Grouped together <span id="groupedtogether"><span>
+
 Multiple terms or clauses can be grouped together with parentheses, to form sub-queries: 
  ```bash
  (value1 OR value2) AND value3
   ```
-### Terms query
+### Terms query <span id="termquery"><span>
 
 Terms query matches documents that contain one or more exact terms in a field.
 
@@ -167,7 +168,8 @@ message:"quick brown fox"
 * Note: If a default field is not set, terms are matched against all fields. 
 For example, a query for response:200 searches for the value 200 in the response field, but a query for just 200 searches for 200 across all fields in your index
 
-### Boolean queries
+### Boolean queries <span id="booleanqueries"><span>
+
 KQL supports or, and, and not. By default, and has a higher precedence than or. To override the default precedence, group operators in parentheses.
 
 To match documents where response is 200, extension is php, or both:
@@ -214,7 +216,7 @@ tags:(success and info and security)
 ```bash
 message:"quick brown fox"
 ```
-### Range queries
+### Range queries <span id="rangequeries"><span>
 
 KQL supports >, >=, <, and ⇐ on numeric and date types.
 
@@ -222,7 +224,7 @@ KQL supports >, >=, <, and ⇐ on numeric and date types.
 account_number >= 100 and items_sold <= 200
 ```
 
-### Date range queries
+### Date range queries <span id="daterangequeries"><span>
 
 Typically, Kibana’s time filter is sufficient for setting a time range, but in some cases you might need to search on dates. Include the date range in quotes.
 
@@ -235,14 +237,15 @@ Typically, Kibana’s time filter is sufficient for setting a time range, but in
 ```bash
 @timestamp < "2021
 ```
-### Exist queries
+### Exist queries <span id="existqueries"><span>
+
 An exist query matches documents that contain a value for a field, in this case, response:
 
 ```
 response:*
 ```
 
-### Wildcard queries
+### Wildcard queries <span id="wildcardqueries"><span>
 
 To match documents where machine.os starts with win, such as "windows 7" and "windows 10":
 
@@ -256,7 +259,8 @@ machine.os*:windows 10
 ```
 The query checks machine.os and machine.os.keyword for the term windows 10.
 
-### Nested field queries
+### Nested field queries <span id="nestedfieldqueries"><span>
+
 Match a single nested document
 ```bash
 items:{ filed1:v1 and field2 > v2 }
@@ -272,8 +276,8 @@ http.response.status_code: 302.
 level1.level2:{ field1:v1 and filed2:v2 }
 ```
 
+## 3. Optimize Search Performance <span id="optimizesearchperformance"><span>
 
-## Optimize Search Performance
 
 Search optimization tools speed the search process, delivering query results in less time and improving productivity for forensic analysis and log management.
 
@@ -298,7 +302,7 @@ Log metadata - In addition to having more data to reference in query operations,
 
 Metric metadata - Elysium provides a number of features you can use to enrich the metrics you collect with metadata. Metric metadata provides considerable benefits when you query your metrics: you can scope your metric queries to return only the metrics of interest. 
 
-## General Search Examples
+## 4.  General Search Examples <span id="generalsearchexamples"><span>
 
 
 
@@ -312,7 +316,7 @@ Metric metadata - Elysium provides a number of features you can use to enrich th
 
 
 
-## Supported Logs
+## 5. Supported Logs <span id="supportedlogs"><span>
 
 1. AWS
 	* ALB
@@ -406,7 +410,8 @@ Metric metadata - Elysium provides a number of features you can use to enrich th
 	* DNS
 
 
-## Standard Fields (ODM VIEW)
+## 6.  Standard Fields (ODM VIEW) <span id="standardfields"><span>
+
 Elysium log analysis applies normalization fields (IPs, domains, etc) to all log records. These fields provide standard names for attributes across all data sources enabling fast and easy data correlation.
 For example, each data source has a time that an event occurred, but each data source will likely not name the attribute the same, nor is it guaranteed that the associated time has a timezone consistent with other data sources.
 
@@ -416,7 +421,7 @@ For example, each data source has a time that an event occurred, but each data s
 |	c|d	| |
 
 
-## Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
+## 7.  Backend snowflake integration, SQL Opendistro query support for Elysium kibana search <span id="snowflake"><span>
 
 
 Elysium can be configured to write processed log data to an AWS-based Snowflake database cluster.
@@ -432,7 +437,7 @@ Monitor Database
 4.  Monitoring history, tracking any load errors encountered 
 
 
-## Save Query
+## 8. Save Query <span id="savequerysearch"><span>
 
 A saved query is a portable collection of query text and filters that you can reuse in Kiban Discover and Dashboard. Save a query when you want to:
 
@@ -508,7 +513,7 @@ To load a saved search into Discover:
 If the saved search is associated with a different index pattern than is currently selected, opening the saved search changes the selected index pattern. The query language used for the saved search will also be automatically selected.
 
 
-## 9. Index Management 
+## 9. Index Management <span id="indexmanagement"><span>
 
 Kibana requires an index pattern to access the Elasticsearch data that you want to explore. An index pattern selects the data to use and allows you to define properties of the fields.
 	* Create an index pattern
