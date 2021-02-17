@@ -508,14 +508,19 @@ If you collected data using one of the Kibana ingest options, uploaded a file, o
 1. Open the main menu, then click to Stack Management > Index Patterns.
 2. Click Create index pattern.
 
+![create index](create-index-pattern.png)
 
+3. Start typing in the Index pattern field, and Kibana looks for the names of Elasticsearch indices that match your input.
+	* Use a wildcard (*) to match multiple indices. For example, suppose your system creates indices for Apache data using the naming scheme filebeat-apache-a, filebeat-		apache-b, and so on. An index pattern named filebeat-a matches a single source, and filebeat-* matches multiple data sources. Using a wildcard is the most popular approach.
+	* Select multiple indices by entering multiple strings, separated with a comma. Make sure there is no space after the comma. For example, filebeat-a,filebeat-b matches two indices, but not other indices you might have afterwards (filebeat-c).Use a minus sign (-) to exclude an index, for example, test*,-test3.
 
+4. Click Next step.
+5. If Kibana detects an index with a timestamp, expand the Time field menu, and then specify the default field for filtering your data by time.
 
+* Note: If your index doesn’t have time-based data, or if you don’t want to select the default timestamp field, choose I don’t want to use the Time Filter.
+6. Click Create index pattern. Kibana is now configured to use your Elasticsearch data.
 
-
-
-
-
+7. Select this index pattern when you search and visualize your data.
 
 
 
