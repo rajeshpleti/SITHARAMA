@@ -444,7 +444,7 @@ To load a saved query into Discover or Dashboard:
 
 1. Click # in the search bar, next to the query text input.
 2. Select the query you want to load. You might need to scroll down to find the query you are looking for.
-###  Save chnages to New query 
+###  Save changes to New query 
 
 If you load a query and then make changes to the query text, the filters, or the time filter, you can save the changes as a new query or update the existing query.
 
@@ -558,7 +558,7 @@ To edit the field display, click the edit icon (edit icon) in the index pattern 
 The first index pattern you create is automatically designated as the default pattern, but you can set any index pattern as the default. The default index pattern is automatically selected when you first open Discover or create a visualization from scratch.
 
 1. In Index patterns, click the index pattern name.
-2. Click the star icon (Star icon).
+2. Click the star icon.
 
 ### Delete an index pattern
 This action removes the pattern from the list of saved objects in Kibana. You will not be able to recover field formatters, scripted fields, source filters, and field popularity data associated with the index pattern. Deleting an index pattern does not remove any indices or data documents from Elasticsearch.
@@ -566,7 +566,7 @@ This action removes the pattern from the list of saved objects in Kibana. You wi
 * Note : Deleting an index pattern breaks all visualizations, saved searches, and other saved objects that reference the pattern.
 
 1. In Index patterns, click the index pattern name.
-2. Click the delete icon ().
+2. Click the delete icon.
 
 
 
