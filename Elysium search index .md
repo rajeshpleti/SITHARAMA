@@ -2,8 +2,8 @@
 
 # Elysium Search User Guide
 ## Overview
-1.	Search basics
-2.	Search query language (KQL)
+1.	[Search basics](#Search basics)
+2.	[Search query language (KQL)](#KQL)
 	* KQL Introduction
 	* Search multiple fields
 	* Grouped together
@@ -54,6 +54,7 @@ Export/Import search data
 Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
+<div id="Search basics"></div>
 ##  Search basics 
 
 ```diff
@@ -97,7 +98,7 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
-## Kibana Query Language
+## Kibana Query Language <span id="KQL"><span>
 ### KQL Introduction
 
 The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
