@@ -499,8 +499,8 @@ Kibana requires an index pattern to access the Elasticsearch data that you want 
 	* Set the default index pattern
 	* Delete an index pattern
 
-** To access the Index Patterns view, you must have the Kibana privilege Index Pattern Management. To create an index pattern, you must have the Elasticsearch privilege view_index_metadata. To add the privileges, open the main menu, then click Stack Management > Roles.
-** If a read-only indicator appears in Kibana, you have insufficient privileges to create or save index patterns. The buttons to create new index patterns or save existing index patterns are not visible. For more information, refer to Granting access to Kibana.
+* To access the Index Patterns view, you must have the Kibana privilege Index Pattern Management. To create an index pattern, you must have the Elasticsearch privilege view_index_metadata. To add the privileges, open the main menu, then click Stack Management > Roles.
+* If a read-only indicator appears in Kibana, you have insufficient privileges to create or save index patterns. The buttons to create new index patterns or save existing index patterns are not visible. For more information, refer to Granting access to Kibana.
 
 ### Create an index pattern
 If you collected data using one of the Kibana ingest options, uploaded a file, or added sample data, you get an index pattern for free, and can start exploring your data. If you loaded your own data, follow these steps to create an index pattern.
@@ -521,6 +521,57 @@ If you collected data using one of the Kibana ingest options, uploaded a file, o
 6. Click Create index pattern. Kibana is now configured to use your Elasticsearch data.
 
 7. Select this index pattern when you search and visualize your data.
+
+### Create an index pattern for rolled up data
+An index pattern can match one rollup index. For a combination rollup index pattern with both raw and rolled up data, use the standard notation:
+
+```bash
+rollup_logstash,kibana_sample_data_logs
+```
+###  Create an index pattern that searches across clusters
+If your Elasticsearch clusters are configured for cross-cluster search, you can create an index pattern to search across the clusters of your choosing. 
+
+```bash
+<cluster-names>:<pattern>
+cluster_one:logstash-*,cluster_two:logstash-*
+```
+
+###  Explore and configure the data fields
+To explore and configure the data fields in your index pattern, open the main menu, then click Stack Management > Index Patterns. Each field has a mapping,indicates the type of data the field contains in Elasticsearch, such as strings or boolean values. The field mapping also determines how you can use the field as searched or aggregated data.
+
+![explore fields](new-index-pattern.png)
+
+### Format the display of common field types
+
+Using field formatters, you can manually change the field type in Kibana to display your data the way you prefer to see it, regardless of how it is stored in Elasticsearch.
+
+For example, if you store date values in Elasticsearch, you can use a Kibana field formatter to change the display to mm/dd/yyyy format. Kibana has field formatters for strings, dates, geopoints, and numbers.
+
+To customize the displayed field name provided by Elasticsearch, you can use Custom Label .
+
+A popularity counter keeps track of the fields you use most often. The top five most popular fields and their values are displayed in Discover.
+To edit the field display, click the edit icon (edit icon) in the index pattern detail view.
+
+![edit field](edit-field-format.png)
+
+### Set the default index pattern
+The first index pattern you create is automatically designated as the default pattern, but you can set any index pattern as the default. The default index pattern is automatically selected when you first open Discover or create a visualization from scratch.
+
+1. In Index patterns, click the index pattern name.
+2. Click the star icon (Star icon).
+
+### Delete an index pattern
+This action removes the pattern from the list of saved objects in Kibana. You will not be able to recover field formatters, scripted fields, source filters, and field popularity data associated with the index pattern. Deleting an index pattern does not remove any indices or data documents from Elasticsearch.
+
+* Note : Deleting an index pattern breaks all visualizations, saved searches, and other saved objects that reference the pattern.
+
+1. In Index patterns, click the index pattern name.
+2. Click the delete icon ().
+
+
+
+
+
 
 
 
