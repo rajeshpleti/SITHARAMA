@@ -27,7 +27,7 @@
 
 
 
-Export/Import search data
+//Export/Import search data
 4.	Search Cheat Sheets
 7.	TIME Compare
 8	Lookup Tables
@@ -74,7 +74,7 @@ When you are building a search query, you have the option to add a time range ex
 ### View Search Results for JSON Logs
 If your search results contain JSON logs, you can expand or collapse the view on the Messages tab to show or hide the JSON format and structure.
 
-##2.  Kibana Query Language <span id="KQL"><span>
+## 2.  Kibana Query Language <span id="KQL"><span>
 ### KQL Introduction <span id="kqlintroduction"><span>
 
 The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
