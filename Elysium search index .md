@@ -21,6 +21,7 @@
 7.	[Backend snowflake integration, SQL Opendistro query support for Elysium kibana search](#snowflake)
 8.	[Save query, search](#savequerysearch)
 9.	[Index Management](#indexmanagement)
+10.	[Create Filters](#createfilter)
 
 	
 	
@@ -646,13 +647,16 @@ This action removes the pattern from the list of saved objects in Kibana. You wi
 2. Click the delete icon.
 
 
+## 10. Create Filter <span id="createfilter"><span>
+
+In Kibana, we can filter transactions by clicking on elements within a visualization. For example, to filter for all the HTTP redirects that are coming from a specific IP and port, click the Filter for value filterforval icon icon next to the client.ip and client.port fields in the transaction detail table. To exclude the HTTP redirects coming from the IP and port, click the Filter out value filteroutval icon icon instead.
+
+![filter Search](filter_from_context.png)
+The selected filters appear under the search box.
+![filter results](kibana-filters.png)
 
 
-
-
-
-
-# Rough 
+#    Rough 
 You *can* start Kibana using `docker run` after [creating a Docker network](https://docs.docker.com/engine/reference/commandline/network_create/) and starting Elasticsearch, but the process of connecting Kibana to Elasticsearch is significantly easier with a Docker Compose file.
 
 1. Run `docker pull amazon/opendistro-for-elasticsearch-kibana:{{site.odfe_version}}`.
