@@ -152,7 +152,7 @@
 * To unify the underlying data schema, Elysium Analytics has created an advanced “layered” schema architecture that supports different log vendors  “views” into the same ODM schema. 
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 
-##1. Insider Threat Detection
+** bold 1. Insider Threat Detection : **
 Insider Threat Detection Show users who are deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features
 2. Privileged Account Usage
 Identify privileged users, services, and shared accounts and then monitor them for abnormal usage associated with insider and external attacks.
@@ -190,13 +190,13 @@ Access to any suspicious or dark sites.
 Show escalated privileges by user/entity
 
 ### 2.	Alerts <span id="alerts"><span>
-	
+<p style='text-align: justify;'> 
 Elysium alerts Monitors continuously query your data to monitor and send notifications when specific events occur.
 thresholds, critical, warning, and missing data and also gives aggregation based results.
 
 Elysium offers a set of correlation rules and behavioral analytics to alert on specific sequence of events or pattern using machine learning and statistical analysis. 
 The alerting feature notifies you when data from one or conditions are met. 
-For example, you might want to receive an email if your application logs more than five HTTP 503 errors in one hour, or you might want to page a developer if no new records have been processed in the past 20 minutes. 
+For example, you might want to receive an email if your application logs more than five HTTP 503 errors in one hour, or you might want to page a developer if no new records have been processed in the past 20 minutes. </p>	
 	
 ### 3.	Endpoint <span id="endpoint"><span>
 Endpoint Dashboard analysis provides traffic and attacks in real-time by monitoring high velocity connections and port scans across devices within the corporate network.
