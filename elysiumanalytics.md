@@ -6,18 +6,18 @@
 Contents 
 
 ## 1. [Key Features Of Elysium Analytics](#KeyFeatures)
-###1. Insider Threat Detection 
-###2. Privileged Account Usage 
-###3. DNS Tunneling
-###4. VPN Monitoring
-###5. Unusual File Access
-###6. Data Exfiltration
-###7. Bot Attack 
-###8. Unusual File Downloads
-###9. Leverage data science platforms (Advanced AI/ML Techniques)
-###10. Phishing Attack
-###11. New IP Addresses
-###12. Build your own Analytical dashboards
+	1. Insider Threat Detection 
+	2. Privileged Account Usage 
+	3. DNS Tunneling
+	4. VPN Monitoring
+	5. Unusual File Access
+	6. Data Exfiltration
+	7. Bot Attack 
+	8. Unusual File Downloads
+	9. Leverage data science platforms (Advanced AI/ML Techniques)
+	10. Phishing Attack
+	11. New IP Addresses
+	12. Build your own Analytical dashboards
 ## 2. [Quick Start](#quickstart)
 ###1.	After filling the client form
 ###2.	Setup Client access using UI
