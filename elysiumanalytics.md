@@ -28,22 +28,21 @@
 
 ## 3. [APP’S Integration](#APPS)
 	
-	1. [Search basics](#Searchbasics)
-	1. [360 view](#360view)
-	
-	3. [Alerts](#alerts)
-	4. [Endpoint](#endpoint)
-	5. [ITD (Inside Threat Detection)](#ITD)
-	6. [Identity Management](#IM)
-	7. [Operational Dashboards](#operationaldashboard)
-	8. [Search](#search)
-	9. [Statistical Data](#statisticaldata)
-	10. [Security Posture](#securityposture)
-	11. [Behavior Analytics UEBA](#UEBA)
-	12. [Snowflake analytics](#snowflakeanalytics)
-	13. [Source analytics](#sourceanalytics)
-	14. [SOC Dashboard](#socdashborad)
-	15. [NIST,HIPAA,SOX](#NIST)
+1. [Search basics](#Searchbasics)
+2. [360 view](#360view)
+3. [Alerts](#alerts)
+4. [Endpoint](#endpoint)
+5. [ITD (Inside Threat Detection)](#ITD)
+6. [Identity Management](#IM)
+7. [Operational Dashboards](#operationaldashboard)
+8. [Search](#search)
+9. [Statistical Data](#statisticaldata)
+10. [Security Posture](#securityposture)
+11. [Behavior Analytics UEBA](#UEBA)
+12. [Snowflake analytics](#snowflakeanalytics)
+13. [Source analytics](#sourceanalytics)
+14. [SOC Dashboard](#socdashborad)
+15. [NIST,HIPAA,SOX](#NIST)
 
 ## 4. Inside Threat Detection 
 	1. Risk score of User and Entity(Day wise and aggregation)
@@ -154,33 +153,33 @@
 * To unify the underlying data schema, Elysium Analytics has created an advanced “layered” schema architecture that supports different log vendors  “views” into the same ODM schema. 
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 
-###1. Insider Threat Detection
+1. Insider Threat Detection
 Insider Threat Detection Show users who are deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features
-###2. Privileged Account Usage
+2. Privileged Account Usage
 Identify privileged users, services, and shared accounts and then monitor them for abnormal usage associated with insider and external attacks.
-###3. DNS Tunneling
+3. DNS Tunneling
 Detect DNS tunneling attacks used for malicious file transfers, payload downloads, or remote access.
-###4. VPN Monitoring
+4. VPN Monitoring
 Profile geo-location of users & endpoints and compute the number of simultaneous VPN connections during any minute of any day to detect unauthorized access.
-###5. Unusual File Access
+5. Unusual File Access
 Identify excessive and abnormal file activity on endpoints and detect individuals, or malware controlled by attackers, attempting to search for and steal valuable digital assets.
-###6. Data Exfiltration
+6. Data Exfiltration
 Detect unauthorized transfer of data from a user's computer or servers carried out by someone manually or automatically by malware on the network.
-###7. Bot Attack 
+7. Bot Attack 
 Detect bot traffic and attacks in real-time by monitoring high velocity connections and port scans across devices within the corporate network.
-###8. Unusual File Downloads
+8. Unusual File Downloads
 Protect your network and  users from malicious content and binaries by detecting downloads from low prevalence and suspicious sites and domains.
-###9. Leverage data science platforms (Advanced AI/ML Techniques)
+9. Leverage data science platforms (Advanced AI/ML Techniques)
 Build your own ML models on Databricks or other preferred data science platforms to  detect new evolving threats.
-###10. Phishing Attack
+10. Phishing Attack
 Profile email use patterns and detect unusual and potentially high risk email messages from low prevalence and suspicious domains.
-###11. New IP Addresses
+11. New IP Addresses
 Protect your network and users from malware downloads, drive-by attacks, and phishing attacks through profiling of new IPs and detection of connections to low prevalence IPs.
-###12. Build your own Analytical dashboards
+12. Build your own Analytical dashboards
 Build your own analytics dashboards with Looker or connect to 3rd party applications through our API.
 
 # 3. APP’S Integration  <span id="APPS"><span>
-### 1.360 view <span id="360view"><span>
+### 1. 360 view <span id="360view"><span>
 	
 Elysium offers to show all the information of a user or an entity for Last 30 Days.
 Shows login patterns (successful & failed logins) for the last 7 and 30 days for the user/entity in context
