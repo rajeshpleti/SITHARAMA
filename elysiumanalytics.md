@@ -79,17 +79,17 @@
 
 1.Search basics
 1.Search query language (KQL)
-	* 1.KQL Introduction
-	* 1.Search multiple fields
-	* 1.Grouped together
-	* 1.Terms query
-	* 1.Boolean queries
-	* 1.Range queries
-	* 1.Date range queries
-	* 1.Exist queries
-	* 1.Wildcard queries
-	* 1.Nested field queries (Subqueries)
-1.Optimize Search Performance
+ * 1.KQL Introduction
+ * 1.Search multiple fields
+ * 1.Grouped together
+ * 1.Terms query
+ * 1.Boolean queries
+ * 1.Range queries
+ * 1.Date range queries
+ * 1.Exist queries
+ * 1.Wildcard queries
+ * 1.Nested field queries (Subqueries)
+ * 1.Optimize Search Performance
 1.General Search Examples
 1.Supported Logs
 1.Standard Fields (ODM)
@@ -99,35 +99,35 @@
 1.Create Filters and search 
 
 ## 8. Manage and Monitoring
-	1. Ingestion and Volumes
-	2. Users and Roles
-	3. Connections and Integration
-	4. Data Forwarding
+1. Ingestion and Volumes
+2. Users and Roles
+3. Connections and Integration
+4. Data Forwarding
 
 ## 9. SIEM (Security Information and Event Management )
-	1. Hosts
-	2. Network
-	3. Endpoint Activity
-	4. Authentication logs
-	5. DNS Traffic
-	6. NetFlow
+1. Hosts
+2. Network
+3. Endpoint Activity
+4. Authentication logs
+5. DNS Traffic
+6. NetFlow
 
 ## 10. Role-Based Access Control
-	1. Admin Role 
-	2. Analyst Role 
-	3. Developer Role 
-	4. Manger Role 
-	5. Team Lead Role 
-	6. Dashboard Access control
+1. Admin Role 
+2. Analyst Role 
+3. Developer Role 
+4. Manger Role 
+5. Team Lead Role 
+6. Dashboard Access control
 
 ## 11. Cloud Integration
-	1. AWS
-	2. GCP
-	3. Azure
+1. AWS
+2. GCP
+3. Azure
 ## 12. Support Help
-	1. Community help github
-	2. Product support 
-	3. Virtual assistance chatbot
+1. Community help github
+2. Product support 
+3. Virtual assistance chatbot
 
 
 
@@ -152,51 +152,51 @@
 * To unify the underlying data schema, Elysium Analytics has created an advanced “layered” schema architecture that supports different log vendors  “views” into the same ODM schema. 
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 
-**1. Insider Threat Detection**
+**1. Insider Threat Detection:**
 
 Insider Threat Detection Show users who are deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features
 
-**2. Privileged Account Usage**
+**2. Privileged Account Usage:**
 
 Identify privileged users, services, and shared accounts and then monitor them for abnormal usage associated with insider and external attacks.
 
-**3. DNS Tunneling**
+**3. DNS Tunneling:**
 
 Detect DNS tunneling attacks used for malicious file transfers, payload downloads, or remote access.
 
-**4. VPN Monitoring**
+**4. VPN Monitoring:**
 
 Profile geo-location of users & endpoints and compute the number of simultaneous VPN connections during any minute of any day to detect unauthorized access.
 
-**5. Unusual File Access**
+**5. Unusual File Access:**
 
 Identify excessive and abnormal file activity on endpoints and detect individuals, or malware controlled by attackers, attempting to search for and steal valuable digital assets.
 
-**6. Data Exfiltration**
+**6. Data Exfiltration:**
 
 Detect unauthorized transfer of data from a user's computer or servers carried out by someone manually or automatically by malware on the network.
 
-**7. Bot Attack**
+**7. Bot Attack:**
 
 Detect bot traffic and attacks in real-time by monitoring high velocity connections and port scans across devices within the corporate network.
 
-**8. Unusual File Downloads**
+**8. Unusual File Downloads:**
 
 Protect your network and  users from malicious content and binaries by detecting downloads from low prevalence and suspicious sites and domains.
 
-**9. Leverage data science platforms (Advanced AI/ML Techniques)**
+**9. Leverage data science platforms (Advanced AI/ML Techniques):**
 
 Build your own ML models on Databricks or other preferred data science platforms to  detect new evolving threats.
 
-**10. Phishing Attack**
+**10. Phishing Attack:**
 
 Profile email use patterns and detect unusual and potentially high risk email messages from low prevalence and suspicious domains.
 
-**11. New IP Addresses**
+**11. New IP Addresses:**
 
 Protect your network and users from malware downloads, drive-by attacks, and phishing attacks through profiling of new IPs and detection of connections to low prevalence IPs.
 
-**12. Build your own Analytical dashboards**
+**12. Build your own Analytical dashboards:**
 
 Build your own analytics dashboards with Looker or connect to 3rd party applications through our API.
 
@@ -239,7 +239,8 @@ It has scoring:  0 to 60% normal, 60 to 90 as unsafe behavior, and 90% or higher
 By using risk-based Scoring, which performs data sketches across time intervals on security metrics baselining the behaviors of all users and entities,
 we gain full visibility into any anomalous and suspicious behavior through risk-based scoring of the security data.
 </p>
-### 5.	Identity Management <span id="IM"><span>
+
+###  5.	Identity Management <span id="IM"><span>
 VPN Session dashboard explain about:
 1. The name of user connecting and disconnecting,
 1. The start and end time of the VPN or administrator sessions,
@@ -292,38 +293,38 @@ This dashboard explains about all key information of the organization.
 	
 ### NIST (National Institute of Standards and Technology)
 Companies that provide products and services to the government have to follow some policies set by the National Institute of Standards and Technology (NIST). NIST has two common mandates (NIST 800-53 AND NIST 800-171 which companies have to follow.
-	These are the reports Offered by Elysium.
-	1. Resource Monitoring
-	1. Remote Access
-	1. Trust Relationships 
-	1. Continuous Monitoring
-	1. User Access and Least Privileges
-	1. File Integrity Monitoring
-	1. Change Control  
-	1. Boundary Defenses
-	1. Login and Logoff Monitoring
-	1. Investigation Reports
-	1. System Events
-	1. Email reports
-	1. Watchguard DHCP Reports
-	1. Watchguard Proxy Reports 
+These are the reports Offered by Elysium.
+1. Resource Monitoring
+1. Remote Access
+1. Trust Relationships 
+1. Continuous Monitoring
+1. User Access and Least Privileges
+1. File Integrity Monitoring
+1. Change Control  
+1. Boundary Defenses
+1. Login and Logoff Monitoring
+1. Investigation Reports
+1. System Events
+1. Email reports
+1. Watchguard DHCP Reports
+1. Watchguard Proxy Reports 
 
 ### HIPAA
 HIPAA Deals with health care organizations where data is sensitive and critical. So Elysium offers to collect and analyze the logs with meaningful information in the form of reports.These are the reports Offered by Elysium.
-	1. Logon and Logoff Monitoring
-	1. Account Logon
-	1. System Events
-	1. Object Access
+1. Logon and Logoff Monitoring
+1. Account Logon
+1. System Events
+1. Object Access
 
 ### SOX IT Compliance
 
 SOX Regulations that mandate accuracy, integrity and security of the company or an organization. 
-	1. It processes log data which is tedious. To make it easy Elysium offers predefined reports.These are the reports Offered by Elysium.
-	1. User Logon and Logoff
-	1. Logon Failure
-	1. User Access
-	1. Successful or Unsuccessful Validation & User group changes
-	1. Continuous Monitoring
+1. It processes log data which is tedious. To make it easy Elysium offers predefined reports.These are the reports Offered by Elysium.
+1. User Logon and Logoff
+1. Logon Failure
+1. User Access
+1. Successful or Unsuccessful Validation & User group changes
+1. Continuous Monitoring
 
 
 
