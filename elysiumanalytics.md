@@ -27,20 +27,23 @@
 	6. Request a Demo
 
 ## 3. [APP’S Integration](#APPS)
+	
+	1. [Search basics](#Searchbasics)
 	1. [360 view](#360view)
-	2. [Alerts](#alerts)
-	3. [Endpoint](#endpoint)
-	4. [ITD (Inside Threat Detection)](#ITD)
-	5. [Identity Management](#IM)
-	6. [Operational Dashboards](#operationaldashboard)
-	7. [Search](#search)
-	8. [Statistical Data](#statisticaldata)
-	9. [Security Posture](#securityposture)
-	10. [Behavior Analytics UEBA](#UEBA)
-	11. [Snowflake analytics](#snowflakeanalytics)
-	12. [Source analytics](#sourceanalytics)
-	13. [SOC Dashboard](#socdashborad)
-	14. [NIST,HIPAA,SOX](#NIST)
+	
+	3. [Alerts](#alerts)
+	4. [Endpoint](#endpoint)
+	5. [ITD (Inside Threat Detection)](#ITD)
+	6. [Identity Management](#IM)
+	7. [Operational Dashboards](#operationaldashboard)
+	8. [Search](#search)
+	9. [Statistical Data](#statisticaldata)
+	10. [Security Posture](#securityposture)
+	11. [Behavior Analytics UEBA](#UEBA)
+	12. [Snowflake analytics](#snowflakeanalytics)
+	13. [Source analytics](#sourceanalytics)
+	14. [SOC Dashboard](#socdashborad)
+	15. [NIST,HIPAA,SOX](#NIST)
 
 ## 4. Inside Threat Detection 
 	1. Risk score of User and Entity(Day wise and aggregation)
@@ -137,18 +140,19 @@
 # 1. Key features Of Elysium Analytics <span id="KeyFeatures"><span>
 	
 	
-Elysium Analytics is a machine learning based log analysis solution for security minded mid-sized to large enterprises, challenged by the volume of security log data today both from an infrastructure as well as an analytics and detection perspective.   
-We have simplified onboarding of data, provide a scalable data lake analytics platform, and search on a pay-as-you-go basis . 
-Since we are built on top of Snowflake, our SaaS solution is truly a cloud scale security analytics platform that removes the barriers from ingesting, contextualizing, searching, analyzing, and storing log data with a cost effective and low risk service. 
-Unlike the other log analysis vendors in this market, our SaaS offering is licensed on a usage basis lowering cost and removing financial risk.  You pay a low price for storage, and compute is billed by the minute of usage.  
-Additionally, we have an open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models. 
+* Elysium Analytics is a machine learning based log analysis solution for security minded mid-sized to large enterprises, challenged by the volume of security log data today both from an infrastructure as well as an analytics and detection perspective.
+
+* We have simplified onboarding of data, provide a scalable data lake analytics platform, and search on a pay-as-you-go basis . 
+* Since we are built on top of Snowflake, our SaaS solution is truly a cloud scale security analytics platform that removes the barriers from ingesting, contextualizing, 	searching, analyzing, and storing log data with a cost effective and low risk service. 
+*  Unlike the other log analysis vendors in this market, our SaaS offering is licensed on a usage basis lowering cost and removing financial risk.  You pay a low price for 	storage, and compute is billed by the minute of usage.  
+* Additionally, we have an open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models. 
 
 
-Elysium Analytics provides a single pane of glass through an SOC analyst identifies, observes  aggregated views of all activity of users and entities across an enterprise.
-This is achieved through the use of profilers, perform data sketches across time intervals on security metrics to baseline, behaviours of users and entities, MITRE ATT&CK vectors. 
+* Elysium Analytics provides a single pane of glass through an SOC analyst identifies, observes  aggregated views of all activity of users and entities across an enterprise.
+* This is achieved through the use of profilers, perform data sketches across time intervals on security metrics to baseline, behaviours of users and entities, MITRE ATT&CK vectors. 
 
-To unify the underlying data schema, Elysium Analytics has created an advanced “layered” schema architecture that supports different log vendors  “views” into the same ODM schema. 
-Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
+* To unify the underlying data schema, Elysium Analytics has created an advanced “layered” schema architecture that supports different log vendors  “views” into the same ODM schema. 
+* Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 
 ###1. Insider Threat Detection
 Insider Threat Detection Show users who are deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features
@@ -197,22 +201,22 @@ For example, you might want to receive an email if your application logs more th
 ### 3.	Endpoint <span id="endpoint"><span>
 Endpoint Dashboard analysis provides traffic and attacks in real-time by monitoring high velocity connections and port scans across devices within the corporate network.
 It supports Profile geo-location of users & endpoints and compute the number of simultaneous VPN connections during any minute of any day to detect unauthorized access
-	1. VPN Monitoring
-	1. Unusual File Access
-	1. Data Exfiltration
-	1. Bot Attack 
+1. VPN Monitoring
+1. Unusual File Access
+1. Data Exfiltration
+1. Bot Attack 
 ### 4.	ITD (Inside Threat Detection) <span id="ITD"><span>
-	The Insider Threat Detection shows users who have crossed a threshold due to statistical anomalies and outliers from unsupervised learning clustering. 
-	It provides quick tips as text to help users to understand the dashboard. 
-	It has scoring:  0 to 60% normal, 60 to 90 as unsafe behavior, and 90% or higher as insider threat. 
-	By using risk-based Scoring, which performs data sketches across time intervals on security metrics baselining the behaviors of all users and entities,
-	we gain full visibility into any anomalous and suspicious behavior through risk-based scoring of the security data.
+The Insider Threat Detection shows users who have crossed a threshold due to statistical anomalies and outliers from unsupervised learning clustering. 
+It provides quick tips as text to help users to understand the dashboard. 
+It has scoring:  0 to 60% normal, 60 to 90 as unsafe behavior, and 90% or higher as insider threat. 
+By using risk-based Scoring, which performs data sketches across time intervals on security metrics baselining the behaviors of all users and entities,
+we gain full visibility into any anomalous and suspicious behavior through risk-based scoring of the security data.
 ### 5.	Identity Management <span id="IM"><span>
-	VPN Session dashboard explain about:
-	1. The name of user connecting and disconnecting,
-	1. The start and end time of the VPN or administrator sessions,
-	1. The outside global address from where the user and host connect
-	1. The inside local address assigned to the user's session.
+VPN Session dashboard explain about:
+1. The name of user connecting and disconnecting,
+1. The start and end time of the VPN or administrator sessions,
+1. The outside global address from where the user and host connect
+1. The inside local address assigned to the user's session.
 
 ### 6.	Operational Dashboards <span id="operationaldashboard"><span>
 	
@@ -241,11 +245,11 @@ Specifically Elysium offers canned UEBA reports that map specific techniques and
 
 ### 11.	Snowflake analytics <span id="snowflakeanalytics"><span>
 Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage aacount details, identifying abnormal behaviour, anamoly scoring, alerting. 
-	1. Snowflake audit logs
-	1. Snowflake login history
-	1. Alert scoring
-	1. Timeseries Scroing 
-	1. Anomaly scores 
+1. Snowflake audit logs
+1. Snowflake login history
+1. Alert scoring
+1. Timeseries Scroing 
+1. Anomaly scores 
 	
 ### 12.	Source analytics <span id="sourceanalytics"><span>
 	
