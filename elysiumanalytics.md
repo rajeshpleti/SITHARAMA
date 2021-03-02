@@ -568,7 +568,7 @@ Privileged Account Usage :
 	
 	###4.	Bandwidth Usage by size and count
 	
-![Bandwidthsize](UEBAbandwidthsize.PNG)	
+![Bandwidthsize](bandwidthsize.PNG)	
 ![Bandwidthcount](bandwidthbycount.PNG)		
 	
 	###5.	VPN Connections
