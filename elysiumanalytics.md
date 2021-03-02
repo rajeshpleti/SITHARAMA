@@ -343,10 +343,11 @@ Elysium Analytics provides a unique AI-driven security analytics platform that c
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors. 
 	
 	
-	Filters:  User can Change the date filter,user filter and RUN the Dashboard
+Filters:  User can Change the date filter,user filter and RUN the Dashboard
  
- 
- 
+![ITD1](itd1.png)
+
+![ITD2](id2.png)
 In 1,2,6 tiles Click on the graph Details appear
 In 3,4,5 tiles Click on the graph or Name Link to 360 View appears and Click on Link to 360 View it redirects to 360 user view or 360 ip view 
  
