@@ -346,7 +346,7 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 	
 	
 
-
+###1.	Filters
 
 Filters:  User can Change the date filter,user filter and RUN the Dashboard
  
@@ -386,7 +386,8 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 	
 	
 ###2.	Anomaly count
-	
+
+![anamolycount](anamolycount.PNG)
 	
 	
 ###3.	Threat User’s and Entity
@@ -399,6 +400,10 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 	
 	Filter: User can change the filter and run the dashboard 
 
+
+![user3601](user3601.PNG)
+
+![user3602](user3602.PNG)
 Overview of the Tiles in Dashboard
 1. Active Directory shows the details of AD User.
 1. Risk Score shows the Average of the Risk Score in a weeks time for Source Type -  ML-AGGREGATE
@@ -446,11 +451,11 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 	
 ###5.	Daily Risky Behavior – Zscores
 	
+![user3603](user3603.PNG)	
 	
+###6.	MITRE-ATTACK and Alerts 
 	
-###6.	MITRE-ATTACK
-	
-	
+![user3604](user3604.PNG)	
 	
 ###7.	Event level Risk Trend
 	
@@ -459,15 +464,15 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 	
 ###8.	Event List
 	
+![eventlist](user3605.PNG)	
 	
-	
-###9.	Alerts
+
 	
 	
 ###10.	Risk score trend analysis for User/ Entity
 	
 	
-###11.	Filters
+
 	
 	
 	
