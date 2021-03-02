@@ -343,6 +343,32 @@ Elysium Analytics provides a unique AI-driven security analytics platform that c
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors. 
 	
 	
+	Filters:  User can Change the date filter,user filter and RUN the Dashboard
+ 
+ 
+ 
+In 1,2,6 tiles Click on the graph Details appear
+In 3,4,5 tiles Click on the graph or Name Link to 360 View appears and Click on Link to 360 View it redirects to 360 user view or 360 ip view 
+ 
+Overview of the ITD tiles in the Dashboard
+ 
+User/Entity Count with High Risk Scores
+It shows the Score of high risky events 
+Anomalous User/Entity by Source
+It shows the count of high anomaly score  and source types
+Behaviors (Of Risky Users/Entities)
+It shows the users/entities with maximum of risk score
+Threat Entities
+In this it shows data for max score for all Entities in Elysium Analytics in the last 15 days
+Threat Users
+In this it shows data for max score for all Users in Elysium Analytics in the last 15 days
+Scores/Alerts
+In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Score,Max of Risk Score.They are represented in different colored Bars.
+
+
+
+	
+	
 	###1.	Risk score of User and Entity(Day wise and aggregation)
 	
 	
@@ -359,6 +385,52 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 	###4.	360 User view
 	
 	
+	Filter: User can change the filter and run the dashboard 
+
+Overview of the Tiles in Dashboard
+1. Active Directory shows the details of AD User.
+1. Risk Score shows the Average of the Risk Score in a weeks time for Source Type -  ML-AGGREGATE
+1. Alerts Count shows the count of alerts in a week
+1. Number of Assets shows the count of IPs accessed in a week.
+1. Aggregates show the Count of Aggregates
+1. Risk Score Trend Analysis shows the sum of Risk score per day for 2 weeks for source Type - ML
+1. High Risk Analysis shows the sum of events based Anomaly Score 
+1. Daily Risky Behavior - Zscores shows the different  Scores for source type - ML in last 15 days
+1. MITRE - ATTACK shows details about the Mitre attack for User in past 2 weeks
+1. Alerts shows the Count of Alerts per Type.
+1. Event Level Risk Trend shows  other than Source Type - ML
+1. Event List shows the details of events like description, IP, Anomaly score etc.
+
+In the tiles (2 & 3) Comparison is done between this week’s Count to last week’s count and difference in the value is calculated.
+Indicate decrease in threats by a value.
+Indicate increase in threats by a value.
+If you click on the number in Tile3 or the Line in Tile 11, you can see the details,
+
+
+In Tile 9, if you click on the link, you can see the details about the attack.
+In Tile 10, when you click on the Bars, you will get different Drill down options to see the data. 
+Show all option, we can see the details
+Filer by Alert name will open another dashboard and see the details about the particular Alert.
+
+
+If you click on Src User name or Src IP in Tile 12, you will get different options to drill down and see the details.
+	
+	###5. 360 IP View 
+	
+	
+	
+	Filter: User can change the filter and run the dashboard 
+
+1.Overview of the Tiles in Dashboard
+1.Risk Score Trend Analysis for Entity shows the sum of risk score of entity / IP for Src Type ML on a day  in the past 15 days.
+1.Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day  in the past 15 days.
+1.High Risk Events shows the total count per Source Type - Security Auditing , Network traffic etc other than type ML with Anomaly score >=85 in past 15 days
+1.Profile Z Score shows the details 
+1.Time Series shows Sum of If Dwnld Ts and If Dwnld Val per day for last 15 days for ML
+1.Alerts shows Count of Alerts by Alert name
+1.Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days
+1.Event List gives the details about the Event with Entity anomaly score >=85 and Dst name other than badsite.com in the past 15 days
+
 	
 	###5.	Daily Risky Behavior – Zscores
 	
@@ -393,8 +465,9 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics) <span id="UEBA"><span>
 	
 	
-	UEBA utilizes Machine Learning and Advanced Artificial Intelligence (AI) analytics to detect threats and simplify the work of technical professionals focused on security. 
-	Furthermore it offers a signature less approach for detecting emerging threats with statistical analysis, AI and machine learning approaches.   
+UEBA utilizes Machine Learning and Advanced Artificial Intelligence (AI) analytics to detect threats and simplify the work of technical professionals focused on security. 
+
+Furthermore it offers a signature less approach for detecting emerging threats with statistical analysis, AI and machine learning approaches.   
 
 	Mobile/Laptop/Desktop Device Malware Scan 
 	The following Dashboard is the data on all events containing "Symantec".
@@ -415,6 +488,52 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 	1. Streaming Media Application
 	1. VPN session activity
 	1. Email Counts & Size.
+
+
+
+
+
+
+Filters:  User can Change the date  and RUN the DASHBOARD
+
+In 1,3 tiles click on the number or the graph Details appear
+In tile 4  click on the bubble ,
+                   										 click on Details it appears
+In tile 2  Information like algorithm,anomaly score range,anomaly outliers threshold,x-axis ,
+  y-axis names of the respective UEBA is  mentioned in the Dashboards .
+When the mouse hovered on the bubbles in all uebas the x-axis,y-axis information,count,score displays.     
+Count of Users,Information,Outliers,Details are common  in all the UEBA’s.They vary with respective ueba view used
+All the tiles in dashboards changes according to the Parameters of the ueba’s .Those 
+ parameters  appear in the Information tile.
+
+
+
+
+
+
+Overview of all the UEBA’s
+
+Bandwidth Usage by Count shows the Average of Downloaded Bytes,Average of Uploaded Bytes Information.
+Bandwidth Usage by Size shows the Average of Sent Bytes,Received Bytes information.
+EndPoint Indicators of Compromise shows the Average of Sent Bytes,Average of End Point  Remote count Information.
+Privileged Account Usage shows average of bandwidth and average of privileged count information.
+High volume File Access shows average of file access and average of file volume count Information
+VPN CONNECTIONS shows  Avg Distance of Geo-locations between Sessions and  Total no.of sessions information
+File Downloads shows Average of Destination count and Average of Download  Count information.
+Bot attack shows average of source count,average of destination count information.
+Unusual Domain shows the average of uploaded bytes and average of Distinct Domain count information
+
+Privileged Account Usage : 
+
+       It shows the Extra tiles like Details view,IP GEO MAP.
+       Details View shows the details like source name,source ip ,source geo city,count in the
+        itd 360 view .
+       Ip Geo Map shows the locations of the user and the count.
+               click on the Details Privileged Account Usage tile
+                                
+                               click on the filter_user_details_geo
+          It redirects to the dashboard with Details View,IP GEO MAP changed.These two tiles 
+          are filtered  with new user value. 
 
 
 
@@ -448,3 +567,70 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 	###8.	Unusual Domain
 	
 	
+## 6. Alerts tiles
+
+Overview of alert  tiles in the Dashboard
+
+1.  New Alerts  
+     It shows the everyday count of alerts.Click on the graph  Show All,Drill appears
+     Click on Drill into any of the event time  it takes to the Details.
+2.  New Alerts By Severity 
+     It shows the count of alerts per severity.Low,high Critical are level of Severity.Click on 
+     the graph Show All, Filter By Severity appears.Click on Filter By Severity it redirects
+     to Dashboard with severity value as filter.
+3.  New Alerts By Type 
+     It shows the count of alerts according to the alert names.Different colored bars represent
+     to  the  respective alert abbreviation names .Click on the graph Show All,
+     Filter By Alert name appears. Click on the Filter By Alert name it filters with the alert_name.
+4.  Alerts By Source 
+     It shows the count of alerts according to the source names.Different colored lines 
+     represent the respective Source names .
+5.  Alerts Origination From Geo 
+     It shows the count of Alerts per Location.
+6.  Alert  types for last 7 days
+     It  shows the different alerts types,count of alerts and alerts generated date. Click on graph 
+     Filter By Alert Name  appears. Click on Filter By Alert Name it redirects to the Dashboard by 
+     filtering  alert name.
+7.  User Alerts for 7 days 
+     It shows the name of the user,count of alerts,alerts generated date.
+8.  Alerts Data 
+     It shows the information of count of alerts,alert type,description,alert abbreviation name,
+     user name ,event time minute and total count of alerts.
+9.  Detailed View 
+     It shows information about  alerts,ID,Parent Alert ID,user name,source,IP’ s of both source 
+     and destination, Hostname
+ 
+
+## 7. Statistical Data / Information
+
+Filter: User can change the filter and run the dashboard 
+
+
+Overview of the Tiles in Dashboard
+
+City shows the Count of Events per City
+Total Activity Per Region shows the total Events / Activities per City per day
+Bandwidth Usage/City shows the  Total uploaded and downloaded bytes per City
+Top 10 Users/ Bandwidth shows the first 10 users who used the most Bandwidth (sum of uploaded and downloaded bytes)
+Details shows the details of a particular user / system like Name, City, Event Date, Successful Login, Number of Emails etc.
+If you hover over (1-4) tiles, you can see the details like Event Date, City, Bandwidth etc
+
+# 7.  SOC Dashboard
+ 
+Overview of the Tiles in Dashboard
+
+1. Top 10 Alerts shows the count of highest Alerts Types
+1. Top Alerts last 48 hours shows the list of users / system with high Alert count with Alert abbreviation name (Alert Type)
+1.Alert Count shows the Total count of Alerts.
+1. Events Count shows the Total Ingested count
+	(1-4) Tiles shows the data in the past 2 days
+1. Data Source loading over the last 7 days shows the sum of Ingested count per Source 
+1. Top 10 bandwidth Usage shows top 10 users who has uploaded or downloaded the highest amount(Bytes) of data
+1. Top 10 Risky Entities shows the high Risk entities
+1. Top 10 Risky Users shows the  high Risk Users
+1. UEBA’s Sparkline shows the maximum score of the Reports 
+	Tiles (5,6 & 9) shows last 7 days of data
+	Tiles (7 & 8) shows last 15 days of data with Risk Score >=50
+ 
+
+
