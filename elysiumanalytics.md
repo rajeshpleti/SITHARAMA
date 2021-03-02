@@ -79,17 +79,17 @@
 
 1.Search basics
 1.Search query language (KQL)
- * 1.KQL Introduction
- * 1.Search multiple fields
- * 1.Grouped together
- * 1.Terms query
- * 1.Boolean queries
- * 1.Range queries
- * 1.Date range queries
- * 1.Exist queries
- * 1.Wildcard queries
- * 1.Nested field queries (Subqueries)
- * 1.Optimize Search Performance
+1.KQL Introduction
+1.Search multiple fields
+1.Grouped together
+1.Terms query
+1.Boolean queries
+1.Range queries
+1.Date range queries
+1.Exist queries
+1.Wildcard queries
+1.Nested field queries (Subqueries)
+1.Optimize Search Performance
 1.General Search Examples
 1.Supported Logs
 1.Standard Fields (ODM)
@@ -343,11 +343,14 @@ Elysium Analytics provides a unique AI-driven security analytics platform that c
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors. 
 	
 	
-Filters:  User can Change the date filter,user filter and RUN the Dashboard
- 
+
 ![ITD1](itd1.png)
 
+Filters:  User can Change the date filter,user filter and RUN the Dashboard
+ 
 ![ITD2](id2.png)
+
+
 In 1,2,6 tiles Click on the graph Details appear
 In 3,4,5 tiles Click on the graph or Name Link to 360 View appears and Click on Link to 360 View it redirects to 360 user view or 360 ip view 
  
