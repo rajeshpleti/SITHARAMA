@@ -380,21 +380,21 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 
 	
 	
-	###1.	Risk score of User and Entity(Day wise and aggregation)
+###1.	Risk score of User and Entity(Day wise and aggregation)
 	
-![riskbehaviour](behaviours .PNG)
-	
-	
-	###2.	Anomaly count
+![riskbehaviour](behaviour.PNG)
 	
 	
+###2.	Anomaly count
 	
-	###3.	Threat User’s and Entity
+	
+	
+###3.	Threat User’s and Entity
 	
 ![threatusersandentity](riskscoreofuserentity.PNG)
 	
 	
-	###4.	360 User view
+###4.	360 User view
 	
 	
 	Filter: User can change the filter and run the dashboard 
@@ -427,7 +427,7 @@ Filer by Alert name will open another dashboard and see the details about the pa
 
 If you click on Src User name or Src IP in Tile 12, you will get different options to drill down and see the details.
 	
-	###5. 360 IP View 
+###5. 360 IP View 
 	
 	
 	
@@ -444,30 +444,30 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 1.Event List gives the details about the Event with Entity anomaly score >=85 and Dst name other than badsite.com in the past 15 days
 
 	
-	###5.	Daily Risky Behavior – Zscores
+###5.	Daily Risky Behavior – Zscores
 	
 	
 	
-	###6.	MITRE-ATTACK
+###6.	MITRE-ATTACK
 	
 	
 	
-	###7.	Event level Risk Trend
+###7.	Event level Risk Trend
 	
 	
 	
 	
-	###8.	Event List
+###8.	Event List
 	
 	
 	
-	###9.	Alerts
+###9.	Alerts
 	
 	
-	###10.	Risk score trend analysis for User/ Entity
+###10.	Risk score trend analysis for User/ Entity
 	
 	
-	###11.	Filters
+###11.	Filters
 	
 	
 	
