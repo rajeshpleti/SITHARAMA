@@ -354,6 +354,7 @@ Filters:  User can Change the date filter,user filter and RUN the Dashboard
 
 ![capsutre](Capture.PNG)
 
+![capsutre](Capture1.PNG)
 
 In 1,2,6 tiles Click on the graph Details appear
 In 3,4,5 tiles Click on the graph or Name Link to 360 View appears and Click on Link to 360 View it redirects to 360 user view or 360 ip view 
