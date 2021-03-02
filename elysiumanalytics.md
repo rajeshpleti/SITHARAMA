@@ -188,6 +188,8 @@ Protect your network and  users from malicious content and binaries by detecting
 
 Build your own ML models on Databricks or other preferred data science platforms to  detect new evolving threats.
 
+![ml](ml.png)
+
 **10. Phishing Attack:**
 
 Profile email use patterns and detect unusual and potentially high risk email messages from low prevalence and suspicious domains.
@@ -344,11 +346,11 @@ Inside Threat Detection identifies abnormal behaviors of user/entity using unsup
 	
 	
 
-![ITD1](itd1.png)
+
 
 Filters:  User can Change the date filter,user filter and RUN the Dashboard
  
-![ITD2](id2.png)
+
 
 
 
@@ -380,7 +382,7 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 	
 	###1.	Risk score of User and Entity(Day wise and aggregation)
 	
-	
+![riskbehaviour](behaviours of riskyusersentity.PNG)
 	
 	
 	###2.	Anomaly count
@@ -389,6 +391,7 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 	
 	###3.	Threat User’s and Entity
 	
+![threatusersandentity](riskscoreofuserentity.PNG)
 	
 	
 	###4.	360 User view
