@@ -434,7 +434,7 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 	
 ###5. 360 IP View 
 	
-	
+![userIP](user3609.PNG)		
 	
 	Filter: User can change the filter and run the dashboard 
 
@@ -459,10 +459,11 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 	
 ###7.	Event level Risk Trend
 	
-	
+![eventlevelrisktrend](user3607.PNG)	
 	
 	
 ###8.	Event List
+	
 	
 ![eventlist](user3605.PNG)	
 	
@@ -472,9 +473,10 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 ###10.	Risk score trend analysis for User/ Entity
 	
 	
-
 	
+![riskscore](user3608.PNG)	
 	
+![riskscoreenity](user36010.PNG)	
 	
 	
 	
