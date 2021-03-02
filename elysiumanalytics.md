@@ -527,8 +527,7 @@ All the tiles in dashboards changes according to the Parameters of the ueba’s 
 
 
 
-
-
+![overviewUEBA](overviewUEBA.PNG)
 
 Overview of all the UEBA’s
 
@@ -558,34 +557,37 @@ Privileged Account Usage :
 
 	###1.	Endpoint Indicators of Compromise
 	
-	
+![endpoint](uebaendpoint.PNG)	
 	
 	###2.	Privileged Account Usage
-	
-	
+![privilegedac1](previllagedac1.PNG)	
+![privilegedac2](previllaed2.PNG)	
 	###3.	High Volume File Access
 	
-	
+![highvolumes](highvolumes.PNG)	
 	
 	###4.	Bandwidth Usage by size and count
 	
-	
+![Bandwidthsize](UEBAbandwidthsize.PNG)	
+![Bandwidthcount](bandwidthbycount.PNG)		
 	
 	###5.	VPN Connections
 	
-	
+![vpnconnections](vpnconnections.PNG)			
 	
 	###6.	File Downloads
 	
-	
+![filedownloads](filedownloads.PNG)	
 	
 	###7.	Bot Attack
 	
-	
+![botattack](botattacks.PNG)	
+		
 	
 	###8.	Unusual Domain
 	
-	
+![unusual](unusual.PNG)	
+			
 ## 6. Alerts tiles
 
 Overview of alert  tiles in the Dashboard
