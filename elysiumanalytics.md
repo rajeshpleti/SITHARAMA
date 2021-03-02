@@ -382,7 +382,7 @@ In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Ano
 	
 	###1.	Risk score of User and Entity(Day wise and aggregation)
 	
-![riskbehaviour](behaviours.PNG)
+![riskbehaviour](behaviours .PNG)
 	
 	
 	###2.	Anomaly count
