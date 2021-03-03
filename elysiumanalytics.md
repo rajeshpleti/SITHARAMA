@@ -44,6 +44,7 @@
 1. [NIST,HIPAA,SOX](#NIST)
 
 ## 4. Inside Threat Detection 
+        1. Filters
 	1. Risk score of User and Entity(Day wise and aggregation)
 	2. Anomaly count
 	3. Threat User’s and Entity
@@ -54,7 +55,7 @@
 	8. Event List
 	9. Alerts
 	10. Risk score trend analysis for User/ Entity
-	11. Filters
+	 
 
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics)
 	1. Endpoint Indicators of Compromise
@@ -154,7 +155,8 @@
 
 **1. Insider Threat Detection:**
 
-Insider Threat Detection Show users who are deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features
+Insider Threat Detection Show users, Entity's deviating from normal behavior and detect statistical anomalies and outliers with unsupervised learning clustering across numerous features, outliers and indicators of compromise threshold values of risk factors.
+Elysium ITD detects early indicators of insider threats Users/Entity's, Behaviours,  prevent insider threats,alerting, mitigate their consequences of actions.
 
 **2. Privileged Account Usage:**
 
@@ -235,7 +237,8 @@ It supports Profile geo-location of users & endpoints and compute the number of 
 ### 4.	ITD (Inside Threat Detection) <span id="ITD"><span>
 <p style='text-align: justify;'> 	
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors.
-The Insider Threat Detection shows users who have crossed a threshold due to statistical anomalies and outliers from unsupervised learning clustering. 
+
+
 It provides quick tips as text to help users to understand the dashboard. 
 It has scoring:  0 to 60% normal, 60 to 90 as unsafe behavior, and 90% or higher as insider threat. 
 By using risk-based Scoring, which performs data sketches across time intervals on security metrics baselining the behaviors of all users and entities,
@@ -340,11 +343,29 @@ SOX Regulations that mandate accuracy, integrity and security of the company or 
 
 ## 4. Inside Threat Detection   <span id="ITD"><span>
 
-Elysium Analytics provides a unique AI-driven security analytics platform that comes with a wide array of advanced ML-based security outcomes and behavioural models to help organizations detect and respond to advanced cyber-attacks.
+Elysium Analytics provides a unique AI-driven security analytics platform that comes with a wide array of advanced ML-based security outcomes and behavioural models to help organizations detect and respond to advanced cyber-attacks. 
+1. It Reduces costs of an insider attack 
+2. Early detection of insider threat
+3. Fast and efficient response to an insider attack. 
+4. Alerting and Notfications 
 	
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors. 
 	
-	
+An Elysium insider threat program is  a efficient core part of modern cybersecurity strategy. Elysium ITD controls in place to detect, deter, and respond to insider attacks and inadvertent data leaks is a necessity for any organization that strives to protect its sensitive data. It’s also required by many IT regulations, standards, and laws: NISPOM, NIST, HIPAA, PCI DSS, and others.
+
+Elysium ITD detect insider threats based on 
+1. Monitor User/Entity activity
+2. Manage User/Entity access to sensitive resources
+3. Analyze User/Entity behavior
+
+Elysium Perform a risk assessment based on 
+
+1. Define threat sources 
+2. Discover cybersecurity vulnerabilities
+3. Create list of high risk employess and high value assests 
+4. Estimate the liklihood insider threat based on timeseries of events
+5. Determine and assess risk scores
+6. Alerting and Notfication to make corresponding actions.
 
 ###1.	Filters
 
@@ -487,6 +508,8 @@ If you click on Src User name or Src IP in Tile 12, you will get different optio
 UEBA utilizes Machine Learning and Advanced Artificial Intelligence (AI) analytics to detect threats and simplify the work of technical professionals focused on security. 
 
 Furthermore it offers a signature less approach for detecting emerging threats with statistical analysis, AI and machine learning approaches.   
+
+Elysium UEBA (User and Entity Behavior Analytics) provides solutions for profile users, their peer groups and other entities, employ advanced analytics to detect anomalous transactions,  behaviors and  User/Entity endpoints.
 
 	Mobile/Laptop/Desktop Device Malware Scan 
 	The following Dashboard is the data on all events containing "Symantec".
