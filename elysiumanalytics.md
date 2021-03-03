@@ -46,15 +46,15 @@
 ## 4. Inside Threat Detection 
         1. Filters
 	1. Risk score of User and Entity(Day wise and aggregation)
-	2. Anomaly count
-	3. Threat User’s and Entity
-	4. 360 User view
-	5. Daily Risky Behavior – Zscores
-	6. MITRE-ATTACK
-	7. Event level Risk Trend
-	8. Event List
-	9. Alerts
-	10. Risk score trend analysis for User/ Entity
+	1. Anomaly count user/Entity source
+	1. Threat User’s and Entity
+	1. 360 User view
+	1. Daily Risky Behavior – Zscores
+	1. MITRE-ATTACK
+	1. Event level Risk Trend
+	1. Event List
+	1. Alerts
+	1. Risk score trend analysis for User/ Entity
 	 
 
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics)
@@ -143,7 +143,7 @@
 
 * We have simplified onboarding of data, provide a scalable data lake analytics platform, and search on a pay-as-you-go basis . 
 * Since we are built on top of Snowflake, our SaaS solution is truly a cloud scale security analytics platform that removes the barriers from ingesting, contextualizing, 	searching, analyzing, and storing log data with a cost effective and low risk service. 
-*  Unlike the other log analysis vendors in this market, our SaaS offering is licensed on a usage basis lowering cost and removing financial risk.  You pay a low price for 	storage, and compute is billed by the minute of usage.  
+*  Unlike the other log analysis vendors in this market, our SaaS offering is licensed on a usage basis lowering cost and reduces financial risk.  You pay a low price for storage, and compute is billed by the minute of usage.  
 * Additionally, we have an open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models. 
 
 
@@ -238,8 +238,7 @@ It supports Profile geo-location of users & endpoints and compute the number of 
 <p style='text-align: justify;'> 	
 Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors.
 
-
-It provides quick tips as text to help users to understand the dashboard. 
+It provides simple dashboards easily understood by users. 
 It has scoring:  0 to 60% normal, 60 to 90 as unsafe behavior, and 90% or higher as insider threat. 
 By using risk-based Scoring, which performs data sketches across time intervals on security metrics baselining the behaviors of all users and entities,
 we gain full visibility into any anomalous and suspicious behavior through risk-based scoring of the security data.
@@ -367,64 +366,52 @@ Elysium Perform a risk assessment based on
 5. Determine and assess risk scores
 6. Alerting and Notfication to make corresponding actions.
 
-###1.	Filters
+### Overview of the ITD tiles in the Dashboard
+### 1.	Filters
 
-Filters:  User can Change the date filter,user filter and RUN the Dashboard
+Filters:  User can Change the  Date filter,User filter and RUN the Dashboard
  
 
-
-
+Date fillter supports is in the past, is on the day, is in the range, is in the year, is any time, is null, is not null etc.
+User filter supports is equal to, contains, starts with, ends with, is not null, is null matches user attribute etc.
 
 ![capsutre](Capture.PNG)
 
 ![capsutre](Capture1.PNG)
+	
+### 2. Behaviours of Risky User and Entity(Day wise and aggregation)
 
-In 1,2,6 tiles Click on the graph Details appear
-In 3,4,5 tiles Click on the graph or Name Link to 360 View appears and Click on Link to 360 View it redirects to 360 user view or 360 ip view 
- 
-Overview of the ITD tiles in the Dashboard
- 
 User/Entity Count with High Risk Scores
-It shows the Score of high risky events 
-Anomalous User/Entity by Source
-It shows the count of high anomaly score  and source types
-Behaviors (Of Risky Users/Entities)
-It shows the users/entities with maximum of risk score
-Threat Entities
-In this it shows data for max score for all Entities in Elysium Analytics in the last 15 days
-Threat Users
-In this it shows data for max score for all Users in Elysium Analytics in the last 15 days
-Scores/Alerts
-In this it shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Score,Max of Risk Score.They are represented in different colored Bars.
-
-
-
-	
-	
-###1.	Risk score of User and Entity(Day wise and aggregation)
+It shows the Score of high risky events
 	
 ![riskbehaviour](behaviour.PNG)
 	
 	
-###2.	Anomaly count
+### 3.	Anomaly count user/Entity source
+Anomalous User/Entity by Source
+It shows the count of high anomaly score  and source types
+
 
 ![anamolycount](anamolycount.PNG)
 	
 	
-###3.	Threat User’s and Entity
-	
+### 4.	Threat User’s and Entity
+
+Threat Users
+It shows data for max score for all Users in Elysium Analytics in the last 15 days
+Threat Entities
+It shows data for max score for all Entities in Elysium Analytics in the last 15 days
+
+
 ![threatusersandentity](riskscoreofuserentity.PNG)
 	
 	
-###4.	360 User view
+### 5.	360 User view
 	
-	
-	Filter: User can change the filter and run the dashboard 
-
-
 ![user3601](user3601.PNG)
 
 ![user3602](user3602.PNG)
+
 Overview of the Tiles in Dashboard
 1. Active Directory shows the details of AD User.
 1. Risk Score shows the Average of the Risk Score in a weeks time for Source Type -  ML-AGGREGATE
@@ -436,68 +423,63 @@ Overview of the Tiles in Dashboard
 1. Daily Risky Behavior - Zscores shows the different  Scores for source type - ML in last 15 days
 1. MITRE - ATTACK shows details about the Mitre attack for User in past 2 weeks
 1. Alerts shows the Count of Alerts per Type.
-1. Event Level Risk Trend shows  other than Source Type - ML
+1. Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days
 1. Event List shows the details of events like description, IP, Anomaly score etc.
-
-In the tiles (2 & 3) Comparison is done between this week’s Count to last week’s count and difference in the value is calculated.
-Indicate decrease in threats by a value.
-Indicate increase in threats by a value.
-If you click on the number in Tile3 or the Line in Tile 11, you can see the details,
-
-
-In Tile 9, if you click on the link, you can see the details about the attack.
-In Tile 10, when you click on the Bars, you will get different Drill down options to see the data. 
-Show all option, we can see the details
-Filer by Alert name will open another dashboard and see the details about the particular Alert.
-
-
-If you click on Src User name or Src IP in Tile 12, you will get different options to drill down and see the details.
+1. If you click on Src User name or Src IP , you will get different options to drill down and see the details.
 	
-###5. 360 IP View 
+### 6. 360 IP View 
 	
 ![userIP](user3609.PNG)		
 	
-	Filter: User can change the filter and run the dashboard 
+Filter: User can change the filter and run the dashboard 
 
-1.Overview of the Tiles in Dashboard
+Overview of the Tiles in Dashboard
 1.Risk Score Trend Analysis for Entity shows the sum of risk score of entity / IP for Src Type ML on a day  in the past 15 days.
-1.Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day  in the past 15 days.
+1.Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day to the past 15 days.
 1.High Risk Events shows the total count per Source Type - Security Auditing , Network traffic etc other than type ML with Anomaly score >=85 in past 15 days
 1.Profile Z Score shows the details 
 1.Time Series shows Sum of If Dwnld Ts and If Dwnld Val per day for last 15 days for ML
 1.Alerts shows Count of Alerts by Alert name
 1.Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days
-1.Event List gives the details about the Event with Entity anomaly score >=85 and Dst name other than badsite.com in the past 15 days
+1.Event List gives the details about the Event with Entity anomaly score >=85 and Dst name in the past 15 days
 
+
+### 7.	Risk score trend analysis for User/ Entity
 	
-###5.	Daily Risky Behavior – Zscores
+Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day to the past 15 days.	
 	
+![riskscore](user3608.PNG)	
+	
+![riskscoreenity](user36010.PNG)
+	
+### 8.	Daily Risky Behavior – Zscores
+Daily Risky Behavior - Zscores shows the different  Scores for source type based machine learning techiques in last 15 days	
 ![user3603](user3603.PNG)	
 	
-###6.	MITRE-ATTACK and Alerts 
-	
+### 9.	MITRE-ATTACK and Alerts 
+MITRE ATT&CK is a framework describing tactics and techniques for how adversaries attack computers and networks.  "ATT&CK" is an abbreviation of "Adversary Tactics and Techniques and Common Knowledge". 
+The Enterprise ATT&CK matrix is Elysium's priority interest and focuses primarily on hosts using Microsoft Windows and Microsoft Windows Server operating systems. The Enterprise matrix include techniques applicable to Linux and MacOS hosts also.
+
+Alerts shows Count of Alerts by Alert name
+Filter by Alert name will open another dashboard and see the details about the particular Alert
+It shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Score,Max of Risk Score.They are represented in different colored Bars.
+
 ![user3604](user3604.PNG)	
 	
-###7.	Event level Risk Trend
-	
+### 10.	Event level Risk Trend
+Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days	
 ![eventlevelrisktrend](user3607.PNG)	
 	
 	
-###8.	Event List
-	
+### 11.	Event List
+Event List shows the details of events like event Timestamp, src username, description, IP, Anomaly score, in bytes, out bytes, event id,  etc	
 	
 ![eventlist](user3605.PNG)	
 	
 
 	
 	
-###10.	Risk score trend analysis for User/ Entity
 	
-	
-	
-![riskscore](user3608.PNG)	
-	
-![riskscoreenity](user36010.PNG)	
 	
 	
 	
@@ -511,105 +493,125 @@ Furthermore it offers a signature less approach for detecting emerging threats w
 
 Elysium UEBA (User and Entity Behavior Analytics) provides solutions for profile users, their peer groups and other entities, employ advanced analytics to detect anomalous transactions,  behaviors and  User/Entity endpoints.
 
-	Mobile/Laptop/Desktop Device Malware Scan 
-	The following Dashboard is the data on all events containing "Symantec".
-	The data on severity level, user's log/event channel and source information were all compiled in this dashboard
-
-
-	## User session Tracking information
-	User session Tracking Dashboard has on information related to these below:
-	1. Bandwidth usage
-	1. File downloads/uploads
-	1. Top visited sites
-	1. Top block sites
-	1. Cloud Applications
-	1. Mobile Traffic by Device Type
-	1. Mobile Traffic by Location
-	1. Locations
-	1. Social Networking Applications
-	1. Streaming Media Application
-	1. VPN session activity
-	1. Email Counts & Size.
-
-
-
-
-
-
-Filters:  User can Change the date  and RUN the DASHBOARD
-
-In 1,3 tiles click on the number or the graph Details appear
-In tile 4  click on the bubble ,
-                   										 click on Details it appears
-In tile 2  Information like algorithm,anomaly score range,anomaly outliers threshold,x-axis ,
-  y-axis names of the respective UEBA is  mentioned in the Dashboards .
-When the mouse hovered on the bubbles in all uebas the x-axis,y-axis information,count,score displays.     
-Count of Users,Information,Outliers,Details are common  in all the UEBA’s.They vary with respective ueba view used
-All the tiles in dashboards changes according to the Parameters of the ueba’s .Those 
- parameters  appear in the Information tile.
-
-
+algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Information,Outliers,Details are common  in all the UEBA’s.They vary with respective UEBA view used and All the tiles in dashboards changes according to the Parameters of the UEBA, Those parameters  appear in the Information tile.
 
 ![overviewUEBA](overviewUEBA.PNG)
 
-Overview of all the UEBA’s
+## **Overview of all the UEBA’s**
 
-Bandwidth Usage by Count shows the Average of Downloaded Bytes,Average of Uploaded Bytes Information.
-Bandwidth Usage by Size shows the Average of Sent Bytes,Received Bytes information.
-EndPoint Indicators of Compromise shows the Average of Sent Bytes,Average of End Point  Remote count Information.
-Privileged Account Usage shows average of bandwidth and average of privileged count information.
-High volume File Access shows average of file access and average of file volume count Information
-VPN CONNECTIONS shows  Avg Distance of Geo-locations between Sessions and  Total no.of sessions information
-File Downloads shows Average of Destination count and Average of Download  Count information.
-Bot attack shows average of source count,average of destination count information.
-Unusual Domain shows the average of uploaded bytes and average of Distinct Domain count information
-
-Privileged Account Usage : 
-
-       It shows the Extra tiles like Details view,IP GEO MAP.
-       Details View shows the details like source name,source ip ,source geo city,count in the
-        itd 360 view .
-       Ip Geo Map shows the locations of the user and the count.
-               click on the Details Privileged Account Usage tile
-                                
-                               click on the filter_user_details_geo
-          It redirects to the dashboard with Details View,IP GEO MAP changed.These two tiles 
-          are filtered  with new user value. 
+* Bandwidth Usage by Count shows the Average of Downloaded Bytes,Average of Uploaded Bytes Information.
+* Bandwidth Usage by Size shows the Average of Sent Bytes,Received Bytes information.
+* EndPoint Indicators of Compromise shows the Average of Sent Bytes,Average of End Point  Remote count Information.
+* Privileged Account Usage shows average of bandwidth and average of privileged count information.
+* High volume File Access shows average of file access and average of file volume count Information
+* VPN CONNECTIONS shows  Avg Distance of Geo-locations between Sessions and  Total no.of sessions information
+* File Downloads shows Average of Destination count and Average of Download  Count information.
+* Bot attack shows average of source count,average of destination count information.
+* Unusual Domain shows the average of uploaded bytes and average of Distinct Domain count information
 
 
 
-	###1.	Endpoint Indicators of Compromise
-	
+
+## User session Tracking information
+User session Tracking Dashboard has on information related to these below:
+1. Bandwidth usage
+1. File downloads/uploads
+1. Top visited sites
+1. Top block sites
+1. Cloud Applications
+1. Mobile Traffic by Device Type
+1. Mobile Traffic by Location
+1. Locations
+1. Social Networking Applications
+1. Streaming Media Application
+1. VPN session activity
+1. Email Counts & Size.
+
+## **Overview of the Tiles in User session tracking Dashboard**
+
+1.Total Web Traffic Count, Bandwidth (Upload and Download Bytes) and Location of Users for Event Ids 
+1. Windows Session Tracking shows the details like Session Start time, End Time, IPs, Description, Duration of the session etc for Windows
+1. WatchGuard Session Tracking shows the details like Session Start time, End Time, status, user etc for WatchGuard
+1. Top visited Sites shows the details of Domain, Web category, count etc a particular user has accessed in  WGTraffic
+1. Overall traffic give you the details like user, IP, Bandwidth etc 
+1. Cloud Application will gives you the details such as User name, session start time, Web category etc
+1. Top Blocked Sites gives you the details  of the blocked sites a user has access.
+1. Streaming Media Application shows the details of category Streaming Media, Entertainment, Internet Telephony etc
+1. Social Networking Application shows the details of users who are using Social media like Facebook, Twitter, YouTube, LinkedIn etc
+1. Email Count & Size  shows the details of emails.
+1. Blocked Transactions gives you details like user name, Domain etc  for web categories like Games, Potentially unwanted software etc or with a message like 'ProxyDeny: 1. HTTP Request categories','ProxyDrop: HTTPS Request categories'
+
+
+## **Overview of the Tiles in UEBA  Dashboard**
+
+
+### 1.	Endpoint Indicators of Compromise
+Mobile/Laptop/Desktop Device Malware Scan 
+The following Dashboard is the data on all events containing "Symantec".
+The data on severity level, user's log/event channel and source information were all compiled in this dashboard
+
+
+* End points on the Network and Anti malware Scan Status shows the Symantec Endpoint protection client and active directory hostname ,description of the status in the past 7 days
+* Fraction of Hosts in various states shows the status ,count of the union of symantec endpoint and active directory Host.
+* Summary of Malware Risk Activities shows the Malware,Action and its description,Hostname .
+* HostName viruses shows the malware name,host name, count of symantec endpoint protection Client  in the past 7 days.
+* Antimalware Software Events shows the names of host,malware,Activities and Counts of file,risk and events in the Symantec End point in the past 7 days.
+
+
 ![endpoint](uebaendpoint.PNG)	
 	
-	###2.	Privileged Account Usage
+### 2.	Privileged Account Usage
+Details View shows the details like source name,source ip ,source geo city,count in the ITD 360 view .
+Ip Geo Map shows the locations of the user and the count.
+It redirects to the dashboard with Details View,IP GEO MAP changed.These two tiles are filtered  with new user value
+
 ![privilegedac1](previllagedac1.PNG)	
-![privilegedac2](previllaed2.PNG)	
-	###3.	High Volume File Access
-	
+![privilegedac2](previllaed2.PNG)
+
+### 3.	High Volume File Access
+High volume File Access shows average of file access and average of file volume count Information	
 ![highvolumes](highvolumes.PNG)	
 	
-	###4.	Bandwidth Usage by size and count
-	
+### 4.	Bandwidth Usage by size and count
+
+* Bandwidth Usage by Count shows the Average of Downloaded Bytes,Average of Uploaded Bytes Information.
+* Bandwidth Usage by Size shows the Average of Sent Bytes,Received Bytes information.
+
 ![Bandwidthsize](bandwidthsize.PNG)	
 ![Bandwidthcount](bandwidthbycount.PNG)		
 	
-	###5.	VPN Connections
-	
+### 5.	VPN Connections
+
+ 1. WatchGuard Session Details shows the information Session,User , source  and host in the past 30 days
+ 2.  Count of WatchGuard Sessions by Device  Shows the Start time of the Session and count of 
+      the  sessions per hostname in the past 30 days.Click on the graph Drill into appears.Click 
+      on any of the sessions start Date time Hour,Minute or Time Details appear.
+3.  Session status shows the status ,count of the Sessions.
+4.  Watchguard Session Types shows the type and Count of the Sessions.
+5.  More Watchguard Session of the User shows the user name and count of the Sessions.
+6.  Locations of the VPN Sessions shows the count of sessions in the locations
+7.  Failed Login  shows the Event  occurred information like user name,
+    source information,hostname and the notification information in the message in the 
+     past 30 days.
+
 ![vpnconnections](vpnconnections.PNG)			
 	
-	###6.	File Downloads
-	
+### 6.	File Downloads
+* File Downloads shows Average of Destination count and Average of Download  Count information.	
 ![filedownloads](filedownloads.PNG)	
 	
-	###7.	Bot Attack
-	
+### 7.	Bot Attack
+*  Bot attack shows average of source count,average of destination count information.
 ![botattack](botattacks.PNG)	
 		
 	
-	###8.	Unusual Domain
-	
+### 8.	Unusual Domain
+
+* Unusual Domain shows the average of uploaded bytes and average of Distinct Domain count information	
 ![unusual](unusual.PNG)	
+
+
+
 			
 ## 6. Alerts tiles
 
