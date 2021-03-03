@@ -44,17 +44,18 @@
 1. [NIST,HIPAA,SOX](#NIST)
 
 ## 4. Inside Threat Detection 
-        1. Filters
-	1. Risk score of User and Entity(Day wise and aggregation)
-	1. Anomaly count user/Entity source
-	1. Threat User’s and Entity
-	1. 360 User view
-	1. Daily Risky Behavior – Zscores
-	1. MITRE-ATTACK
-	1. Event level Risk Trend
-	1. Event List
-	1. Alerts
-	1. Risk score trend analysis for User/ Entity
+1. Filters
+1. Behaviours of Risky User and Entity(Day wise and aggregation)
+1. Anomaly count user/Entity source
+1. Threat User’s and Entity
+1. 360 User view
+1. 360 IP View
+1. Risk score trend analysis for User/ Entity
+1. Daily Risky Behavior – Zscores
+1. MITRE-ATTACK and Alerts
+1. Event level Risk Trend
+1. Event List
+ 
 	 
 
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics)
