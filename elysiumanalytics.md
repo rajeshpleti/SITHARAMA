@@ -434,14 +434,15 @@ Overview of the Tiles in Dashboard
 Filter: User can change the filter and run the dashboard 
 
 Overview of the Tiles in Dashboard
-1.Risk Score Trend Analysis for Entity shows the sum of risk score of entity / IP for Src Type ML on a day  in the past 15 days.
-1.Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day to the past 15 days.
-1.High Risk Events shows the total count per Source Type - Security Auditing , Network traffic etc other than type ML with Anomaly score >=85 in past 15 days
-1.Profile Z Score shows the details 
-1.Time Series shows Sum of If Dwnld Ts and If Dwnld Val per day for last 15 days for ML
-1.Alerts shows Count of Alerts by Alert name
-1.Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days
-1.Event List gives the details about the Event with Entity anomaly score >=85 and Dst name in the past 15 days
+
+1. Risk Score Trend Analysis for Entity shows the sum of risk score of entity / IP for Src Type ML on a day  in the past 15 days.
+1. Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day to the past 15 days.
+1. High Risk Events shows the total count per Source Type - Security Auditing , Network traffic etc other than type ML with Anomaly score >=85 in past 15 days
+1. Profile Z Score shows the details 
+1. Time Series shows Sum of If Dwnld Ts and If Dwnld Val per day for last 15 days for ML
+1. Alerts shows Count of Alerts by Alert name
+1. Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days
+1. Event List gives the details about the Event with Entity anomaly score >=85 and Dst name in the past 15 days
 
 
 ### 7.	Risk score trend analysis for User/ Entity
@@ -470,18 +471,10 @@ It shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Sco
 Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days	
 ![eventlevelrisktrend](user3607.PNG)	
 	
-	
 ### 11.	Event List
 Event List shows the details of events like event Timestamp, src username, description, IP, Anomaly score, in bytes, out bytes, event id,  etc	
 	
 ![eventlist](user3605.PNG)	
-	
-
-	
-	
-	
-	
-	
 	
 	
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics) <span id="UEBA"><span>
@@ -513,7 +506,7 @@ algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Informa
 
 
 ## User session Tracking information
-User session Tracking Dashboard has on information related to these below:
+1. User session Tracking Dashboard has on information related to these below:
 1. Bandwidth usage
 1. File downloads/uploads
 1. Top visited sites
