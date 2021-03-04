@@ -44,29 +44,30 @@
 1. [NIST,HIPAA,SOX](#NIST)
 
 ## 4. Inside Threat Detection 
-1. Filters
-1. Behaviours of Risky User and Entity(Day wise and aggregation)
-1. Anomaly count user/Entity source
-1. Threat User’s and Entity
-1. 360 User view
-1. 360 IP View
-1. Risk score trend analysis for User/ Entity
-1. Daily Risky Behavior – Zscores
-1. MITRE-ATTACK and Alerts
-1. Event level Risk Trend
-1. Event List
+1. [Filters](#filters)
+1. [Behaviours of Risky User and Entity(Day wise and aggregation)](#behaviourofrisky)
+1. [Anomaly count user/Entity source](#anomalycount)
+1. [Threat User’s and Entity](#threatuserentity)
+1. [360 User view](#360userviewmain)
+1. [360 IP View](#360ipwmain)
+1. [Risk score trend analysis for User/ Entity](#riskscoretrendanalysis)
+1. [Daily Risky Behavior – Zscores](#dailyriskyzscores)
+1. [MITRE-ATTACK and Alerts](#MITREattack)
+1. [Event level Risk Trend](#eventlevelrisktrend)
+1. [Event List](#eventlist)
  
 	 
 
 ## 5. Profile (User/Entity anomaly Scores) or UEBA(User and Entity Behavior Analytics)
-	1. Endpoint Indicators of Compromise
-	2. Privileged Account Usage
-	3. High Volume File Access
-	4. Bandwidth Usage by size and count
-	5. VPN Connections
-	6. File Downloads
-	7. Bot Attack
-	8. Unusual Domain
+1. [Endpoint Indicators of Compromise](#endpoint1)
+2. [Privileged Account Usage](#previlegedaccount)
+3. [High Volume File Access](#highvolumeaccess)
+4. [Bandwidth Usage by size and count](#bandwidthsizecount)
+5. [VPN Connections](#vpnconnections)
+6. [File Downloads](#filedownloads)
+7. [Bot Attack](#botattack)
+8. [Unusual Domain](#unusualdomain)
+
 ## 6. Alerts
 	1. Alerts monitor
 	2. Scheduled searches
@@ -278,7 +279,7 @@ Furthermore it offers a signatureless approach for detecting emerging threats wi
 Specifically Elysium offers canned UEBA reports that map specific techniques and tactics from MITRE ATT@CK vectors, encoding them into behavior profiles that detect unusual behaviors.
 
 ### 11.	Snowflake analytics <span id="snowflakeanalytics"><span>
-Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage aacount details, identifying abnormal behaviour, anamoly scoring, alerting. 
+Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage aacount details, identifying abnormal behaviour, anomoly scoring, alerting. 
 1. Snowflake audit logs
 1. Snowflake login history
 1. Alert scoring
@@ -368,7 +369,7 @@ Elysium Perform a risk assessment based on
 6. Alerting and Notfication to make corresponding actions.
 
 ### Overview of the ITD tiles in the Dashboard
-### 1.	Filters
+### 1.	Filters  <span id="filters"><span>
 
 Filters:  User can Change the  Date filter,User filter and RUN the Dashboard
  
@@ -380,7 +381,7 @@ User filter supports is equal to, contains, starts with, ends with, is not null,
 
 ![capsutre](Capture1.PNG)
 	
-### 2. Behaviours of Risky User and Entity(Day wise and aggregation)
+### 2. Behaviours of Risky User and Entity(Day wise and aggregation)  <span id="behaviourofrisky"><span>
 
 User/Entity Count with High Risk Scores
 It shows the Score of high risky events
@@ -388,7 +389,7 @@ It shows the Score of high risky events
 ![riskbehaviour](behaviour.PNG)
 	
 	
-### 3.	Anomaly count user/Entity source
+### 3.	Anomaly count user/Entity source <span id="anomalycount"><span>
 Anomalous User/Entity by Source
 It shows the count of high anomaly score  and source types
 
@@ -396,7 +397,7 @@ It shows the count of high anomaly score  and source types
 ![anamolycount](anamolycount.PNG)
 	
 	
-### 4.	Threat User’s and Entity
+### 4.	Threat User’s and Entity <span id="threatuserentity"><span>
 
 Threat Users
 It shows data for max score for all Users in Elysium Analytics in the last 15 days
@@ -407,7 +408,7 @@ It shows data for max score for all Entities in Elysium Analytics in the last 15
 ![threatusersandentity](riskscoreofuserentity.PNG)
 	
 	
-### 5.	360 User view
+### 5.	360 User view <span id="360userviewmain"><span>
 	
 ![user3601](user3601.PNG)
 
@@ -428,7 +429,7 @@ Overview of the Tiles in Dashboard
 1. Event List shows the details of events like description, IP, Anomaly score etc.
 1. If you click on Src User name or Src IP , you will get different options to drill down and see the details.
 	
-### 6. 360 IP View 
+### 6. 360 IP View  <span id="360ipmain"><span>
 	
 ![userIP](user3609.PNG)		
 	
@@ -446,7 +447,7 @@ Overview of the Tiles in Dashboard
 1. Event List gives the details about the Event with Entity anomaly score >=85 and Dst name in the past 15 days
 
 
-### 7.	Risk score trend analysis for User/ Entity
+### 7.	Risk score trend analysis for User/ Entity <span id="riskscoretrendanalysis"><span>
 	
 Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity / IP  for Scr Type ML on a day to the past 15 days.	
 	
@@ -454,11 +455,11 @@ Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity
 	
 ![riskscoreenity](user36010.PNG)
 	
-### 8.	Daily Risky Behavior – Zscores
+### 8.	Daily Risky Behavior – Zscores  <span id="dailyriskyzscores"><span>
 Daily Risky Behavior - Zscores shows the different  Scores for source type based machine learning techiques in last 15 days	
 ![user3603](user3603.PNG)	
 	
-### 9.	MITRE-ATTACK and Alerts 
+### 9.	MITRE-ATTACK and Alerts  <span id="MITREattack"><span>
 MITRE ATT&CK is a framework describing tactics and techniques for how adversaries attack computers and networks.  "ATT&CK" is an abbreviation of "Adversary Tactics and Techniques and Common Knowledge". 
 The Enterprise ATT&CK matrix is Elysium's priority interest and focuses primarily on hosts using Microsoft Windows and Microsoft Windows Server operating systems. The Enterprise matrix include techniques applicable to Linux and MacOS hosts also.
 
@@ -468,11 +469,11 @@ It shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Sco
 
 ![user3604](user3604.PNG)	
 	
-### 10.	Event level Risk Trend
+### 10.	Event level Risk Trend  <span id="eventlevelrisktrend"><span>
 Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days	
 ![eventlevelrisktrend](user3607.PNG)	
 	
-### 11.	Event List
+### 11.	Event List  <span id="eventlist"><span>
 Event List shows the details of events like event Timestamp, src username, description, IP, Anomaly score, in bytes, out bytes, event id,  etc	
 	
 ![eventlist](user3605.PNG)	
@@ -539,7 +540,7 @@ algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Informa
 ## **Overview of the Tiles in UEBA  Dashboard**
 
 
-### 1.	Endpoint Indicators of Compromise
+### 1.	Endpoint Indicators of Compromise <span id="endpoint1"><span>
 Mobile/Laptop/Desktop Device Malware Scan 
 The following Dashboard is the data on all events containing "Symantec".
 The data on severity level, user's log/event channel and source information were all compiled in this dashboard
@@ -554,7 +555,7 @@ The data on severity level, user's log/event channel and source information were
 
 ![endpoint](uebaendpoint.PNG)	
 	
-### 2.	Privileged Account Usage
+### 2.	Privileged Account Usage <span id="previlegedaccount"><span>
 Details View shows the details like source name,source ip ,source geo city,count in the ITD 360 view .
 Ip Geo Map shows the locations of the user and the count.
 It redirects to the dashboard with Details View,IP GEO MAP changed.These two tiles are filtered  with new user value
@@ -562,11 +563,11 @@ It redirects to the dashboard with Details View,IP GEO MAP changed.These two til
 ![privilegedac1](previllagedac1.PNG)	
 ![privilegedac2](previllaed2.PNG)
 
-### 3.	High Volume File Access
+### 3.	High Volume File Access  <span id="highvolumeaccess"><span>
 High volume File Access shows average of file access and average of file volume count Information	
 ![highvolumes](highvolumes.PNG)	
 	
-### 4.	Bandwidth Usage by size and count
+### 4.	Bandwidth Usage by size and count  <span id="bandwidthsizecount"><span>
 
 * Bandwidth Usage by Count shows the Average of Downloaded Bytes,Average of Uploaded Bytes Information.
 * Bandwidth Usage by Size shows the Average of Sent Bytes,Received Bytes information.
@@ -574,7 +575,7 @@ High volume File Access shows average of file access and average of file volume 
 ![Bandwidthsize](bandwidthsize.PNG)	
 ![Bandwidthcount](bandwidthbycount.PNG)		
 	
-### 5.	VPN Connections
+### 5.	VPN Connections   <span id="vpnconnections"><span>
 
  1. WatchGuard Session Details shows the information Session,User , source  and host in the past 30 days
  2.  Count of WatchGuard Sessions by Device  Shows the Start time of the Session and count of 
@@ -590,16 +591,16 @@ High volume File Access shows average of file access and average of file volume 
 
 ![vpnconnections](vpnconnections.PNG)			
 	
-### 6.	File Downloads
+### 6.	File Downloads  <span id="filedownloads"><span>
 * File Downloads shows Average of Destination count and Average of Download  Count information.	
 ![filedownloads](filedownloads.PNG)	
 	
-### 7.	Bot Attack
+### 7.	Bot Attack  <span id="botattack"><span>
 *  Bot attack shows average of source count,average of destination count information.
 ![botattack](botattacks.PNG)	
 		
 	
-### 8.	Unusual Domain
+### 8.	Unusual Domain  <span id="unusualdomain"><span>
 
 * Unusual Domain shows the average of uploaded bytes and average of Distinct Domain count information	
 ![unusual](unusual.PNG)	
