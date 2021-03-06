@@ -209,7 +209,8 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 
 # 3. APP’S Integration  <span id="APPS"><span>
 	
-	
+Elysium APP'S Integration 
+![apps](appstoremain.PNG)
 ### 1. 360 view <span id="360view"><span>
 	
 Elysium offers to show all the information of a user or an entity for Last 30 Days.
@@ -406,13 +407,13 @@ It shows data for max score for all Entities in Elysium Analytics in the last 15
 
 
 ![threatusersandentity](riskscoreofuserentity.PNG)
+![top10users](top10users.PNG)
 	
 	
 ### 5.	360 User view <span id="360userviewmain"><span>
 	
-![user3601](user3601.PNG)
+![user3601](360userview.PNG)
 
-![user3602](user3602.PNG)
 
 Overview of the Tiles in Dashboard
 1. Active Directory shows the details of AD User.
@@ -468,6 +469,7 @@ Filter by Alert name will open another dashboard and see the details about the p
 It shows data for max of Total Alert Count,Max of Alert Score,Max of Anomaly Score,Max of Risk Score.They are represented in different colored Bars.
 
 ![user3604](user3604.PNG)	
+![alertssoc](alerts.PNG)
 	
 ### 10.	Event level Risk Trend  <span id="eventlevelrisktrend"><span>
 Event Level Risk Trend shows the sum of User Anomaly score for type other than ML in the past 15 days	
