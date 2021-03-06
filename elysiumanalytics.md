@@ -210,7 +210,9 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 # 3. APP’S Integration  <span id="APPS"><span>
 	
 Elysium APP'S Integration 
+
 ![apps](appstoremain.PNG)
+
 ### 1. 360 view <span id="360view"><span>
 	
 Elysium offers to show all the information of a user or an entity for Last 30 Days.
@@ -457,7 +459,12 @@ Anomaly Score Trend Analysis for Entity shows the sum of Anomaly score of entity
 ![riskscoreenity](user36010.PNG)
 	
 ### 8.	Daily Risky Behavior – Zscores  <span id="dailyriskyzscores"><span>
-Daily Risky Behavior - Zscores shows the different  Scores for source type based machine learning techiques in last 15 days	
+Z_score value gives the amount of abnormal deviation of an object (user/enity) from the population by considering its previous behaviour over time series along with other objest behaviour .
+Daily Risky Behavior - Zscores shows the different  Scores for source type based machine learning techiques in last 15 days.
+Ex: Logins Zscore, Failedlogins Zscore,  If Upld Zscore, If Dwnld Zscore, Fileactivity Zscore, Email Count Zscore
+
+
+
 ![user3603](user3603.PNG)	
 	
 ### 9.	MITRE-ATTACK and Alerts  <span id="MITREattack"><span>
@@ -490,7 +497,7 @@ Furthermore it offers a signature less approach for detecting emerging threats w
 
 Elysium UEBA (User and Entity Behavior Analytics) provides solutions for profile users, their peer groups and other entities, employ advanced analytics to detect anomalous transactions,  behaviors and  User/Entity endpoints.
 
-algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Information,Outliers,Details are common  in all the UEBA’s.They vary with respective UEBA view used and All the tiles in dashboards changes according to the Parameters of the UEBA, Those parameters  appear in the Information tile.
+Algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Information,Outliers,Details are common  in all the UEBA’s.They vary with respective UEBA view used and All the tiles in dashboards changes according to the Parameters of the UEBA, Those parameters  appear in the Information tile.
 
 ![overviewUEBA](overviewUEBA.PNG)
 
