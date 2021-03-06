@@ -1,7 +1,7 @@
 
 
 
-# Elysium Analytics and AI Documnetation 
+# Elysium Analytics and AI Documentation
 
 ## Contents 
 
