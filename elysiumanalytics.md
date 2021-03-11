@@ -68,7 +68,22 @@
 7. [Bot Attack](#botattack)
 8. [Unusual Domain](#unusualdomain)
 
-## 6. Alerts
+
+## 6. Build your own Analytical dashboards
+ 1. looker creation dashboards 
+ * Creating A New Dashboard in Elysium Analytics
+ * Creating a Blank Dashboard
+ * Looker opens the Explore window
+ * Select the fields and  filters for your query tile’s
+ * Configure your visualization options
+ * Adding Dashboard Filters a User Can Change
+ * Copy Of Existing Dashboard and Editing the dashboard
+ * Users and Roles of access of dashboards
+ * Dashboards Available in Elysium Analytics
+ 3. Elysium kibana data visualizations 
+ 4. Build own ML Models using data bricks  
+
+## 7. Alerts
 	1. Alerts monitor
 	2. Scheduled searches
 	3. Alert rules
@@ -78,7 +93,7 @@
 	7. Alert Dashboards
 	8. Drill Down Alerts
 
-## 7. Search
+## 8. Search
 
 1.Search basics
 1.Search query language (KQL)
