@@ -70,18 +70,21 @@
 
 
 ## 6. Build your own Analytical dashboards
- 1. looker creation dashboards 
- * Creating A New Dashboard in Elysium Analytics
- * Creating a Blank Dashboard
- * Looker opens the Explore window
- * Select the fields and  filters for your query tile’s
- * Configure your visualization options
- * Adding Dashboard Filters a User Can Change
- * Copy Of Existing Dashboard and Editing the dashboard
- * Users and Roles of access of dashboards
- * Dashboards Available in Elysium Analytics
- 3. Elysium kibana data visualizations 
- 4. Build own ML Models using data bricks  
+1. looker creation dashboards 
+
+* Creating A New Dashboard in Elysium Analytics
+* adding new tiles to dashboard
+* Looker Explore window to discover new insights 
+* Select the fields and  filters for your query tile’s
+* Configure your visualization options
+* Adding Dashboard Filters a User Can Change
+* Copy Of Existing Dashboard and Editing the dashboard
+* Users and Roles of access of dashboards
+* Dashboards Available in Elysium Analytics
+
+3. Elysium kibana data visualizations 
+
+5. Build own ML Models using data bricks  
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -630,6 +633,54 @@ High volume File Access shows average of file access and average of file volume 
 ![unusual](unusual.PNG)	
 
 
+
+
+## 6. Build your own Analytical dashboards
+
+* Elysium  visualize your data into dashboards, combining tables, charts in useful and interesting layouts, aggregations to the axes, filtering data interactively based on logical conditions, choose modes and colors of charts, and place legends and labels.
+* This modules explains how to use the Elysium Analytics user interface to create a new dashboard and populate it with visualizations
+* A dashboard is essentially a collection of visualizations of tiles, displayed all in one page. It allows to add filters to make the dashboard interactive and rearrange its tiles and shares visualization dashboard to team memebers based on access roles.
+
+1. looker creation dashboards 
+
+* Creating A New Dashboard in Elysium Analytics
+
+To create a blank dashboard:
+
+1.	Click New Dashboard.
+2.	Name the Dashboard.
+3.	Click Create Dashboard
+
+
+another option is go to personal folder of Looker after entering the credentials https://elysiumanalyticsstaging.cloud.looker.com/ then click on New dashboard option. 
+![personalfolder](newdashboard1.PNG)
+
+* adding new tiles to dashboard
+after creating emptydashboard, editdashboard,  add new tiles to dashboard 
+
+![addtiles](addtile.PNG)
+
+* Looker Explore window to discover new insights 
+
+adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics. Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
+
+![explore](explore1.PNG)
+
+* Select the fields and  filters for your query tile’s
+
+* Configure your visualization options
+
+* Adding Dashboard Filters a User Can Change
+
+* Copy Of Existing Dashboard and Editing the dashboard
+
+* Users and Roles of access of dashboards
+
+* Dashboards Available in Elysium Analytics
+
+3. Elysium kibana data visualizations 
+
+5. Build own ML Models using data bricks  
 
 			
 ## 6. Alerts tiles
