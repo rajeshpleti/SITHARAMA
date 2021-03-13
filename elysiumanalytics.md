@@ -73,7 +73,7 @@
 1. looker creation dashboards 
 
 * Creating A New Dashboard in Elysium Analytics
-* adding new tiles to dashboard
+* Adding new tiles to dashboard
 * Looker Explore window to discover new insights 
 * Select the fields and  filters for your query tile’s
 * Configure your visualization options
@@ -643,7 +643,7 @@ High volume File Access shows average of file access and average of file volume 
 
 1. looker creation dashboards 
 
-* Creating A New Dashboard in Elysium Analytics
+### 6.1 Creating A New Dashboard in Elysium Analytics
 
 To create a blank dashboard:
 
@@ -656,12 +656,12 @@ To create a blank dashboard:
 another option is go to personal folder of Looker after entering the credentials https://elysiumanalyticsstaging.cloud.looker.com/ then click on New dashboard option. 
 ![personalfolder](newdashboard1.PNG)
 
-* adding new tiles to dashboard
+### 6.2  Adding new tiles to dashboard
 after creating emptydashboard, editdashboard,  add new tiles to dashboard 
 
 ![addtiles](addtile.PNG)
 
-* Looker Explore window to discover new insights 
+### 6.3 Looker Explore window to discover new insights 
 
 adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics.Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
 
@@ -674,12 +674,12 @@ It contains three modules
 3. Data
 ![sample](snowflakestorage.PNG)
 
-* Select the fields and  filters for your query tile’s
+### 6.4 Select the fields and  filters for your query tile’s
 
 first select data fileter, then choose relevant fields and filters for query tiles to visually analyze the insights of data
 ![filters](filterfields.PNG)
 
-* Configure your visualization options
+### 6.5 Configure your visualization options
 
 
 
@@ -687,33 +687,33 @@ first select data fileter, then choose relevant fields and filters for query til
 
 ![config2](config2.PNG)
 
-* Adding Dashboard Filters a User Can Change
+### 6.6 Adding Dashboard Filters a User Can Change
 
 ![parameters](addfilterdashboards.PNG)
 
-* Copy Of Existing Dashboard and Editing the dashboard
+### 6.7 Copy Of Existing Dashboard and Editing the dashboard
 ![copyofnew](copyofnew.PNG)
 * Users and Roles of access of dashboards
 organizational data contains more sensitiive information and these kind of  visualization dashboards need to be shared to only intended persons.
 
 ![roles](roles.PNG)
 
-* Dashboards Available in Elysium Analytics
-1. Insider Threat Detection
-2. Security Posture
-3. UEBA
-4. Alerts
-5. 360 View Matters
-6. SOC Dashboard
-7. Statistical Dashboard
-8. SOX IT Compliance
-9. HIPAA
-10. NIST
-11. Operational Dashboards
-12. Source Analytics Dashboard
-13. Identity Management 
-14. User session Tracking information
-15. Active Sync and Outlook Web Access
+### 6.8 Dashboards Available in Elysium Analytics
+	1. Insider Threat Detection
+	2. Security Posture
+	3. UEBA
+	4. Alerts
+	5. 360 View Matters
+	6. SOC Dashboard
+	7. Statistical Dashboard
+	8. SOX IT Compliance
+	9. HIPAA
+	10. NIST
+	11. Operational Dashboards
+	12. Source Analytics Dashboard
+	13. Identity Management 
+	14. User session Tracking information
+	15. Active Sync and Outlook Web Access
 
 3. Elysium kibana data visualizations 
 
