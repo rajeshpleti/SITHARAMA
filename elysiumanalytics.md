@@ -651,6 +651,7 @@ To create a blank dashboard:
 2.	Name the Dashboard.
 3.	Click Create Dashboard
 
+![newdashboard2](newdashboard2.PNG)
 
 another option is go to personal folder of Looker after entering the credentials https://elysiumanalyticsstaging.cloud.looker.com/ then click on New dashboard option. 
 ![personalfolder](newdashboard1.PNG)
@@ -662,21 +663,57 @@ after creating emptydashboard, editdashboard,  add new tiles to dashboard
 
 * Looker Explore window to discover new insights 
 
-adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics. Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
+adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics.Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
 
 ![explore](explore1.PNG)
 
+![explore2](explore2.PNG)
+It contains three modules
+1. Filters
+2. Visualization
+3. Data
+![sample](snowflakestorage.PNG)
+
 * Select the fields and  filters for your query tile’s
+
+first select data fileter, then choose relevant fields and filters for query tiles to visually analyze the insights of data
+![filters](filterfields.PNG)
 
 * Configure your visualization options
 
+
+
+![config1](config1.PNG)
+
+![config2](config2.PNG)
+
 * Adding Dashboard Filters a User Can Change
 
-* Copy Of Existing Dashboard and Editing the dashboard
+![parameters](addfilterdashboards.PNG)
 
+* Copy Of Existing Dashboard and Editing the dashboard
+![copyofnew](copyofnew.PNG)
 * Users and Roles of access of dashboards
+organizational data contains more sensitiive information and these kind of  visualization dashboards need to be shared to only intended persons.
+
+![roles](roles.PNG)
 
 * Dashboards Available in Elysium Analytics
+1. Insider Threat Detection
+2. Security Posture
+3. UEBA
+4. Alerts
+5. 360 View Matters
+6. SOC Dashboard
+7. Statistical Dashboard
+8. SOX IT Compliance
+9. HIPAA
+10. NIST
+11. Operational Dashboards
+12. Source Analytics Dashboard
+13. Identity Management 
+14. User session Tracking information
+15. Active Sync and Outlook Web Access
 
 3. Elysium kibana data visualizations 
 
