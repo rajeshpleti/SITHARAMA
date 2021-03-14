@@ -69,22 +69,22 @@
 8. [Unusual Domain](#unusualdomain)
 
 
-## 6. Build your own Analytical dashboards
-1. looker creation dashboards 
+## 6. [Build your own Analytical dashboards](#buildanalytics)
+## 1. [looker creation dashboards](#lookerdashboard)
 
-* Creating A New Dashboard in Elysium Analytics
-* Adding new tiles to dashboard
-* Looker Explore window to discover new insights 
-* Select the fields and  filters for your query tile’s
-* Configure your visualization options
-* Adding Dashboard Filters a User Can Change
-* Copy Of Existing Dashboard and Editing the dashboard
-* Users and Roles of access of dashboards
-* Dashboards Available in Elysium Analytics
+1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
+1. [Adding new tiles to dashboard](#newtiles)
+1. [Looker Explore window to discover new insights](#explore) 
+1. [Select the fields and  filters for your query tile’s](fieldsandfilters)
+1. [Configure your visualization options](#visualizations)
+1. [Adding Dashboard Filters a User Can Change](#usercanchange)
+1. [Copy Of Existing Dashboard and Editing the dashboard](#copy1)
+1. [Users and Roles of access of dashboards](#userroles)
+1. [Dashboards Available in Elysium Analytics](#availabledashboards)
 
-3. Elysium kibana data visualizations 
+## 2. [Elysium kibana data visualizations](#kibanaviz1) 
 
-5. Build own ML Models using data bricks  
+## 3. [Build own ML Models using data bricks](#ownml)  
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -635,35 +635,35 @@ High volume File Access shows average of file access and average of file volume 
 
 
 
-## 6. Build your own Analytical dashboards
+## 6. Build your own Analytical dashboards <span id="buildanalytics"><span>
 
 * Elysium  visualize your data into dashboards, combining tables, charts in useful and interesting layouts, aggregations to the axes, filtering data interactively based on logical conditions, choose modes and colors of charts, and place legends and labels.
 * This modules explains how to use the Elysium Analytics user interface to create a new dashboard and populate it with visualizations
 * A dashboard is essentially a collection of visualizations of tiles, displayed all in one page. It allows to add filters to make the dashboard interactive and rearrange its tiles and shares visualization dashboard to team memebers based on access roles.
 
-1. looker creation dashboards 
+## 6.1 looker creation dashboards  <span id="lookerdashboard"><span>
 
-### 6.1 Creating A New Dashboard in Elysium Analytics
+### 1. Creating A New Dashboard in Elysium Analytics <span id="newdashboard"><span>
 
 To create a blank dashboard:
 
-1.	Click New Dashboard.
-2.	Name the Dashboard.
-3.	Click Create Dashboard
+	1. Click New Dashboard.
+	2. Name the Dashboard.
+	3. Click Create Dashboard
 
 ![newdashboard2](newdashboard2.PNG)
 
 another option is go to personal folder of Looker after entering the credentials https://elysiumanalyticsstaging.cloud.looker.com/ then click on New dashboard option. 
 ![personalfolder](newdashboard1.PNG)
 
-### 6.2  Adding new tiles to dashboard
-after creating emptydashboard, editdashboard,  add new tiles to dashboard 
+### 2. Adding new tiles to dashboard <span id="newtiles"><span>
+After creating emptydashboard, editdashboard,  add new tiles to dashboard 
 
 ![addtiles](addtile.PNG)
 
-### 6.3 Looker Explore window to discover new insights 
+### 3. Looker Explore window to discover new insights  <span id="explore"><span>
 
-adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics.Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
+Adding New Tile opens a menu of Explores. Choose an Explore view to build dashboard based on different types supported dashboards views already existed in elysium analytics.Explore AWS,Azure,graph Test, Insider trading, IOT, Insider threat detection, Marketing, ODM, Redsky, snowfalke Usage,SQL master, sstech, stock details,  system activity, stubhub, Timelines etc.
 
 ![explore](explore1.PNG)
 
@@ -674,31 +674,48 @@ It contains three modules
 3. Data
 ![sample](snowflakestorage.PNG)
 
-### 6.4 Select the fields and  filters for your query tile’s
+### 4. Select the fields and  filters for your query tile’s <span id="fieldsandfilters"><span>
 
-first select data fileter, then choose relevant fields and filters for query tiles to visually analyze the insights of data
+First select data fileter, then choose relevant fields and filters for query tiles to visually analyze the insights of data
 ![filters](filterfields.PNG)
 
-### 6.5 Configure your visualization options
-
+### 5. Configure your visualization options <span id="visualizations"><span>
+configuration options allows users to change the visualization based on various parameters 	
+a. Create and run your query.
+b. Click the Visualization tab to start configuring your visualization options.
+c. Select the type of visualization that best displays your data. For more options, click … to the right of the displayed visualization options.
+d. Click Edit to configure the visualization option settings, such as naming and arranging chart axes, choosing the position and type of each data series, or 		    modifying the chart color palette.
+e. Once you have set up your query, click Run.
+f. Click Save to save the query as a tile on your dashboard.
+g. Same way we can add  multiple tiles to the dashboard
 
 
 ![config1](config1.PNG)
 
 ![config2](config2.PNG)
 
-### 6.6 Adding Dashboard Filters a User Can Change
+### 6. Adding Dashboard Filters a User Can Change <span id="usercanchange"><span>
 
 ![parameters](addfilterdashboards.PNG)
 
-### 6.7 Copy Of Existing Dashboard and Editing the dashboard
+### 7. Copy Of Existing Dashboard and Editing the dashboard <span id="copy1"><span>
+	
+a. Click on Edit Dashboard and Rename Dashboard and start editing it.
+b. Add tiles and filters based on the needed to the edited dashboard.
+
 ![copyofnew](copyofnew.PNG)
-* Users and Roles of access of dashboards
-organizational data contains more sensitiive information and these kind of  visualization dashboards need to be shared to only intended persons.
+
+### 8. Users and Roles of access of dashboards <span id="userroles"><span>
+
+Organizational data contains more sensitiive information and these kind of  visualization dashboards need to be shared to only intended persons.
 
 ![roles](roles.PNG)
 
-### 6.8 Dashboards Available in Elysium Analytics
+a. Personal Folder has all the dashboard built from elysium for personal space.
+b. Group Folder we can move dashboards from personal to group so that specific User related can view those dashboards.
+c. Shared Dashboards will be accessed by all  the users who has access to Elysium applications.
+
+### 9. Dashboards Available in Elysium Analytics <span id="availabledashboards"><span>
 	1. Insider Threat Detection
 	2. Security Posture
 	3. UEBA
@@ -715,9 +732,9 @@ organizational data contains more sensitiive information and these kind of  visu
 	14. User session Tracking information
 	15. Active Sync and Outlook Web Access
 
-3. Elysium kibana data visualizations 
+## 6.2 Elysium kibana data visualizations  <span id="kibanaviz1"><span>
 
-5. Build own ML Models using data bricks  
+## 6.3 Build own ML Models using data bricks   <span id="ownml"><span>
 
 			
 ## 6. Alerts tiles
@@ -785,5 +802,24 @@ Overview of the Tiles in Dashboard
 	Tiles (5,6 & 9) shows last 7 days of data
 	Tiles (7 & 8) shows last 15 days of data with Risk Score >=50
  
+
+
+
+## 6. [Build your own Analytical dashboards](#buildanalytics)
+## 1. [looker creation dashboards](#lookerdashboard)
+
+1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
+1. [Adding new tiles to dashboard](#newtiles)
+1. [Looker Explore window to discover new insights](#explore) 
+1. [Select the fields and  filters for your query tile’s](fieldsandfilters)
+1. [Configure your visualization options](#visualizations)
+1. [Adding Dashboard Filters a User Can Change](#usercanchange)
+1. [Copy Of Existing Dashboard and Editing the dashboard](#copy1)
+1. [Users and Roles of access of dashboards](#userroles)
+1. [Dashboards Available in Elysium Analytics](#availabledashboards)
+
+## 2. [Elysium kibana data visualizations](#kibanaviz1) 
+
+## 3. [Build own ML Models using data bricks](#ownml)  
 
 
