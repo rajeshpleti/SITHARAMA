@@ -647,7 +647,7 @@ High volume File Access shows average of file access and average of file volume 
 
 To create a blank dashboard:
 
-	1. Click New Dashboard.
+ 	1. Click New Dashboard.
 	2. Name the Dashboard.
 	3. Click Create Dashboard
 
@@ -683,14 +683,15 @@ First select data fileter, then choose relevant fields and filters for query til
 
 ### 5. Configure your visualization options <span id="visualizations"><span>
 	
-configuration options allows users to change the visualization based on various parameters 	
-	1. Create and run your query.
-	1. Click the Visualization tab to start configuring your visualization options.
-	1. Select the type of visualization that best displays your data. For more options, click … to the right of the displayed visualization options.
-	1. Click Edit to configure the visualization option settings, such as naming and arranging chart axes, choosing the position and type of each data series, or 		    modifying the chart color palette.
-	1. Once you have set up your query, click Run.
-	1. Click Save to save the query as a tile on your dashboard.
-	1. Same way we can add  multiple tiles to the dashboard
+configuration options allows users to change the visualization based on various parameters
+
+1. Create and run your query.
+1. Click the Visualization tab to start configuring your visualization options.
+1. Select the type of visualization that best displays your data. For more options, click … to the right of the displayed visualization options.
+1. Click Edit to configure the visualization option settings, such as naming and arranging chart axes, choosing the position and type of each data series, or 		     modifying the chart color palette.
+1. Once you have set up your query, click Run.
+1. Click Save to save the query as a tile on your dashboard.
+1. Same way we can add  multiple tiles to the dashboard
 
 
 ![config1](config1.PNG)
@@ -718,8 +719,8 @@ configuration options allows users to change the visualization based on various 
 
 ### 7. Copy Of Existing Dashboard and Editing the dashboard <span id="copy1"><span>
 	
-	1. Click on Edit Dashboard and Rename Dashboard and start editing it.
-	1. Add tiles and filters based on the needed to the edited dashboard.
+1. Click on Edit Dashboard and Rename Dashboard and start editing it.
+1. Add tiles and filters based on the needed to the edited dashboard.
 
 ![copyofnew](copyofnew.PNG)
 
@@ -729,9 +730,9 @@ Organizational data contains more sensitiive information and these kind of  visu
 
 ![roles](roles.PNG)
 
-	1. Personal Folder has all the dashboard built from elysium for personal space.
-	1. Group Folder we can move dashboards from personal to group so that specific User related can view those dashboards.
-	1. Shared Dashboards will be accessed by all  the users who has access to Elysium applications.
+1. Personal Folder has all the dashboard built from elysium for personal space.
+1. Group Folder we can move dashboards from personal to group so that specific User related can view those dashboards.
+1. Shared Dashboards will be accessed by all  the users who has access to Elysium applications.
 
 ### 9. Dashboards Available in Elysium Analytics <span id="availabledashboards"><span>
 	1. Insider Threat Detection
