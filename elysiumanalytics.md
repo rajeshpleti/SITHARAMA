@@ -70,7 +70,7 @@
 
 
 ## 6. [Build your own Analytical dashboards](#buildanalytics)
-## 1. [looker creation dashboards](#lookerdashboard)
+### 1. [looker creation dashboards](#lookerdashboard)
 
 1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
 1. [Adding new tiles to dashboard](#newtiles)
@@ -82,9 +82,9 @@
 1. [Users and Roles of access of dashboards](#userroles)
 1. [Dashboards Available in Elysium Analytics](#availabledashboards)
 
-## 2. [Elysium kibana data visualizations](#kibanaviz1) 
+### 2. [Elysium kibana data visualizations](#kibanaviz1) 
 
-## 3. [Build own ML Models using data bricks](#ownml)  
+### 3. [Build own ML Models using data bricks](#ownml)  
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -668,26 +668,29 @@ Adding New Tile opens a menu of Explores. Choose an Explore view to build dashbo
 ![explore](explore1.PNG)
 
 ![explore2](explore2.PNG)
+
 It contains three modules
-1. Filters
-2. Visualization
-3. Data
+	1. Filters
+	2. Visualization
+	3. Data
 ![sample](snowflakestorage.PNG)
 
 ### 4. Select the fields and  filters for your query tile’s <span id="fieldsandfilters"><span>
 
 First select data fileter, then choose relevant fields and filters for query tiles to visually analyze the insights of data
+
 ![filters](filterfields.PNG)
 
 ### 5. Configure your visualization options <span id="visualizations"><span>
+	
 configuration options allows users to change the visualization based on various parameters 	
-a. Create and run your query.
-b. Click the Visualization tab to start configuring your visualization options.
-c. Select the type of visualization that best displays your data. For more options, click … to the right of the displayed visualization options.
-d. Click Edit to configure the visualization option settings, such as naming and arranging chart axes, choosing the position and type of each data series, or 		    modifying the chart color palette.
-e. Once you have set up your query, click Run.
-f. Click Save to save the query as a tile on your dashboard.
-g. Same way we can add  multiple tiles to the dashboard
+	1. Create and run your query.
+	1. Click the Visualization tab to start configuring your visualization options.
+	1. Select the type of visualization that best displays your data. For more options, click … to the right of the displayed visualization options.
+	1. Click Edit to configure the visualization option settings, such as naming and arranging chart axes, choosing the position and type of each data series, or 		    modifying the chart color palette.
+	1. Once you have set up your query, click Run.
+	1. Click Save to save the query as a tile on your dashboard.
+	1. Same way we can add  multiple tiles to the dashboard
 
 
 ![config1](config1.PNG)
@@ -698,10 +701,25 @@ g. Same way we can add  multiple tiles to the dashboard
 
 ![parameters](addfilterdashboards.PNG)
 
+1. Click on Filter to create a new filter. Elysium lists the new filter on the left hand side of the filters pop-up. You can drag and drop the filters to control the       order in which they appear on the dashboard.
+2. Enter filter a name.
+3. Choose the type of filter you want to create. You are able to create a Date, String, Number or Field filter
+4. Add a default value if desired. You can choose a basic default value from the drop-down options, or create a more complex default value based on an advanced match
+5. Decide which tiles the filter should be applied to and turn them on. Then, choose the field to which the value of the filter will be applied.
+6. For tiles based on merge query results, select the query or queries you want to apply the filter to and turn them on, then select the LookML field to which the filter    value will be applied.
+7. In the Filters to Update tab, you can make different filters dependent on the selected filter. To do so:
+	* Save your filter, as defined so far.
+	* Turn on the switch next to the other filters you want to make dependent on this filter.
+8. In the Customize Filter tab, choose the behavior of your filter:
+	* Require a filter value to run this dashboard: The user must enter a filter value before the dashboard can be run. 
+	* Allow multiple filter values: When this is on, the user can select multiple filter values. When this is off, the user is able to select only a single filter             value.
+9. Save your filter
+
+
 ### 7. Copy Of Existing Dashboard and Editing the dashboard <span id="copy1"><span>
 	
-a. Click on Edit Dashboard and Rename Dashboard and start editing it.
-b. Add tiles and filters based on the needed to the edited dashboard.
+	1. Click on Edit Dashboard and Rename Dashboard and start editing it.
+	1. Add tiles and filters based on the needed to the edited dashboard.
 
 ![copyofnew](copyofnew.PNG)
 
@@ -711,9 +729,9 @@ Organizational data contains more sensitiive information and these kind of  visu
 
 ![roles](roles.PNG)
 
-a. Personal Folder has all the dashboard built from elysium for personal space.
-b. Group Folder we can move dashboards from personal to group so that specific User related can view those dashboards.
-c. Shared Dashboards will be accessed by all  the users who has access to Elysium applications.
+	1. Personal Folder has all the dashboard built from elysium for personal space.
+	1. Group Folder we can move dashboards from personal to group so that specific User related can view those dashboards.
+	1. Shared Dashboards will be accessed by all  the users who has access to Elysium applications.
 
 ### 9. Dashboards Available in Elysium Analytics <span id="availabledashboards"><span>
 	1. Insider Threat Detection
