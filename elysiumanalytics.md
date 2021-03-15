@@ -670,9 +670,10 @@ Adding New Tile opens a menu of Explores. Choose an Explore view to build dashbo
 ![explore2](explore2.PNG)
 
 It contains three modules
-	1. Filters
-	2. Visualization
-	3. Data
+1. Filters
+2. Visualization
+3. Data
+
 ![sample](snowflakestorage.PNG)
 
 ### 4. Select the fields and  filters for your query tile’s <span id="fieldsandfilters"><span>
@@ -824,21 +825,5 @@ Overview of the Tiles in Dashboard
 
 
 
-## 6. [Build your own Analytical dashboards](#buildanalytics)
-## 1. [looker creation dashboards](#lookerdashboard)
-
-1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
-1. [Adding new tiles to dashboard](#newtiles)
-1. [Looker Explore window to discover new insights](#explore) 
-1. [Select the fields and  filters for your query tile’s](fieldsandfilters)
-1. [Configure your visualization options](#visualizations)
-1. [Adding Dashboard Filters a User Can Change](#usercanchange)
-1. [Copy Of Existing Dashboard and Editing the dashboard](#copy1)
-1. [Users and Roles of access of dashboards](#userroles)
-1. [Dashboards Available in Elysium Analytics](#availabledashboards)
-
-## 2. [Elysium kibana data visualizations](#kibanaviz1) 
-
-## 3. [Build own ML Models using data bricks](#ownml)  
 
 
