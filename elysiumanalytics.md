@@ -771,17 +771,21 @@ To create a visualization:
 * Line, Area and Bar charts	: Compare different series in X/Y charts
 * Heat maps 			: Shade cells within a matrix
 * Pie chart 			: Display each source’s contribution to a total
+
 - Data
 -----
 * Data table  : Display the raw data of a composed aggregation.
 * Metric :  Display a single number.
 * Goal and Gauge : Display a gauge.
+
 - Maps
 * Coordinate map: Associate the results of an aggregation with geographic locations.
 * Region map : Thematic maps where a shape’s color intensity corresponds to a metric’s value. locations.
+
 - Time Series
 * Timelion : Compute and combine data from multiple time series data sets.
 * Time Series Visual Builder: Visualize time series data using pipeline aggregations.
+
 - Other visualizations
 * Controls :Controls provide the ability to add interactive inputs to Kibana Dashboards.
 * Markdown widget: Display free-form information or instructions.
@@ -795,36 +799,12 @@ To create a visualization:
 
 1. In the visualization builder, choose the metric aggregation for the visualization’s Y axis
 
-•	**Metric Aggregations:**
-•	count
-•	average
-•	sum
-•	min
-•	max
-•	standard deviation
-•	unique count
-•	median (50th percentile)
-•	percentiles
-•	percentile ranks
-•	top hit
-•	geo centroid
-•	**Parent Pipeline Aggregations:**
-•	derivative
-•	cumulative sum
-•	moving average
-•	serial diff
-•	**Sibling Pipeline Aggregations:**
-•	average bucket
-•	sum bucket
-•	min bucket
-•	max bucket
+**Metric Aggregations:** count, average,sum, min, max, standard deviation, unique count, median (50th percentile), percentiles, percentile ranks, top hit, geo centroid
+**Parent Pipeline Aggregations:** derivative,cumulative sum,moving average, serial diff
+**Sibling Pipeline Aggregations:** average bucket, sum bucket, min bucket, max bucket
 
 1. For the visualizations X axis, select a bucket aggregation:
-•	date histogram
-•	range
-•	terms
-•	filters
-•	significant terms
+   Date histogram, range,terms,filters, significant terms
 
 
 ![v2](bar-terms-agg.jpg)
