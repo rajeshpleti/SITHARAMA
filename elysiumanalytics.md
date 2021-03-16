@@ -763,8 +763,9 @@ To create a visualization:
 1. Click the Create new visualization button or the + button.
 1. Choose the visualization type:
 
-![v1](#visualization1.png)
-![v2](#visualization2.gif)
+![visua](visualization1.png)
+
+![visu](visualization2.gif)
 
 - Basic charts
   ----
@@ -773,37 +774,40 @@ To create a visualization:
 * Pie chart 			: Display each source’s contribution to a total
 
 - Data
------
+  -----
 * Data table  : Display the raw data of a composed aggregation.
 * Metric :  Display a single number.
 * Goal and Gauge : Display a gauge.
 
 - Maps
+  -----
 * Coordinate map: Associate the results of an aggregation with geographic locations.
 * Region map : Thematic maps where a shape’s color intensity corresponds to a metric’s value. locations.
 
 - Time Series
+  -----
 * Timelion : Compute and combine data from multiple time series data sets.
 * Time Series Visual Builder: Visualize time series data using pipeline aggregations.
 
 - Other visualizations
+  ----
 * Controls :Controls provide the ability to add interactive inputs to Kibana Dashboards.
 * Markdown widget: Display free-form information or instructions.
 * Tag cloud: Display words as a cloud in which the size of the word correspond to its importance.
 * Vega graph :Support for user-defined graphs, external data sources, images, and user-defined interactivity.
 
-1. Specify a search query to retrieve the data for your visualization
+4. Specify a search query to retrieve the data for your visualization
    * To enter new search criteria, select the index pattern for the indices that contain the data you want to visualize. This opens the visualization builder with a           wildcard query that matches all of the documents in the selected indices.
    * To build a visualization from a saved search, click the name of the saved search you want to use. This opens the visualization builder and loads the selected query.
 
 
-1. In the visualization builder, choose the metric aggregation for the visualization’s Y axis
+5. In the visualization builder, choose the metric aggregation for the visualization’s Y axis
 
 **Metric Aggregations:** count, average,sum, min, max, standard deviation, unique count, median (50th percentile), percentiles, percentile ranks, top hit, geo centroid
 **Parent Pipeline Aggregations:** derivative,cumulative sum,moving average, serial diff
 **Sibling Pipeline Aggregations:** average bucket, sum bucket, min bucket, max bucket
 
-1. For the visualizations X axis, select a bucket aggregation:
+6. For the visualizations X axis, select a bucket aggregation:
    Date histogram, range,terms,filters, significant terms
 
 
