@@ -69,8 +69,8 @@
 8. [Unusual Domain](#unusualdomain)
 
 
-## 6. [Build your own Analytical dashboards](#buildanalytics)
-### 1. [looker creation dashboards](#lookerdashboard)
+## 6. [Build your own Analytical Dashboards](#buildanalytics)
+### 1. [looker creation of dashboards](#lookerdashboard)
 
 1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
 1. [Adding new tiles to dashboard](#newtiles)
@@ -82,9 +82,12 @@
 1. [Users and Roles of access of dashboards](#userroles)
 1. [Dashboards Available in Elysium Analytics](#availabledashboards)
 
-### 2. [Elysium kibana data visualizations](#kibanaviz1) 
+### 2. [Elysium Kibana Data Visualizations](#kibanaviz1) 
 
-### 3. [Build own ML Models using data bricks](#ownml)  
+
+
+
+### 3. [Build Kiabana Dashboards](#ownml)  
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -753,6 +756,28 @@ Organizational data contains more sensitiive information and these kind of  visu
 	15. Active Sync and Outlook Web Access
 
 ## 6.2 Elysium kibana data visualizations  <span id="kibanaviz1"><span>
+
+To create a visualization:
+
+1. Click on Visualize in the side navigation.
+1. Click the Create new visualization button or the + button.
+1. Choose the visualization type:
+
+![v1](#visualization1.png)
+![v2](#visualization2.gif)
+
+Basic charts
+ ----
+Line, Area and Bar charts| Compare different series in X/Y charts.
+Heat maps |Shade cells within a matrix.
+Pie chart | Display each source’s contribution to a total.
+
+
+1. Specify a search query to retrieve the data for your visualization
+   * To enter new search criteria, select the index pattern for the indices that contain the data you want to visualize. This opens the visualization builder with a           wildcard query that matches all of the documents in the selected indices.
+   * To build a visualization from a saved search, click the name of the saved search you want to use. This opens the visualization builder and loads the selected query.
+
+
 
 ## 6.3 Build own ML Models using data bricks   <span id="ownml"><span>
 
