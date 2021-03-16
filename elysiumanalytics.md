@@ -766,13 +766,11 @@ To create a visualization:
 ![v1](#visualization1.png)
 ![v2](#visualization2.gif)
 
-- Basic charts|
+- Basic charts
   ----
-|Line, Area and Bar charts| Compare different series in X/Y charts|
- ----
-|Heat maps |Shade cells within a matrix|
-----
-|Pie chart | Display each source’s contribution to a total|
+ * Line, Area and Bar charts	: Compare different series in X/Y charts
+ * Heat maps 			: Shade cells within a matrix
+ * Pie chart 			: Display each source’s contribution to a total|
 
 
 1. Specify a search query to retrieve the data for your visualization
