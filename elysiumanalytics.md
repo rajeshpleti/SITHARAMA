@@ -84,10 +84,18 @@
 
 ### 2. [Elysium Kibana Data Visualizations](#kibanaviz1) 
 
-
-
-
 ### 3. [Build Kiabana Dashboards](#mainkibanadashboard)  
+1. [Visualize your data with dashboards](#yourdashboard)
+1. [Open the dashboard](#opendashboard)
+1. [Create panels](#createpanels)
+1. [clone panels](#clonepanels)
+1. [Explore the underlying documents](#exploredocuments)
+1. [Download panel data as CSV](#downloadpanel)
+1. [Share the dashboard](#sharedashboard)
+1. [Export the dashboard](#exportdashboard)
+
+
+
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -825,13 +833,13 @@ To create a visualization:
 
 ## 6.3 Build Kiabana Dashboards   <span id="mainkibanadashboard"><span>
 
-### Visualize your data with dashboards.
+### Visualize your data with dashboards  <span id="yourdashboard"><span>
 * The best way to understand your data is to visualize it. With dashboards, you can turn your data from one or more index patterns into a collection of panels that bring clarity to your data, tell a story about your data, and allow you to focus on only the data that’s important to you. Configure each panel to display your data in a chart, table, map, and more, then compare the panels side-by-side to identify the patterns and connections in your data.	
 * User need to have insufficient privileges to create or save dashboards or  Granting access to Kibana.
 
 ![dashboard](Dashboard_example.png)
 
-### Open the dashboard
+### Open the dashboard  <span id="opendashboard"><span>
 Begin with an empty dashboard, or open an existing dashboard.
 
 1.Open the main menu, then click Dashboard.
@@ -839,7 +847,7 @@ Begin with an empty dashboard, or open an existing dashboard.
 	* To start with an empty dashboard, click Create dashboard.
 	* To open an existing dashboard, click the dashboard Title you want to open.
 
-### Create panels
+### Create panels   <span id="createpanels"><span>
 Choose the type of panel to create, then save the panel to the dashboard.
 
 1. From the dashboard, choose one of the following options:
@@ -854,15 +862,14 @@ Choose the type of panel to create, then save the panel to the dashboard.
 	* Click Save and return.
 
 
-### clone panels
+### clone panels     <span id="clonepanels"><span>
 To duplicate a panel and the configured functionality, clone the panel. Cloned panels continue to replicate all of the functionality from the original panel, including renaming, editing, and cloning. When you clone a panel, the clone appears beside the original panel, and moves other panels to provide a space on the dashboard.
-
-1.From the toolbar, click Edit.
-1.Open the panel menu, then select Clone panel.
+1. From the toolbar, click Edit.
+1. Open the panel menu, then select Clone panel.
 
 ![clone](clone_panel.gif)
 
-### Explore the underlying documents
+### Explore the underlying documents     <span id="exploredocuments"><span>
 Dashboard panels have a shortcut to view the underlying documents in Discover. Open the panel menu, then click Explore underlying data. Discover will be opened with the same time range and filters as the panel.
 
 ![datacontexting](explore_data_context_menu.png)
@@ -870,7 +877,7 @@ Dashboard panels have a shortcut to view the underlying documents in Discover. O
 * Explore underlying data is available only for visualization panels with a single index pattern.
 
 
-### Download panel data as CSV
+### Download panel data as CSV     <span id="downloadpanel"><span>
 Download panel data in a CSV file. You can download most panels in a CSV file, but there is a shortcut available for Lens panels.
 
 Lens
@@ -881,7 +888,7 @@ Open the Lens panel menu, then select More > Download as CSV.
 ![csv1](Dashboard_inspect.png)
 
 
-### Share the dashboard
+### Share the dashboard         <span id="sharedashboard"><span>
 To share the dashboard with a larger audience, click Share in the toolbar, then choose one of the following options:
 
 1. Permalinks: Share a direct link to a Kibana dashboard. User authentication is required.
@@ -890,9 +897,8 @@ To share the dashboard with a larger audience, click Share in the toolbar, then 
 1. Embed code:  Embed the dashboard as an iframe on a web page. Embedded dashboards are fully interactive, but you can hide some parts of the dashboard using the menu                   options. User authentication is required,
 
 
-### Export the dashboard
+### Export the dashboard    <span id="exportdashboard"><span>
 To automate Kibana, you can export dashboards as JSON using the import and export dashboard APIs. It is important to export dashboards with all references needed.
-
 
 
 
