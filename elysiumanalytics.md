@@ -87,7 +87,7 @@
 
 
 
-### 3. [Build Kiabana Dashboards](#ownml)  
+### 3. [Build Kiabana Dashboards](#mainkibanadashboard)  
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -803,23 +803,67 @@ To create a visualization:
 
 5. In the visualization builder, choose the metric aggregation for the visualization’s Y axis
 
-**Metric Aggregations:** count, average,sum, min, max, standard deviation, unique count, median (50th percentile), percentiles, percentile ranks, top hit, geo centroid
-**Parent Pipeline Aggregations:** derivative,cumulative sum,moving average, serial diff
-**Sibling Pipeline Aggregations:** average bucket, sum bucket, min bucket, max bucket
+	**Metric Aggregations:** count, average,sum, min, max, standard deviation, unique count, median (50th percentile), percentiles, percentile ranks, top hit, geo 	                                   centroid
+	**Parent Pipeline Aggregations:** derivative,cumulative sum,moving average, serial diff
+	**Sibling Pipeline Aggregations:** average bucket, sum bucket, min bucket, max bucket
 
 6. For the visualizations X axis, select a bucket aggregation:
    Date histogram, range,terms,filters, significant terms
 
-
+	For example, indexing Apache server logs, visualization of bar chart shows that distribution of incoming requests by geographic location by specifying a terms           aggregation on the geo.src field:
 ![v2](bar-terms-agg.jpg)
+
+	* The y-axis shows the number of requests received from each country, and the countries are displayed across the x-axis.
+	* Bar, line, or area chart visualizations use metrics for the y-axis and buckets for the x-axis. Buckets are analogous to SQL GROUP BY statements. Pie charts,             use the metric for the slice size and the bucket for the number of slices.
+	* You can further break down the data by specifying sub aggregations. The first aggregation determines the data set for any subsequent aggregations. Sub           	   aggregations are applied in order.
+	* For example, you could add a terms sub aggregation on the geo.dest field to the Country of Origin bar chart to see the locations those requests were targeting
+	
 ![v3](bar-terms-subagg.jpg)
 
 
 
 
-## 6.3 Build own ML Models using data bricks   <span id="ownml"><span>
+## 6.3 Build Kiabana Dashboards   <span id="mainkibanadashboard"><span>
 
-			
+### Visualize your data with dashboards.
+* The best way to understand your data is to visualize it. With dashboards, you can turn your data from one or more index patterns into a collection of panels that bring clarity to your data, tell a story about your data, and allow you to focus on only the data that’s important to you. Configure each panel to display your data in a chart, table, map, and more, then compare the panels side-by-side to identify the patterns and connections in your data.	
+* User need to have insufficient privileges to create or save dashboards or  Granting access to Kibana.
+
+![dashboard](Dashboard_example.png)
+
+### Open the dashboard
+Begin with an empty dashboard, or open an existing dashboard.
+
+1.Open the main menu, then click Dashboard.
+1. On the Dashboards page, choose one of the following options:
+	* To start with an empty dashboard, click Create dashboard.
+	* To open an existing dashboard, click the dashboard Title you want to open.
+
+### Create panels
+Choose the type of panel to create, then save the panel to the dashboard.
+
+1. From the dashboard, choose one of the following options:
+
+	* To create a panel, click Create panel, then click the panel type on the New visualization window. Lens is recommended for most users.
+	* To add a saved panel, click Add from library, then select the panel you want to add. When a panel contains a stored query, both queries are applied.
+1. To save the panel, click Save in the toolbar, then configure the Save visualization options.
+
+	* Enter the Title and optional Description.
+	* From the Tags drop down, select any applicable tags.
+	* Select Add to Dashboard after saving.
+	* Click Save and return.
+
+
+### clone panels
+To duplicate a panel and the configured functionality, clone the panel. Cloned panels continue to replicate all of the functionality from the original panel, including renaming, editing, and cloning. When you clone a panel, the clone appears beside the original panel, and moves other panels to provide a space on the dashboard.
+
+1.From the toolbar, click Edit.
+1.Open the panel menu, then select Clone panel.
+
+![clone](clone_panel.gif)
+
+
+
 ## 6. Alerts tiles
 
 Overview of alert  tiles in the Dashboard
