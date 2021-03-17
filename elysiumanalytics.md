@@ -862,6 +862,40 @@ To duplicate a panel and the configured functionality, clone the panel. Cloned p
 
 ![clone](clone_panel.gif)
 
+### Explore the underlying documents
+Dashboard panels have a shortcut to view the underlying documents in Discover. Open the panel menu, then click Explore underlying data. Discover will be opened with the same time range and filters as the panel.
+
+![datacontexting](explore_data_context_menu.png)
+
+* Explore underlying data is available only for visualization panels with a single index pattern.
+
+
+### Download panel data as CSV
+Download panel data in a CSV file. You can download most panels in a CSV file, but there is a shortcut available for Lens panels.
+
+Lens
+Open the Lens panel menu, then select More > Download as CSV.
+
+![csv](download_csv_context_menu.png)
+
+![csv1](Dashboard_inspect.png)
+
+
+### Share the dashboard
+To share the dashboard with a larger audience, click Share in the toolbar, then choose one of the following options:
+
+1. Permalinks: Share a direct link to a Kibana dashboard. User authentication is required.
+1. PDF Reports: Generate a PDF report.
+1. PNG Reports: Generate a PNG report
+1. Embed code:  Embed the dashboard as an iframe on a web page. Embedded dashboards are fully interactive, but you can hide some parts of the dashboard using the menu                   options. User authentication is required,
+
+
+### Export the dashboard
+To automate Kibana, you can export dashboards as JSON using the import and export dashboard APIs. It is important to export dashboards with all references needed.
+
+
+
+
 
 
 ## 6. Alerts tiles
