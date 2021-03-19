@@ -70,7 +70,7 @@
 
 
 ## 6. [Build your own Analytical Dashboards](#buildanalytics)
-### 1. [looker creation of dashboards](#lookerdashboard)
+### 6.1. [looker creation of dashboards](#lookerdashboard)
 
 1. [Creating A New Dashboard in Elysium Analytics](#newdashboard)
 1. [Adding new tiles to dashboard](#newtiles)
@@ -82,9 +82,9 @@
 1. [Users and Roles of access of dashboards](#userroles)
 1. [Dashboards Available in Elysium Analytics](#availabledashboards)
 
-### 2. [Elysium Kibana Data Visualizations](#kibanaviz1) 
+### 6.2. [Elysium Kibana Data Visualizations](#kibanaviz1) 
 
-### 3. [Build Kiabana Dashboards](#mainkibanadashboard)  
+### 6.3. [Build Kiabana Dashboards](#mainkibanadashboard)  
 1. [Visualize your data with dashboards](#yourdashboard)
 1. [Open the dashboard](#opendashboard)
 1. [Create panels](#createpanels)
