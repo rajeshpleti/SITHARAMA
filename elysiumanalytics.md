@@ -95,7 +95,15 @@
 1. [Export the dashboard](#exportdashboard)
 
 
+## 8. Data Collection and Ingestion
 
+1. Collect your data/ Shippers
+2. Connect to your data
+3. Parse your data
+4. Enrich your data
+5. Load your data
+6. Add Threat Intel to your data
+7. Cloud Apps
 
 ## 7. Alerts
 	1. Alerts monitor
@@ -901,6 +909,59 @@ To share the dashboard with a larger audience, click Share in the toolbar, then 
 To automate Kibana, you can export dashboards as JSON using the import and export dashboard APIs. It is important to export dashboards with all references needed.
 
 
+## 8. Data Collection and Ingestion :
+
+
+*   Elysium Analytics provides a scalable, robust and flexible architecture, delivered as a service, that assures secure and reliable collection, parsing and loading of 	any type of log data as well as network traffic data into a cloud scale data lake built on top of Snowflake’s data warehouse.
+*   Elysium SaaS solution is truly a cloud scale security analytics platform that removes the barriers from
+	ingesting, contextualizing, searching, analyzing, and storing log data with a cost-effective and low-risk service
+
+*  Elysium SaaS offering licensed on a usage basis, lowering cost and removing financial risk and provides a low price for storage, and compute is billed by the minute 	of usage.
+*   Additionally, Elysium provides open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models.
+
+*   Elysium supports, developed a broad library of Collectors, Parsers and Plug-ins that allows you to collect and load all security related data as well as data for context and enrichment into our data lake. Our data collection is delivered as a cloud service; all you need to do is to point your data sources to our infrastructure and we will take of it from there.
+
+
+
+1. Collect your data/ Shippers
+
+With integration to all your security and log sources, Elysium Analytics automatically collects all the data you need from any source; cloud, on-prem, or SIEM solution. Leveraging Kafka, Logstash, Beats, and Nifi.
+
+Collect all your enterprise network and endpoint device logs for full visibility to all activity across all layers of your
+network.
+
+Collect all log data from your all your security devices, on-premises and cloud implementations for a consolidated view of all activity across all your security solutions and retain the data for as long as you need to.
+
+ 
+2. Connect to your data
+Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
+
+3. Parse your data
+Parse, map, and group your data, in Elysium Analytics Open Data, Model for full context and fast, analytics.
+Parse legacy device data sources in Logstash and modern data sources in JSON
+
+4. Enrich your data
+
+Enrich data in real time with Identity, Asset, Geolocation,Threat Intelligence, as well as data from lookup tables built into the storage platform data
+pipeline,
+
+Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
+
+
+5. Load your data
+lake is billed by the second and can be configured to continuous loading or batch loading. Since
+you are billed by the compute resources you consume, you can configure frequency and capacity based on what your needs are
+
+
+6. Add Threat Intel to your data
+
+Enrich your data with Threat Intel and get a broad view of the threat landscape external to your organization allowing your security
+team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation. We have
+implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
+
+
+7. Cloud Apps
+Collect, aggregate and analyze logs from any cloud application source. Simple setup. Get insights  from all your cloud applications, infrastructure, and devices.
 
 
 
