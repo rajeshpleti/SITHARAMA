@@ -95,7 +95,7 @@
 1. [Export the dashboard](#exportdashboard)
 
 
-## 8. Data Collection and Ingestion
+## 7. Data Collection and Ingestion
 
 1. Collect your data/ Shippers
 2. Connect to your data
@@ -105,7 +105,7 @@
 6. Add Threat Intel to your data
 7. Cloud Apps
 
-## 7. Alerts
+## 8. Alerts
 	1. Alerts monitor
 	2. Scheduled searches
 	3. Alert rules
@@ -115,7 +115,7 @@
 	7. Alert Dashboards
 	8. Drill Down Alerts
 
-## 8. Search
+## 9. Search
 
 1.Search basics
 1.Search query language (KQL)
@@ -919,11 +919,11 @@ To automate Kibana, you can export dashboards as JSON using the import and expor
 *  Elysium SaaS offering licensed on a usage basis, lowering cost and removing financial risk and provides a low price for storage, and compute is billed by the minute 	of usage.
 *   Additionally, Elysium provides open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models.
 
-*   Elysium supports, developed a broad library of Collectors, Parsers and Plug-ins that allows you to collect and load all security related data as well as data for context and enrichment into our data lake. Our data collection is delivered as a cloud service; all you need to do is to point your data sources to our infrastructure and we will take of it from there.
+*   Elysium supports, developed a broad library of Collectors, Parsers and Plug-ins that allows you to collect and load all security related data as well as data for 		context and enrichment into our data lake. Our data collection is delivered as a cloud service; all you need to do is to point your data sources to our 		infrastructure and we will take of it from there.
 
 
 
-1. Collect your data/ Shippers
+## 1. Collect your data/ Shippers
 
 With integration to all your security and log sources, Elysium Analytics automatically collects all the data you need from any source; cloud, on-prem, or SIEM solution. Leveraging Kafka, Logstash, Beats, and Nifi.
 
@@ -932,15 +932,98 @@ network.
 
 Collect all log data from your all your security devices, on-premises and cloud implementations for a consolidated view of all activity across all your security solutions and retain the data for as long as you need to.
 
+## Elysium Beats
+
+* Elysium Beats are a set of lightweight data shippers that allow to conveniently send data to data lake Service. 
+* Being lightweight, Beats do not incur much runtime overhead and they can therefore run and collect data on devices with limited hardware resources, such as IoT      		devices, edge device, or embedded devices. 
+* Beats are the perfect match if you need to collect data without having the resources to run resource-intensive data collectors. This kind of pervasive data collection on all of your networked devices allows you to quickly detect and react upon, for example, system-wide issues and security incidents.Of course, Beats are not limited to resource-constrained systems. They can also be used on systems that have more hardware resources available.
+
+**The Beats fleet: an overview** 
+Beats come in various flavors to collect different kinds of data:
+
+* There are numerous ways to ingest data into elysium Service. The choice of specific methods or tools to ingest data depends on your specific use case, requirements, and environment.
+* Beats provide a convenient and lightweight out-of-the-box solution to collect and ingest data from many different sources.
+* Packaged with the Beats are modules that provide the configuration for data acquisition, parsing, indexing, and visualization for many common databases, operating systems, container environments, web servers, caches, and so on.
+
+
+![beats](beats1.PNG)
  
-2. Connect to your data
+## 2. Connect to your data (Connectors and plugins)
 Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
 
-3. Parse your data
-Parse, map, and group your data, in Elysium Analytics Open Data, Model for full context and fast, analytics.
-Parse legacy device data sources in Logstash and modern data sources in JSON
 
-4. Enrich your data
+
+## 3. Parse your data
+Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
+Parse legacy device data sources in Logstash and modern data sources using JSON.
+
+Parser Name  Description
+
+
+MSFT Exchange	 Microsoft email events
+Windows Audit	Windows audit and sysmon events
+
+Bluecoat	Web proxy events
+WatchGuard - DNS	Web proxy DNS events
+WatchGuard - VPN	Web proxy VPN events
+Cisco ASA	Firewall and VPN events
+Windows Sysmon	Windows system monitoring events
+Symantec Endpoint Protection	Anti-virus events
+Barracuda	Web email events
+Palo Alto	Firewall, Proxy and VPN events
+Web Sphere	Web traffic events
+FireEye	 Web download traffic inspection events
+Source Fire	IDS events
+Bro/Zeek	Flow data
+Snort IDS	IDS events
+Netflow, IPFIX	  Flow data
+AWS	Cloud security events
+Azure	Cloud security events
+AS/400 and iSeries	Mainframe
+Box	Cloud services
+Checkpoint OPSEC/LEA	Firewall and VPN events
+Cisco SDEE	Content delivery events
+Cloud/SaaS solutions	Cloud events
+Cradlepoint	Network edge events
+Flat files (single-line and multi-line, compressed or uncompressed)	Custom flat file events
+
+
+
+
+
+Flex Database Log Adapter for system and
+custom logs written to database tables (e.g.,
+Oracle, SQL Server, MySQL) (ODBC & JDBC
+protocols)                                                 Custom db events
+
+
+
+Flow data (e.g., IPFIX, NetFlow, sFlow, J-Flow, SmartFlow)    Flow data
+
+McAfee A/V	Anti-virus events
+McAfee HIPS	Endpoint monitoring events
+MSFT IIS	Web traffic events
+Netflow, IPFIX	    Flow data
+Office 365	Microsoft Office 365 events
+Qualys   	Vulnerability events
+Rapid7	  Collectoin of web proxy events
+Redhat    Enterprise OS events
+Salesforce	CRM vents
+SNMP	Traps event
+Snort IDS	IDS events
+Sourcefire eStreamer IDS streaming events
+Squid	Web proxy events
+Symantec DLP	DLP events
+Tenable Security Center	 Security events
+UDP/TCP and secure syslog	Custom network events
+Vendor-specific APIs (example sources):	Collectoin of web proxy events
+Vulnerability scanners (example sources):	Vulnerability events
+Vendor-specific APIs (example sources):	Collectoin of web proxy events
+Vulnerability scanners (example sources):	Vulnerability events
+
+
+
+## 4. Enrich your data
 
 Enrich data in real time with Identity, Asset, Geolocation,Threat Intelligence, as well as data from lookup tables built into the storage platform data
 pipeline,
@@ -948,19 +1031,19 @@ pipeline,
 Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
 
 
-5. Load your data
+## 5. Load your data
 lake is billed by the second and can be configured to continuous loading or batch loading. Since
 you are billed by the compute resources you consume, you can configure frequency and capacity based on what your needs are
 
 
-6. Add Threat Intel to your data
+## 6. Add Threat Intelligence to your data
 
 Enrich your data with Threat Intel and get a broad view of the threat landscape external to your organization allowing your security
 team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation. We have
 implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
 
 
-7. Cloud Apps
+## 7. Cloud Apps
 Collect, aggregate and analyze logs from any cloud application source. Simple setup. Get insights  from all your cloud applications, infrastructure, and devices.
 
 
