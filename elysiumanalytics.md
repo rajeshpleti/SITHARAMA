@@ -95,15 +95,18 @@
 1. [Export the dashboard](#exportdashboard)
 
 
-## 7. Data Collection and Ingestion
+## 7. Data Collection and Ingestion (#datacolection)
 
-1. Collect your data/ Shippers
-2. Connect to your data
-3. Parse your data
-4. Enrich your data
-5. Load your data
-6. Add Threat Intel to your data
-7. Cloud Apps
+1. Collect your data/Shippers(#shippers)
+2. Connectors and plugins (#connectyourdata)
+3. Parsing data(#parsedata)
+4. Enrich data(#enrichdata)
+5. Loading data(#loaddata)
+6. Add Threat intelligence to your data(#addthreat)
+7. Cloud Apps (#cloudapps)
+8. Data Investigation Dashboards(#investigationdashboard)
+9. Data Ingestion tracking(#ingestiontracking)
+10. Logstash Network Traffic Dashboards(#LogstashNetwork)
 
 ## 8. Alerts
 	1. Alerts monitor
@@ -1115,6 +1118,15 @@ Overview of the Tiles in Dashboard
  
 
 
+Data Collection and Ingestion (#datacolection)
 
-
-
+1. Collect your data/Shippers(#shippers)
+2. Connectors and plugins (#connectyourdata)
+3. Parsing data(#parsedata)
+4. Enrich data(#enrichdata)
+5. Loading data(#loaddata)
+6. Add Threat intelligence to your data(#addthreat)
+7. Cloud Apps (#cloudapps)
+8. Data Investigation Dashboards(#investigationdashboard)
+9. Data Ingestion tracking(#ingestiontracking)
+10. Logstash Network Traffic Dashboards(#LogstashNetwork)
