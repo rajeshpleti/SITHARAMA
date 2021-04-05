@@ -98,7 +98,7 @@
 ## 7. Data Collection and Ingestion (#datacolection)
 
 1. [Collect your data/Shippers](#shippers)
-2. [Connectors and plugins] (#connectyourdata)
+2. [Connectors and plugins](#connectyourdata)
 3. [Parsing data](#parsedata)
 4. [Enrich data](#enrichdata)
 5. [Loading data](#loaddata)
@@ -955,7 +955,13 @@ Beats come in various flavors to collect different kinds of data:
  
 **Logstash**
 
+* Logstash is a powerful and flexible tool to read, process, and ship data of any kind and integrates the data from different external sources.
+* A common architectural pattern is to combine Beats and Logstash: use Beats to collect data and use Logstash to perform any data processing that Beats are not capable   of doing.
+* Logstash works by executing event processing pipelines, whereby each pipeline consists of at least one of each of the following:
 
+	1. Inputs:  read from data sources. Many data sources are officially supported, including files, http, imap, jdbc, kafka, syslog, tcp, and udp.
+	2. Filters: process and enrich the data in various ways. In many cases, unstructured log lines first need to be parsed into a more structured format. Logstash 		    therefore provides, among others, filters to parse CSV, JSON, key/value pairs, delimited unstructured data, and complex unstructured data on the basis 		    of regular expressions (grok filters). Logstash further provides filters to enrich data by performing DNS lookups, adding geoinformation about IP 			    addresses, or by performing lookups against a custom dictionary. Additional filters allow for diverse transformations of the data, for example, to rename, 			remove, copy data fields and values (mutate filter).
+	3.  Outputs: write the parsed and enriched data to data sinks and are the final stage of the Logstash processing pipeline.
  
 ![datacollection](datacollection1.PNG)
 
