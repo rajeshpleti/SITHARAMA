@@ -962,6 +962,36 @@ Beats come in various flavors to collect different kinds of data:
 	1. Inputs:  read from data sources. Many data sources are officially supported, including files, http, imap, jdbc, kafka, syslog, tcp, and udp.
 	2. Filters: process and enrich the data in various ways. In many cases, unstructured log lines first need to be parsed into a more structured format. Logstash 		    therefore provides, among others, filters to parse CSV, JSON, key/value pairs, delimited unstructured data, and complex unstructured data on the basis 		    of regular expressions (grok filters). Logstash further provides filters to enrich data by performing DNS lookups, adding geoinformation about IP 			    addresses, or by performing lookups against a custom dictionary. Additional filters allow for diverse transformations of the data, for example, to rename, 			remove, copy data fields and values (mutate filter).
 	3.  Outputs: write the parsed and enriched data to data sinks and are the final stage of the Logstash processing pipeline.
+
+
+```bash
+input {
+  file {
+         path => "/var/log/apache2/access.log"
+    start_position => "beginning"
+    sincedb_path => "/dev/null"
+  }
+}
+filter {
+    grok {
+      match => { "message" => "%{COMBINEDAPACHELOG}" }
+    }
+    date {
+    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+  geoip {
+      source => "clientip"
+    }
+}
+output {
+  elysiumsearch {
+    hosts => ["localhost:9200"]
+  }
+}
+
+
+```
+
  
 ![datacollection](datacollection1.PNG)
 
@@ -984,35 +1014,33 @@ Combine all your on-prem IT logs, enterprise network logs, cloud logs and networ
 Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
 Parse legacy device data sources in Logstash and modern data sources using JSON.
 
-Parser Name  Description
-
-
-MSFT Exchange	 Microsoft email events
-Windows Audit	Windows audit and sysmon events
-
-Bluecoat	Web proxy events
-WatchGuard - DNS	Web proxy DNS events
-WatchGuard - VPN	Web proxy VPN events
-Cisco ASA	Firewall and VPN events
-Windows Sysmon	Windows system monitoring events
-Symantec Endpoint Protection	Anti-virus events
-Barracuda	Web email events
-Palo Alto	Firewall, Proxy and VPN events
-Web Sphere	Web traffic events
-FireEye	 Web download traffic inspection events
-Source Fire	IDS events
-Bro/Zeek	Flow data
-Snort IDS	IDS events
-Netflow, IPFIX	  Flow data
-AWS	Cloud security events
-Azure	Cloud security events
-AS/400 and iSeries	Mainframe
-Box	Cloud services
-Checkpoint OPSEC/LEA	Firewall and VPN events
-Cisco SDEE	Content delivery events
-Cloud/SaaS solutions	Cloud events
-Cradlepoint	Network edge events
-Flat files (single-line and multi-line, compressed or uncompressed)	Custom flat file events
+|Parser Name| Description|
+|<--------->|<-------->|
+|MSFT Exchange|	 Microsoft email events|
+|Windows Audit|	Windows audit and sysmon events|
+|Bluecoat|	Web proxy events|
+|WatchGuard - DNS|	Web proxy DNS events|
+|WatchGuard - VPN|	Web proxy VPN events|
+|Cisco ASA|	Firewall and VPN events|
+|Windows Sysmon|	Windows system monitoring events|
+|Symantec Endpoint Protection|	Anti-virus events|
+|Barracuda|	Web email events|
+|Palo Alto|	Firewall, Proxy and VPN events|
+|Web Sphere|	Web traffic events|
+|FireEye|	 Web download traffic inspection events|
+|Source Fire|	IDS events|
+|Bro/Zeek|	Flow data|
+|Snort IDS|	IDS events|
+|Netflow, IPFIX	|  Flow data|
+|AWS|	Cloud security events|
+|Azure|	Cloud security events|
+|AS/400 and iSeries|	Mainframe|
+|Box|	Cloud services|
+|Checkpoint OPSEC/LEA|	Firewall and VPN events|
+|Cisco SDEE|	Content delivery events|
+|Cloud/SaaS solutions|	Cloud events|
+|Cradlepoint|	Network edge events|
+|Flat files (single-line and multi-line, compressed or uncompressed)|	Custom flat file events|
 
 
 
@@ -1056,6 +1084,11 @@ Enrich data in real time with Identity, Asset, Geolocation,Threat Intelligence, 
 pipeline,
 
 Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
+
+It has three prerequisites before you can use it in your pipeline:
+	- you need to have the source index from which we will get the enrichment data
+	- you need to define an enrich policy defining source indices, matched field and the appended fields
+	- you need to _execute the enrich policy to create an enrich index for the policy
 
 
 ## 5. Load your data        <span id="loaddata"><span>
