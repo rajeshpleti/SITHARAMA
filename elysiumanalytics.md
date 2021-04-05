@@ -1086,14 +1086,15 @@ pipeline,
 Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
 
 It has three prerequisites before you can use it in your pipeline:
-	- you need to have the source index from which we will get the enrichment data
-	- you need to define an enrich policy defining source indices, matched field and the appended fields
-	- you need to _execute the enrich policy to create an enrich index for the policy
+* you need to have the source index from which we will get the enrichment data
+* you need to define an enrich policy defining source indices, matched field and the appended fields
+* you need to _execute the enrich policy to create an enrich index for the policy
 
 
 ## 5. Load your data        <span id="loaddata"><span>
-lake is billed by the second and can be configured to continuous loading or batch loading. Since
-you are billed by the compute resources you consume, you can configure frequency and capacity based on what your needs are
+lake is billed by the second and can be configured to continuous loading or batch loading. 
+Elysium SaaS provides a low price for storage.
+
 
 
 ## 6. Add Threat Intelligence to your data         <span id="addthreat"><span>
