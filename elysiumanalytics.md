@@ -1015,7 +1015,7 @@ Parse, map, and group your data, in Elysium Analytics Open Data Model for full c
 Parse legacy device data sources in Logstash and modern data sources using JSON.
 
 |Parser Name| Description|
-|<--------->|<-------->|
+|:---------:|:--------:|
 |MSFT Exchange|	 Microsoft email events|
 |Windows Audit|	Windows audit and sysmon events|
 |Bluecoat|	Web proxy events|
