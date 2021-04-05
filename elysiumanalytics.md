@@ -95,7 +95,7 @@
 1. [Export the dashboard](#exportdashboard)
 
 
-## 7. Data Collection and Ingestion (#datacolection)
+## 7. Data Collection and Ingestion 
 
 1. [Collect your data/Shippers](#shippers)
 2. [Connectors and plugins](#connectyourdata)
