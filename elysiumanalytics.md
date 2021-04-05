@@ -912,7 +912,7 @@ To share the dashboard with a larger audience, click Share in the toolbar, then 
 To automate Kibana, you can export dashboards as JSON using the import and export dashboard APIs. It is important to export dashboards with all references needed.
 
 
-## 8. Data Collection and Ingestion :
+## 8. Data Collection and Ingestion :  <span id="datacolection"><span>
 
 
 *   Elysium Analytics provides a scalable, robust and flexible architecture, delivered as a service, that assures secure and reliable collection, parsing and loading of 	any type of log data as well as network traffic data into a cloud scale data lake built on top of Snowflake’s data warehouse.
@@ -926,7 +926,7 @@ To automate Kibana, you can export dashboards as JSON using the import and expor
 
 
 
-## 1. Collect your data/ Shippers
+## 1. Collect your data/ Shippers   <span id="shippers"><span>
 
 With integration to all your security and log sources, Elysium Analytics automatically collects all the data you need from any source; cloud, on-prem, or SIEM solution. Leveraging Kafka, Logstash, Beats, and Nifi.
 
@@ -935,7 +935,9 @@ network.
 
 Collect all log data from your all your security devices, on-premises and cloud implementations for a consolidated view of all activity across all your security solutions and retain the data for as long as you need to.
 
-## Elysium Beats
+![operational](operationalmain.PNG)
+
+**Elysium Beats**
 
 * Elysium Beats are a set of lightweight data shippers that allow to conveniently send data to data lake Service. 
 * Being lightweight, Beats do not incur much runtime overhead and they can therefore run and collect data on devices with limited hardware resources, such as IoT      		devices, edge device, or embedded devices. 
@@ -951,12 +953,28 @@ Beats come in various flavors to collect different kinds of data:
 
 ![beats](beats1.PNG)
  
-## 2. Connect to your data (Connectors and plugins)
+**Logstash**
+
+
+ 
+![datacollection](datacollection1.PNG)
+
+
+![datacollection2](datacollection2.PNG)
+ 
+## 2. Connect to your data (Connectors and plugins)      <span id="connectyourdata"><span>
 Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
 
+![awsconnectors](aws.PNG)
 
+![cloudapps1](cloudapps1.PNG)
 
-## 3. Parse your data
+![microsoftconnectors](microsoft1.PNG)
+
+**create custom connectors:**
+![createconnector](createconnector.PNG)
+
+## 3. Parse your data              <span id="parsedata"><span>
 Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
 Parse legacy device data sources in Logstash and modern data sources using JSON.
 
@@ -1026,7 +1044,7 @@ Vulnerability scanners (example sources):	Vulnerability events
 
 
 
-## 4. Enrich your data
+## 4. Enrich your data                <span id="enrichdata"><span>
 
 Enrich data in real time with Identity, Asset, Geolocation,Threat Intelligence, as well as data from lookup tables built into the storage platform data
 pipeline,
@@ -1034,20 +1052,41 @@ pipeline,
 Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
 
 
-## 5. Load your data
+## 5. Load your data        <span id="loaddata"><span>
 lake is billed by the second and can be configured to continuous loading or batch loading. Since
 you are billed by the compute resources you consume, you can configure frequency and capacity based on what your needs are
 
 
-## 6. Add Threat Intelligence to your data
+## 6. Add Threat Intelligence to your data         <span id="addthreat"><span>
 
 Enrich your data with Threat Intel and get a broad view of the threat landscape external to your organization allowing your security
 team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation. We have
 implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
 
 
-## 7. Cloud Apps
+## 7. Cloud Apps              <span id="cloudapps"><span>
 Collect, aggregate and analyze logs from any cloud application source. Simple setup. Get insights  from all your cloud applications, infrastructure, and devices.
+	
+	
+![cloudconnectors](cloudapps.PNG)
+
+## 8. Data Investigation Dashboards(#investigationdashboard)        <span id="investigationdashboard"><span>
+	
+![dataingestion](dataingestion.PNG)
+	
+![dataingestion2](dataingestion2.PNG)	
+	
+## 9. Data Ingestion tracking(#ingestiontracking)         <span id="ingestiontracking"><span>
+	
+![datatracking](datatracking.PNG)	
+
+
+## 10. Logstash Network Traffic Dashboards(#LogstashNetwork)   <span id="LogstashNetwork"><span>
+
+![logstash1.PNG](logstash1.PNG)
+
+
+
 
 
 
@@ -1118,7 +1157,7 @@ Overview of the Tiles in Dashboard
  
 
 
-Data Collection and Ingestion (#datacolection)
+## 7. Data Collection and Ingestion (#datacolection)
 
 1. Collect your data/Shippers(#shippers)
 2. Connectors and plugins (#connectyourdata)
