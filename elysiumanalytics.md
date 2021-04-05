@@ -97,16 +97,16 @@
 
 ## 7. Data Collection and Ingestion (#datacolection)
 
-1. Collect your data/Shippers(#shippers)
-2. Connectors and plugins (#connectyourdata)
-3. Parsing data(#parsedata)
-4. Enrich data(#enrichdata)
-5. Loading data(#loaddata)
-6. Add Threat intelligence to your data(#addthreat)
-7. Cloud Apps (#cloudapps)
-8. Data Investigation Dashboards(#investigationdashboard)
-9. Data Ingestion tracking(#ingestiontracking)
-10. Logstash Network Traffic Dashboards(#LogstashNetwork)
+1. [Collect your data/Shippers](#shippers)
+2. [Connectors and plugins] (#connectyourdata)
+3. [Parsing data](#parsedata)
+4. [Enrich data](#enrichdata)
+5. [Loading data](#loaddata)
+6. [Add Threat intelligence to your data](#addthreat)
+7. [Cloud Apps](#cloudapps)
+8. [Data Investigation Dashboards](#investigationdashboard)
+9. [Data Ingestion tracking](#ingestiontracking)
+10. [Logstash Network Traffic Dashboards](#LogstashNetwork)
 
 ## 8. Alerts
 	1. Alerts monitor
