@@ -101,7 +101,7 @@
 2. [Connectors and plugins](#connectyourdata)
 3. [Parsing data](#parsedata)
 4. [Enrich data](#enrichdata)
-5. [Loading data](#loaddata)
+5. [Load data to datalake](#loaddata)
 6. [Add Threat intelligence to your data](#addthreat)
 7. [Cloud Apps](#cloudapps)
 8. [Data Investigation Dashboards](#investigationdashboard)
@@ -1145,30 +1145,12 @@ It has three prerequisites before you can use it in your pipeline:
 * you need to _execute the enrich policy to create an enrich index for the policy
 
 
-## 5. Load your data        <span id="loaddata"><span>
+## 5. Load  data to datalake       <span id="loaddata"><span>
 * Data lake is billed by the second and can be configured to continuous loading or batch loading. 
 * Elysium SaaS provides a low price for storage when compared to other log analysis vendors. 
 * Elysium Analytics is running on Snowflake’s Data Cloud with
 separation of storage and compute. This is a major breakthrough as users can scale storage and
 compute completely independently and transparently as needed.
-* consider a case where there is a need to ingest 2TB of log data daily and retain
-the data for one year which adds up to 720TB ingested data. With Elysium Analytics, we will provide
-collection, parsing and loading (ELT) as a service.
-
-|Elysium Analytics cost|AWS Ultrawarm cost|Traditional Elasticsearch cost|
-|:---------|:--------|:---------|
-|Loading compute cost: $2,344|3 master nodes r5.2xl: $1,057|3 master nodes r5.2xl:$ 2,117
-|Storage compressed 10X: $1,656|37 Ultrawarm nodes: $70,416|132 data nodes i3.16xl:$ 502,396
-|Query compute cost:$2,160|720TB managed storage: $17,280|
-|Total monthly cost:$6,160| Total monthly cost: $88,753|Total monthly cost:$ 504,513
-
-
-
-
-
-
-
-
 
 
 ## 6. Add Threat Intelligence to your data         <span id="addthreat"><span>
@@ -1277,15 +1259,3 @@ Overview of the Tiles in Dashboard
  
 
 
-## 7. Data Collection and Ingestion (#datacolection)
-
-1. Collect your data/Shippers(#shippers)
-2. Connectors and plugins (#connectyourdata)
-3. Parsing data(#parsedata)
-4. Enrich data(#enrichdata)
-5. Loading data(#loaddata)
-6. Add Threat intelligence to your data(#addthreat)
-7. Cloud Apps (#cloudapps)
-8. Data Investigation Dashboards(#investigationdashboard)
-9. Data Ingestion tracking(#ingestiontracking)
-10. Logstash Network Traffic Dashboards(#LogstashNetwork)
