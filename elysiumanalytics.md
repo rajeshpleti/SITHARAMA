@@ -1058,7 +1058,7 @@ http_poller|Decodes the output of an HTTP API into events
 |relp|	Receives RELP events over a TCP socket|
 |rss|	Captures the output of command line tools as an event|
 |s3|	Streams events from files in a S3 bucket|
-|salesforce||	Creates events based on a Salesforce SOQL query|
+|salesforce|	Creates events based on a Salesforce SOQL query|
 |snmp|	Polls network devices using Simple Network Management Protocol (SNMP)|
 |snmptrap|	Creates events based on SNMP trap messages|
 |sqlite|	Creates events based on rows in an SQLite database|
@@ -1068,7 +1068,7 @@ http_poller|Decodes the output of an HTTP API into events
 |syslog|	Reads syslog messages as events|
 |tcp|	Reads events from a TCP socket|
 |twitter|	Reads events from the Twitter Streaming API|
-|udp||	Reads events over UDP|
+|udp|	Reads events over UDP|
 |unix|	Reads events over a UNIX socket|
 |varnishlog|	Reads from the varnish cache shared memory log|
 |websocket|	Reads events from a websocket|
