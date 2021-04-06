@@ -925,6 +925,7 @@ To automate Kibana, you can export dashboards as JSON using the import and expor
 *   Elysium supports, developed a broad library of Collectors, Parsers and Plug-ins that allows you to collect and load all security related data as well as data for 		context and enrichment into our data lake. Our data collection is delivered as a cloud service; all you need to do is to point your data sources to our 		infrastructure and we will take of it from there.
 
 
+![maincollection](main collection.png)
 
 ## 1. Collect your data/ Shippers   <span id="shippers"><span>
 
@@ -965,6 +966,7 @@ Beats come in various flavors to collect different kinds of data:
 
 
 ```bash
+Logstash Config file:
 input {
   file {
          path => "/var/log/apache2/access.log"
@@ -992,6 +994,7 @@ output {
 
 ```
 
+The following Eysium Data collection dashboards describes the sum of ingeated count by source, Total count of events per host, Data Collection for last 24 Hours and it can also provides filter the data collection events using time intervals.
  
 ![datacollection](datacollection1.PNG)
 
@@ -999,7 +1002,9 @@ output {
 ![datacollection2](datacollection2.PNG)
  
 ## 2. Connect to your data (Connectors and plugins)      <span id="connectyourdata"><span>
-Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
+* Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
+
+* Elysium connectors reduces the  client configuration setups requirements  to collect the data from various log sources.
 
 ![awsconnectors](aws.PNG)
 
@@ -1008,11 +1013,48 @@ Combine all your on-prem IT logs, enterprise network logs, cloud logs and networ
 ![microsoftconnectors](microsoft1.PNG)
 
 **create custom connectors:**
+Elysium connectors allow users and provides flexibility  to create own connectors to collect the data.
 ![createconnector](createconnector.PNG)
+
+|Plugin|Description|
+|:---------|:--------|
+
+|azure_event_hubs| Receives events from Azure Event Hubs|
+|beats	|Receives events from the Elastic Beats framework|
+|cloudwatch|	Pulls events from the Amazon Web Services CloudWatch API|
+
+|couchdb_changes|	Streams events from CouchDB’s _changes URI|
+|dead_letter_queue|	read events from Logstash’s dead letter queue|
+|elasticsearch|	Reads query results from an Elasticsearch cluster|
+|exec|	Captures the output of a shell command as an event|
+|file|	Streams events from files|
+
+
+|ganglia	Reads Ganglia packets over UDP
+gelf	Reads GELF-format messages from Graylog2 as events
+generator	Generates random log events for test purposes
+github	Reads events from a GitHub webhook
+google_cloud_storage	Extract events from files in a Google Cloud Storage bucket
+google_pubsub	Consume events from a Google Cloud PubSub service
+graphite	Reads metrics from the graphite tool
+heartbeat	Generates heartbeat events for testing
+http	Receives events over HTTP or HTTPS
+
+http_poller	
+Decodes the output of an HTTP API into events
+imap	Reads mail from an IMAP server
+irc	Reads events from an IRC server
+java_generator	Generates synthetic log events
+java_stdin	Reads events from standard input
+jdbc	Creates events from JDBC data
+jms	Reads events from a Jms Broker
+jmx	Retrieves metrics from remote Java applications over JMX
+kafka	Reads events from a Kafka topic
+kinesis	Receives events through an AWS Kinesis stream
 
 ## 3. Parse your data              <span id="parsedata"><span>
 Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
-Parse legacy device data sources in Logstash and modern data sources using JSON.
+Parse legacy device data sources in Logstash and modern data sources using different kind of suppoted formats.
 
 |Parser Name| Description|
 |:---------|:--------|
@@ -1041,40 +1083,33 @@ Parse legacy device data sources in Logstash and modern data sources using JSON.
 |Cloud/SaaS solutions|	Cloud events|
 |Cradlepoint|	Network edge events|
 |Flat files (single-line and multi-line, compressed or uncompressed)|	Custom flat file events|
-
-
-
-
-
-Flex Database Log Adapter for system and
+|Flex Database Log Adapter for system and
 custom logs written to database tables (e.g.,
 Oracle, SQL Server, MySQL) (ODBC & JDBC
-protocols)                                                 Custom db events
+protocols)|                                                 Custom db events|
 
+|Flow data (e.g., IPFIX, NetFlow, sFlow, J-Flow, SmartFlow) |   Flow data|
 
-
-Flow data (e.g., IPFIX, NetFlow, sFlow, J-Flow, SmartFlow)    Flow data
-
-McAfee A/V	Anti-virus events
-McAfee HIPS	Endpoint monitoring events
-MSFT IIS	Web traffic events
-Netflow, IPFIX	    Flow data
-Office 365	Microsoft Office 365 events
-Qualys   	Vulnerability events
-Rapid7	  Collectoin of web proxy events
-Redhat    Enterprise OS events
-Salesforce	CRM vents
-SNMP	Traps event
-Snort IDS	IDS events
-Sourcefire eStreamer IDS streaming events
-Squid	Web proxy events
-Symantec DLP	DLP events
-Tenable Security Center	 Security events
-UDP/TCP and secure syslog	Custom network events
-Vendor-specific APIs (example sources):	Collectoin of web proxy events
-Vulnerability scanners (example sources):	Vulnerability events
-Vendor-specific APIs (example sources):	Collectoin of web proxy events
-Vulnerability scanners (example sources):	Vulnerability events
+|McAfee A/V|	Anti-virus events|
+|McAfee HIPS|	Endpoint monitoring events|
+|MSFT IIS|	Web traffic events|
+|Netflow, IPFIX	|    Flow data|
+|Office 365|	Microsoft Office 365 events|
+|Qualys |  	Vulnerability events|
+|Rapid7	|  Collectoin of web proxy events|
+|Redhat |   Enterprise OS events|
+|Salesforce|	CRM vents|
+|SNMP|	Traps event|
+|Snort IDS|	IDS events|
+|Sourcefire eStreamer| IDS streaming events|
+|Squid|	Web proxy events|
+|Symantec DLP|	DLP events|
+|Tenable Security Center|	 Security events|
+|UDP/TCP and secure syslog|	Custom network events|
+|Vendor-specific APIs (example sources):|	Collectoin of web proxy events|
+|Vulnerability scanners (example sources):|	Vulnerability events|
+|Vendor-specific APIs (example sources):|	Collectoin of web proxy events|
+|Vulnerability scanners (example sources):|	Vulnerability events|
 
 
 
@@ -1092,8 +1127,8 @@ It has three prerequisites before you can use it in your pipeline:
 
 
 ## 5. Load your data        <span id="loaddata"><span>
-lake is billed by the second and can be configured to continuous loading or batch loading. 
-Elysium SaaS provides a low price for storage.
+data lake is billed by the second and can be configured to continuous loading or batch loading. 
+Elysium SaaS provides a low price for storage when compared to other vendors. 
 
 
 
