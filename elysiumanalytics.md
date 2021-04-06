@@ -1158,7 +1158,7 @@ collection, parsing and loading (ELT) as a service.
 |Elysium Analytics cost|AWS Ultrawarm cost|Traditional Elasticsearch cost|
 |:---------|:--------|:---------|
 |Loading compute cost: $2,344|3 master nodes r5.2xl: $1,057|3 master nodes r5.2xl:$ 2,117
-|Storage compressed 10X: $1,656||37 Ultrawarm nodes: $70,416|132 data nodes i3.16xl:$ 502,396
+|Storage compressed 10X: $1,656|37 Ultrawarm nodes: $70,416|132 data nodes i3.16xl:$ 502,396
 |Query compute cost:$2,160|720TB managed storage: $17,280|
 |Total monthly cost:$6,160| Total monthly cost: $88,753|Total monthly cost:$ 504,513
 
