@@ -925,7 +925,7 @@ To automate Kibana, you can export dashboards as JSON using the import and expor
 *   Elysium supports, developed a broad library of Collectors, Parsers and Plug-ins that allows you to collect and load all security related data as well as data for 		context and enrichment into our data lake. Our data collection is delivered as a cloud service; all you need to do is to point your data sources to our 		infrastructure and we will take of it from there.
 
 
-![maincollection](main collection.png)
+![maincollection](maincollection.png)
 
 ## 1. Collect your data/ Shippers   <span id="shippers"><span>
 
@@ -1018,19 +1018,15 @@ Elysium connectors allow users and provides flexibility  to create own connector
 
 |Plugin|Description|
 |:---------|:--------|
-
 |azure_event_hubs| Receives events from Azure Event Hubs|
 |beats	|Receives events from the Elastic Beats framework|
 |cloudwatch|	Pulls events from the Amazon Web Services CloudWatch API|
-
 |couchdb_changes|	Streams events from CouchDB’s _changes URI|
 |dead_letter_queue|	read events from Logstash’s dead letter queue|
 |elasticsearch|	Reads query results from an Elasticsearch cluster|
 |exec|	Captures the output of a shell command as an event|
 |file|	Streams events from files|
-
-
-|ganglia	Reads Ganglia packets over UDP
+|ganglia|	Reads Ganglia packets over UDP|
 gelf	Reads GELF-format messages from Graylog2 as events
 generator	Generates random log events for test purposes
 github	Reads events from a GitHub webhook
@@ -1083,13 +1079,8 @@ Parse legacy device data sources in Logstash and modern data sources using diffe
 |Cloud/SaaS solutions|	Cloud events|
 |Cradlepoint|	Network edge events|
 |Flat files (single-line and multi-line, compressed or uncompressed)|	Custom flat file events|
-|Flex Database Log Adapter for system and
-custom logs written to database tables (e.g.,
-Oracle, SQL Server, MySQL) (ODBC & JDBC
-protocols)|                                                 Custom db events|
-
+|Flex Database Log Adapter for system and custom logs written to database tables (e.g., Oracle, SQL Server, MySQL) (ODBC & JDBC protocols)|Custom db events|
 |Flow data (e.g., IPFIX, NetFlow, sFlow, J-Flow, SmartFlow) |   Flow data|
-
 |McAfee A/V|	Anti-virus events|
 |McAfee HIPS|	Endpoint monitoring events|
 |MSFT IIS|	Web traffic events|
@@ -1106,10 +1097,10 @@ protocols)|                                                 Custom db events|
 |Symantec DLP|	DLP events|
 |Tenable Security Center|	 Security events|
 |UDP/TCP and secure syslog|	Custom network events|
-|Vendor-specific APIs (example sources):|	Collectoin of web proxy events|
-|Vulnerability scanners (example sources):|	Vulnerability events|
-|Vendor-specific APIs (example sources):|	Collectoin of web proxy events|
-|Vulnerability scanners (example sources):|	Vulnerability events|
+|Vendor-specific APIs (example sources)|	Collectoin of web proxy events|
+|Vulnerability scanners (example sources)|	Vulnerability events|
+|Vendor-specific APIs (example sources)|	Collectoin of web proxy events|
+|Vulnerability scanners (example sources)|	Vulnerability events|
 
 
 
