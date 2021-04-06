@@ -1048,6 +1048,33 @@ http_poller|Decodes the output of an HTTP API into events
 |jmx|	Retrieves metrics from remote Java applications over JMX|
 |kafka|	Reads events from a Kafka topic|
 |kinesis|	Receives events through an AWS Kinesis stream|
+|log4j|	Reads events over a TCP socket from a Log4j SocketAppender object|
+|lumberjack|	Receives events using the Lumberjack protocl|
+|meetup|	Captures the output of command line tools as an event|
+|pipe|	Streams events from a long-running command pipe|
+|puppet_facter|	Receives facts from a Puppet server|
+|rabbitmq|	Pulls events from a RabbitMQ exchange|
+|redis|	Reads events from a Redis instance|
+|relp|	Receives RELP events over a TCP socket|
+|rss|	Captures the output of command line tools as an event|
+|s3|	Streams events from files in a S3 bucket|
+|salesforce||	Creates events based on a Salesforce SOQL query|
+|snmp|	Polls network devices using Simple Network Management Protocol (SNMP)|
+|snmptrap|	Creates events based on SNMP trap messages|
+|sqlite|	Creates events based on rows in an SQLite database|
+|sqs|	Pulls events from an Amazon Web Services Simple Queue Service queue|
+|stdin|	Reads events from standard input|
+|stomp|	Creates events received with the STOMP protocol|
+|syslog|	Reads syslog messages as events|
+|tcp|	Reads events from a TCP socket|
+|twitter|	Reads events from the Twitter Streaming API|
+|udp||	Reads events over UDP|
+|unix|	Reads events over a UNIX socket|
+|varnishlog|	Reads from the varnish cache shared memory log|
+|websocket|	Reads events from a websocket|
+|wmi|	Creates events based on the results of a WMI query|
+|xmpp|	Receives events over the XMPP/Jabber protocol|
+
 
 ## 3. Parse your data              <span id="parsedata"><span>
 Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
