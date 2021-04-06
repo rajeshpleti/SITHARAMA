@@ -1135,7 +1135,7 @@ Parse legacy device data sources in Logstash and modern data sources using diffe
 ## 4. Enrich your data                <span id="enrichdata"><span>
 
 Enrich data in real time with Identity, Asset, Geolocation,Threat Intelligence, as well as data from lookup tables built into the storage platform data
-pipeline,
+pipeline.
 
 Context enrichment adds event and non-event contextual information to security event data in order to transform raw data into meaningful insights. User typically enrich with geo data, asset lookup data, and more.
 
@@ -1146,36 +1146,62 @@ It has three prerequisites before you can use it in your pipeline:
 
 
 ## 5. Load your data        <span id="loaddata"><span>
-data lake is billed by the second and can be configured to continuous loading or batch loading. 
-Elysium SaaS provides a low price for storage when compared to other vendors. 
+* Data lake is billed by the second and can be configured to continuous loading or batch loading. 
+* Elysium SaaS provides a low price for storage when compared to other log analysis vendors. 
+* Elysium Analytics is running on Snowflake’s Data Cloud with
+separation of storage and compute. This is a major breakthrough as users can scale storage and
+compute completely independently and transparently as needed.
+* consider a case where there is a need to ingest 2TB of log data daily and retain
+the data for one year which adds up to 720TB ingested data. With Elysium Analytics, we will provide
+collection, parsing and loading (ELT) as a service.
+
+|Elysium Analytics cost|AWS Ultrawarm cost|Traditional Elasticsearch cost|
+|:---------|:--------|:---------|
+|Loading compute cost: $2,344|3 master nodes r5.2xl: $1,057|3 master nodes r5.2xl:$ 2,117
+|Storage compressed 10X: $1,656||37 Ultrawarm nodes: $70,416|132 data nodes i3.16xl:$ 502,396
+|Query compute cost:$2,160|720TB managed storage: $17,280|
+|Total monthly cost:$6,160| Total monthly cost: $88,753|Total monthly cost:$ 504,513
+
+
+
+
+
+
+
 
 
 
 ## 6. Add Threat Intelligence to your data         <span id="addthreat"><span>
 
 Enrich your data with Threat Intel and get a broad view of the threat landscape external to your organization allowing your security
-team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation. We have
-implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
+team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation.
+We have implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
 
 
 ## 7. Cloud Apps              <span id="cloudapps"><span>
-Collect, aggregate and analyze logs from any cloud application source. Simple setup. Get insights  from all your cloud applications, infrastructure, and devices.
+Collect, aggregate and analyze logs from any cloud application source. Simple setup, get insights  from all your cloud applications, infrastructure, and devices.
 	
 	
 ![cloudconnectors](cloudapps.PNG)
 
-## 8. Data Investigation Dashboards(#investigationdashboard)        <span id="investigationdashboard"><span>
+## 8. Data Investigation Dashboards        <span id="investigationdashboard"><span>
+
+Data Investigation dashboards represents data stream processing of statistics, counts by each source, min, max, average time in hours to process events.
+It also provides time delay Notfications, alerts during failures of ingestion of data. 
 	
 ![dataingestion](dataingestion.PNG)
 	
 ![dataingestion2](dataingestion2.PNG)	
 	
-## 9. Data Ingestion tracking(#ingestiontracking)         <span id="ingestiontracking"><span>
-	
+## 9. Data Ingestion tracking         <span id="ingestiontracking"><span>
+
+Data Ingestion Tracking dashboard provides aggregation of date, Source name, type, host  of events list 
+
+
 ![datatracking](datatracking.PNG)	
 
 
-## 10. Logstash Network Traffic Dashboards(#LogstashNetwork)   <span id="LogstashNetwork"><span>
+## 10. Logstash Network Traffic Dashboards   <span id="LogstashNetwork"><span>
 
 ![logstash1.PNG](logstash1.PNG)
 
