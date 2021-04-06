@@ -1019,10 +1019,12 @@ Elysium connectors allow users and provides flexibility  to create own connector
 |Plugin|Description|
 |:---------|:--------|
 |azure_event_hubs| Receives events from Azure Event Hubs|
-|beats	|Receives events from the Elastic Beats framework|
-|cloudwatch|	Pulls events from the Amazon Web Services CloudWatch API|
-|couchdb_changes|	Streams events from CouchDB’s _changes URI|
-|dead_letter_queue|	read events from Logstash’s dead letter queue|
+|beats|Receives events from the Elastic Beats framework|
+|cloudwatch|Pulls events from the Amazon Web Services CloudWatch API|
+
+
+|couchdb_changes|Streams events from CouchDB’s _changes URI|
+|dead_letter_queue|read events from Logstash’s dead letter queue|
 |elasticsearch|	Reads query results from an Elasticsearch cluster|
 |exec|	Captures the output of a shell command as an event|
 |file|	Streams events from files|
@@ -1079,7 +1081,7 @@ Parse legacy device data sources in Logstash and modern data sources using diffe
 |Cloud/SaaS solutions|	Cloud events|
 |Cradlepoint|	Network edge events|
 |Flat files (single-line and multi-line, compressed or uncompressed)|	Custom flat file events|
-|Flex Database Log Adapter for system and custom logs written to database tables (e.g., Oracle, SQL Server, MySQL) (ODBC & JDBC protocols)|Custom db events|
+|Flex Database Log Adapter for system and custom logs written to database tables(e.g.,Oracle, SQL Server,MySQL)(ODBC & JDBC protocols)|Custom db events|
 |Flow data (e.g., IPFIX, NetFlow, sFlow, J-Flow, SmartFlow) |   Flow data|
 |McAfee A/V|	Anti-virus events|
 |McAfee HIPS|	Endpoint monitoring events|
