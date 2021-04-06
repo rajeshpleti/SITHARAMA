@@ -1004,7 +1004,7 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 ## 2. Connect to your data (Connectors and plugins)      <span id="connectyourdata"><span>
 * Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
 
-* Elysium connectors reduces the  client configuration setups requirements  to collect the data from various log sources.
+* Elysium connectors and plugins reduces the  client configuration setups requirements  to collect the data from various log sources.
 
 ![awsconnectors](aws.PNG)
 
@@ -1016,39 +1016,38 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 Elysium connectors allow users and provides flexibility  to create own connectors to collect the data.
 ![createconnector](createconnector.PNG)
 
+
+**Elysium Plugins**
+
 |Plugin|Description|
 |:---------|:--------|
 |azure_event_hubs| Receives events from Azure Event Hubs|
 |beats|Receives events from the Elastic Beats framework|
 |cloudwatch|Pulls events from the Amazon Web Services CloudWatch API|
-
-
 |couchdb_changes|Streams events from CouchDB’s _changes URI|
 |dead_letter_queue|read events from Logstash’s dead letter queue|
-|elasticsearch|	Reads query results from an Elasticsearch cluster|
-|exec|	Captures the output of a shell command as an event|
-|file|	Streams events from files|
-|ganglia|	Reads Ganglia packets over UDP|
-gelf	Reads GELF-format messages from Graylog2 as events
-generator	Generates random log events for test purposes
-github	Reads events from a GitHub webhook
-google_cloud_storage	Extract events from files in a Google Cloud Storage bucket
-google_pubsub	Consume events from a Google Cloud PubSub service
-graphite	Reads metrics from the graphite tool
-heartbeat	Generates heartbeat events for testing
-http	Receives events over HTTP or HTTPS
-
-http_poller	
-Decodes the output of an HTTP API into events
-imap	Reads mail from an IMAP server
-irc	Reads events from an IRC server
-java_generator	Generates synthetic log events
-java_stdin	Reads events from standard input
-jdbc	Creates events from JDBC data
-jms	Reads events from a Jms Broker
-jmx	Retrieves metrics from remote Java applications over JMX
-kafka	Reads events from a Kafka topic
-kinesis	Receives events through an AWS Kinesis stream
+|elasticsearch|Reads query results from an Elasticsearch cluster|
+|exec|Captures the output of a shell command as an event|
+|file|Streams events from files|
+|ganglia|Reads Ganglia packets over UDP|
+|gelf|Reads GELF-format messages from Graylog2 as events|
+|generator|	Generates random log events for test purposes|
+|github|Reads events from a GitHub webhook|
+|google_cloud_storage|	Extract events from files in a Google Cloud Storage bucket|
+|google_pubsub|	Consume events from a Google Cloud PubSub service|
+|graphite|Reads metrics from the graphite tool|
+|heartbeat|Generates heartbeat events for testing|
+|http|	Receives events over HTTP or HTTPS|
+http_poller|Decodes the output of an HTTP API into events
+|imap|	Reads mail from an IMAP server|
+|irc|	Reads events from an IRC server|
+|java_generator|	Generates synthetic log events|
+|java_stdin|	Reads events from standard input|
+|jdbc|	Creates events from JDBC data|
+|jms|	Reads events from a Jms Broker|
+|jmx|	Retrieves metrics from remote Java applications over JMX|
+|kafka|	Reads events from a Kafka topic|
+|kinesis|	Receives events through an AWS Kinesis stream|
 
 ## 3. Parse your data              <span id="parsedata"><span>
 Parse, map, and group your data, in Elysium Analytics Open Data Model for full context and fast, analytics.
