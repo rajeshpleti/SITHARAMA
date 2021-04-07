@@ -995,6 +995,7 @@ output {
 ```
 
 The following Eysium Data collection dashboards describes the sum of ingeated count by source, Total count of events per host, Data Collection for last 24 Hours and it can also provides filter the data collection events using time intervals.
+
  
 ![datacollection](datacollection1.PNG)
 
@@ -1170,6 +1171,23 @@ Collect, aggregate and analyze logs from any cloud application source. Simple se
 
 Data Investigation dashboards represents data stream processing of statistics, counts by each source, min, max, average time in hours to process events.
 It also provides time delay Notfications, alerts during failures of ingestion of data. 
+
+Data Stream Processing Statistics,Data Streaming Processing Counts (Event Time Processing Time) of the below source types.
+ 
+1. Microsoft Windows Security Auditing
+1. Microsoft Windows Security Auditing Network Traffic
+1. Microsoft Windows Sysmon
+1. Symantec EndPoint Protection Client
+1. Symantec Network Protection
+1. WatchGuard NetworkTraffic
+1. WatchGuard Events and Alarm
+1. WatchGuard NetFlow
+1. Microsoft Exchange-Internet Information Server (Active Sync & OWA)
+1. Microsoft Exchange-Message Tracking Log
+1. Microsoft Exchange-Connectivity Log
+1. Microsoft Exchange-Agent Log
+1. Active Directory Computers
+1. Active Directory Users
 	
 ![dataingestion](dataingestion.PNG)
 	
@@ -1184,6 +1202,8 @@ Data Ingestion Tracking dashboard provides aggregation of date, Source name, typ
 
 
 ## 10. Logstash Network Traffic Dashboards   <span id="LogstashNetwork"><span>
+	
+Logstash Network traffic Dashboard describes start time, endtime by each source and geo location to processing events list.
 
 ![logstash1.PNG](logstash1.PNG)
 
