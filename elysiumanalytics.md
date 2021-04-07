@@ -1160,6 +1160,15 @@ Enrich your data with Threat Intel and get a broad view of the threat landscape 
 team to more effectively detect threats, measure overall relevant risk exposure, and become more effective at mitigation.
 We have implemented a RESTful API as well as STIX & TAXII support for simple ingestion into our data lake.
 
+Elysium provides a unique AI driven security analytics platform that comes with a wide array of ML based security outcomes and behavioral models to help organizations detect and respond to advanced cyber attacks.  
+
+Elysium also has a wide variety of built-in ML algorithms to solve specific threat detection use cases such as Beaconing threat, DGA, K-Means Clustering, One-Class SVM, Isolation etc.
+
+Elysium models score each of the contributing events and profiler statistics and are rolled up into user and entity scores.
+
+** Real Time Threat Detection:** 
+One of the key security issues that Elysium attempts to address is detecting the threats in real-time, as early as the data ingestion stage. In order to arrive at this, Elysium uses an optimized data profiling mechanism built into the data ingestion pipeline along with the real-time alert framework with very low latency by bringing these computations to the data storage layer.
+
 
 ## 7. Cloud Apps              <span id="cloudapps"><span>
 Collect, aggregate and analyze logs from any cloud application source. Simple setup, get insights  from all your cloud applications, infrastructure, and devices.
