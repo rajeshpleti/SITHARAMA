@@ -109,14 +109,19 @@
 10. [Logstash Network Traffic Dashboards](#LogstashNetwork)
 
 ## 8. Alerts
-	1. Alerts monitor
-	2. Scheduled searches
-	3. Alert rules
-	4. Alert creation
-	5. Alert action
-	6. Alert Notification
-	7. Alert Dashboards
-	8. Drill Down Alerts
+	1. Alerts monitoring
+	2. Alerts by Severity, Type, Source
+	3. Alert Filters by Users/Entity's based on Time Intervals 
+	4. Alert rules
+	5. Alert Dashboards
+	6. Alert creation
+	7. Alert action
+	8. Alert Notification
+	9. 
+	10. Drill Down Alerts
+	11. 
+	12. Scheduled searches
+	13. 
 
 ## 9. Search
 
