@@ -112,16 +112,20 @@
 	1. Alerts monitoring
 	2. Alerts by Severity, Type, Source
 	3. Alert Filters by Users/Entity's based on Time Intervals 
+	   - Top 10 Risky Users and Enity's
 	4. Alert rules
 	5. Alert Dashboards
-	6. Alert creation
+	6. Alert creation and manage alert rules
+		- Aggregate Based
+		- Rulebased
+		- Profilebased
+		- Custom alert Creation
+
 	7. Alert action
 	8. Alert Notification
-	9. 
-	10. Drill Down Alerts
-	11. 
-	12. Scheduled searches
-	13. 
+	9. Drill Down Alerts
+	10.Scheduled searches
+	
 
 ## 9. Search
 
