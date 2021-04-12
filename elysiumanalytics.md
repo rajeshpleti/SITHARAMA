@@ -123,7 +123,7 @@
 7. [Alert action](#alertaction)
 8. [Alert Notification](#alertnotification)
 9. [Drill Down Alerts](#drilldownalerts)
-10.[Scheduled searches](#Scheduledsearches)
+10. [Scheduled searches](#Scheduledsearches)
 	
 
 ## 9. Search
