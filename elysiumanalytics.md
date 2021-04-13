@@ -127,27 +127,26 @@
 	
 
 ## 9. Search
-
-1.Search basics
-1.Search query language (KQL)
-1.KQL Introduction
-1.Search multiple fields
-1.Grouped together
-1.Terms query
-1.Boolean queries
-1.Range queries
-1.Date range queries
-1.Exist queries
-1.Wildcard queries
-1.Nested field queries (Subqueries)
-1.Optimize Search Performance
-1.General Search Examples
-1.Supported Logs
-1.Standard Fields (ODM)
-1.Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
-1.Save query, search
-1.Index Management
-1.Create Filters and search 
+1. Search basics
+2. Search query language (KQL)
+	* KQL Introduction
+	* Search multiple fields
+	* Grouped together
+	* Terms query
+	* Boolean queries
+	* Range queries
+	* Date range queries
+	* Exist queries
+	* Wildcard queries
+	* Nested field queries (Subqueries)
+3. Optimize Search Performance
+4. General Search Examples
+5. Supported Logs
+6. Standard Fields (ODM)
+7. Backend snowflake integration, SQL Opendistro query support for Elysium kibana search
+8. Save query, search
+9. Index Management
+10. Create Filters and search 
 
 ## 8. Manage and Monitoring
 1. Ingestion and Volumes
@@ -1047,7 +1046,7 @@ Elysium connectors allow users and provides flexibility  to create own connector
 |graphite|Reads metrics from the graphite tool|
 |heartbeat|Generates heartbeat events for testing|
 |http|	Receives events over HTTP or HTTPS|
-http_poller|Decodes the output of an HTTP API into events
+|http_poller|Decodes the output of an HTTP API into events|
 |imap|	Reads mail from an IMAP server|
 |irc|	Reads events from an IRC server|
 |java_generator|	Generates synthetic log events|
