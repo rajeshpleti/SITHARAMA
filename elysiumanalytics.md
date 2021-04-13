@@ -1230,10 +1230,14 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 
 ## 1. Alerts monitoring  <span id="alertmonitoring"><span>
 	
-	
+![mainalerts](mainalerts.PNG)	
 ## 2. Alerts by Severity,Type, Source    <span id="AlertsbySeverityTypeSource"><span> 
 	
-	
+
+![alertsdashboard1](alertsdashboard1.PNG)
+
+![alertsdashboard2.PNG](alertsdashboard2.PNG)
+
 ## 3. Alert Filters by Users/Entity's based on Time Intervals   <span id="alertuserenity"><span> 
 	
 	
@@ -1242,30 +1246,44 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 ## 4. Alert rules   <span id="alertrules"><span>
 	
 	
-	
+![MITRE1](MITRE1.PNG)	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
 	
-	
+![alertsdashboard3](alertsdashboard3.PNG)	
 	
 ## 6. Alert creation and manage alert rules   <span id="alertcreationandmanagement"><span>
 	
-	* Aggregate Based    <span id="AggregateBased"><span>
+* Aggregate Based    <span id="AggregateBased"><span>
 	
-	* Rulebased   	<span id="Rulebased"><span>
-	
-	* Profilebased   <span id="Profilebased"><span>
-	
-	* Custom alert Creation   <span id="customalert"><span>
+![aggregatebasedalerts](aggregatebasedalerts.PNG)	
+
+* Rulebased   	<span id="Rulebased"><span>
+
+
+![Rulebased](Rulebased.PNG)
+
+* Profilebased   <span id="Profilebased"><span>
+
+![profilebased](profilebased.PNG)
+
+* Custom alert Creation   <span id="customalert"><span>
+
+![Customqueryalert](Customqueryalert.PNG)
 
 ## 7. Alert action         <span id="alertaction"><span>
 	
-	
+![alerttable](alerttable.PNG)	
 ## 8. Alert Notification   <span id="alertnotification"><span>
 	
 	
 ## 9. Drill Down Alerts    <span id="drilldownalerts"><span>
-	
+
+
+![alertdashboard4](alertdashboard4.PNG)
+
+
+![Dashboard5](Dashboard5.PNG)
 	
 ## 10. Scheduled searches   <span id="Scheduledsearches"><span>
 	
