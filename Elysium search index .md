@@ -34,7 +34,7 @@
 8	Lookup Tables
 
 
-Kibana is the default visualization tool for data in Elasticsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
+Kibana is the default visualization tool for data in Elysiumsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management plugins.
 
 
 
@@ -406,7 +406,7 @@ For example, each data source has a time that an event occurred, but each data s
 |DST_HOST_ID|VARCHAR(16777216)|
 |DST_PROC_NAME|VARCHAR(16777216)|
 |DST_IP|VARCHAR(16777216)|
-DST_PORT|NUMBER(38,0)|
+|DST_PORT|NUMBER(38,0)|
 |DST_USER_ID|VARCHAR(16777216)|
 |SRC_GEO_COUNTRY|VARCHAR(16777216)|
 |SRC_GEO_CITY|VARCHAR(16777216)|
@@ -571,13 +571,13 @@ If the saved search is associated with a different index pattern than is current
 
 ## 9. Index Management <span id="indexmanagement"><span>
 
-Kibana requires an index pattern to access the Elasticsearch data that you want to explore. An index pattern selects the data to use and allows you to define properties of the fields.
+Kibana requires an index pattern to access the Elysiumsearch data that you want to explore. An index pattern selects the data to use and allows you to define properties of the fields.
 	* Create an index pattern
 	* Explore and configure the data fields
 	* Set the default index pattern
 	* Delete an index pattern
 
-* To access the Index Patterns view, you must have the Kibana privilege Index Pattern Management. To create an index pattern, you must have the Elasticsearch privilege view_index_metadata. To add the privileges, open the main menu, then click Stack Management > Roles.
+* To access the Index Patterns view, you must have the Kibana privilege Index Pattern Management. To create an index pattern, you must have the Elysiumsearch privilege view_index_metadata. To add the privileges, open the main menu, then click Stack Management > Roles.
 * If a read-only indicator appears in Kibana, you have insufficient privileges to create or save index patterns. The buttons to create new index patterns or save existing index patterns are not visible. For more information, refer to Granting access to Kibana.
 
 ### Create an index pattern
@@ -588,7 +588,7 @@ If you collected data using one of the Kibana ingest options, uploaded a file, o
 
 ![create index](create-index-pattern.png)
 
-3. Start typing in the Index pattern field, and Kibana looks for the names of Elasticsearch indices that match your input.
+3. Start typing in the Index pattern field, and Kibana looks for the names of Elysiumsearch indices that match your input.
 	* Use a wildcard (*) to match multiple indices. For example, suppose your system creates indices for Apache data using the naming scheme filebeat-apache-a, filebeat-		apache-b, and so on. An index pattern named filebeat-a matches a single source, and filebeat-* matches multiple data sources. Using a wildcard is the most popular approach.
 	* Select multiple indices by entering multiple strings, separated with a comma. Make sure there is no space after the comma. For example, filebeat-a,filebeat-b matches two indices, but not other indices you might have afterwards (filebeat-c).Use a minus sign (-) to exclude an index, for example, test*,-test3.
 
@@ -596,7 +596,7 @@ If you collected data using one of the Kibana ingest options, uploaded a file, o
 5. If Kibana detects an index with a timestamp, expand the Time field menu, and then specify the default field for filtering your data by time.
 
 * Note: If your index doesn’t have time-based data, or if you don’t want to select the default timestamp field, choose I don’t want to use the Time Filter.
-6. Click Create index pattern. Kibana is now configured to use your Elasticsearch data.
+6. Click Create index pattern. Kibana is now configured to use your Elysiumsearch data.
 
 7. Select this index pattern when you search and visualize your data.
 
@@ -607,7 +607,7 @@ An index pattern can match one rollup index. For a combination rollup index patt
 rollup_logstash,kibana_sample_data_logs
 ```
 ###  Create an index pattern that searches across clusters
-If your Elasticsearch clusters are configured for cross-cluster search, you can create an index pattern to search across the clusters of your choosing. 
+If your Elysiumsearch clusters are configured for cross-cluster search, you can create an index pattern to search across the clusters of your choosing. 
 
 ```bash
 <cluster-names>:<pattern>
@@ -615,17 +615,17 @@ cluster_one:logstash-*,cluster_two:logstash-*
 ```
 
 ###  Explore and configure the data fields
-To explore and configure the data fields in your index pattern, open the main menu, then click Stack Management > Index Patterns. Each field has a mapping,indicates the type of data the field contains in Elasticsearch, such as strings or boolean values. The field mapping also determines how you can use the field as searched or aggregated data.
+To explore and configure the data fields in your index pattern, open the main menu, then click Stack Management > Index Patterns. Each field has a mapping,indicates the type of data the field contains in Elysiumsearch, such as strings or boolean values. The field mapping also determines how you can use the field as searched or aggregated data.
 
 ![explore fields](new-index-pattern.png)
 
 ### Format the display of common field types
 
-Using field formatters, you can manually change the field type in Kibana to display your data the way you prefer to see it, regardless of how it is stored in Elasticsearch.
+Using field formatters, you can manually change the field type in Kibana to display your data the way you prefer to see it, regardless of how it is stored in Elysiumsearch.
 
-For example, if you store date values in Elasticsearch, you can use a Kibana field formatter to change the display to mm/dd/yyyy format. Kibana has field formatters for strings, dates, geopoints, and numbers.
+For example, if you store date values in Elysiumsearch, you can use a Kibana field formatter to change the display to mm/dd/yyyy format. Kibana has field formatters for strings, dates, geopoints, and numbers.
 
-To customize the displayed field name provided by Elasticsearch, you can use Custom Label .
+To customize the displayed field name provided by Elysiumsearch, you can use Custom Label .
 
 A popularity counter keeps track of the fields you use most often. The top five most popular fields and their values are displayed in Discover.
 To edit the field display, click the edit icon (edit icon) in the index pattern detail view.
@@ -639,7 +639,7 @@ The first index pattern you create is automatically designated as the default pa
 2. Click the star icon.
 
 ### Delete an index pattern
-This action removes the pattern from the list of saved objects in Kibana. You will not be able to recover field formatters, scripted fields, source filters, and field popularity data associated with the index pattern. Deleting an index pattern does not remove any indices or data documents from Elasticsearch.
+This action removes the pattern from the list of saved objects in Kibana. You will not be able to recover field formatters, scripted fields, source filters, and field popularity data associated with the index pattern. Deleting an index pattern does not remove any indices or data documents from Elysiumsearch.
 
 * Note : Deleting an index pattern breaks all visualizations, saved searches, and other saved objects that reference the pattern.
 
@@ -656,6 +656,15 @@ In Kibana, we can filter transactions by clicking on elements within a visualiza
 The selected filters appear under the search box.
 
 ![filter results](kibana-filters.png)
+
+
+
+
+
+
+
+
+
 
 
 #    Rough 
