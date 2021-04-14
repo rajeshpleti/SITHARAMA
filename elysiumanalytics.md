@@ -116,14 +116,16 @@
 4. [Alert rules](#alertrules)
 5. [Alert Dashboards](#alertdashboard)
 6. [Alert creation and manage alert rules](#alertcreationandmanagement)
+	- Behaviour Based
 	* [Aggregate Based](#AggregateBased)
+	* TIME SERIES
 	* [Rulebased](#Rulebased)
 	* [Profilebased](#Profilebased)
 	* [Custom alert Creation](#customalert)
 7. [Alert action](#alertaction)
 8. [Alert Notification](#alertnotification)
 9. [Drill Down Alerts](#drilldownalerts)
-10. [Scheduled searches](#Scheduledsearches)
+10. [Report Scheduler](#Scheduledsearches)
 	
 
 ## 9. Search
@@ -1254,9 +1256,19 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 	
 ## 6. Alert creation and manage alert rules   <span id="alertcreationandmanagement"><span>
 	
-* Aggregate Based    <span id="AggregateBased"><span>
+	- Behaviour Based
 	
-![aggregatebasedalerts](aggregatebasedalerts.PNG)	
+	
+	
+* Aggregate Based    <span id="AggregateBased"><span>
+
+
+	
+![aggregatebasedalerts](aggregatebasedalerts.PNG)
+
+
+* TIME SERIES
+
 
 * Rulebased   	<span id="Rulebased"><span>
 
@@ -1285,7 +1297,7 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 
 ![Dashboard5](Dashboard5.PNG)
 	
-## 10. Scheduled searches   <span id="Scheduledsearches"><span>
+## 10. Report Scheduler   <span id="Scheduledsearches"><span>
 	
 
 
@@ -1355,4 +1367,22 @@ Overview of the Tiles in Dashboard
 	Tiles (7 & 8) shows last 15 days of data with Risk Score >=50
  
 
-
+## 8. Alerts
+1. [Alerts monitoring](#alertmonitoring)
+2. [Alerts by Severity,Type, Source](#AlertsbySeverityTypeSource)
+3. [Alert Filters by Users/Entity's based on Time Intervals](#alertuserenity) 
+	* [Top 10 Risky Users and Enity's](#top10risky)
+4. [Alert rules](#alertrules)
+5. [Alert Dashboards](#alertdashboard)
+6. [Alert creation and manage alert rules](#alertcreationandmanagement)
+	- Behaviour Based
+	* [Aggregate Based](#AggregateBased)
+	* TIME SERIES
+	* [Rulebased](#Rulebased)
+	* [Profilebased](#Profilebased)
+	* [Custom alert Creation](#customalert)
+7. [Alert action](#alertaction)
+8. [Alert Notification](#alertnotification)
+9. [Drill Down Alerts](#drilldownalerts)
+10. [Report Scheduler](#Scheduledsearches)
+	
