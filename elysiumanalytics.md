@@ -116,9 +116,9 @@
 4. [Alert rules](#alertrules)
 5. [Alert Dashboards](#alertdashboard)
 6. [Alert creation and manage alert rules](#alertcreationandmanagement)
-	- Behaviour Based
+	* [Behaviour Based](#behaviouralerts)
 	* [Aggregate Based](#AggregateBased)
-	* TIME SERIES
+	* [TIME SERIES](#timeseriesalerts)
 	* [Rulebased](#Rulebased)
 	* [Profilebased](#Profilebased)
 	* [Custom alert Creation](#customalert)
@@ -1235,6 +1235,28 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 ![mainalerts](mainalerts.PNG)	
 ## 2. Alerts by Severity,Type, Source    <span id="AlertsbySeverityTypeSource"><span> 
 	
+**Alerts by Severity:**
+ It displays the Severity of the alerts  for the last 1 day, Depending upon the alert abbreviation name  Severity.
+  
+
+Severity Description:
+
+|Alert abbreviation name|Severity  |
+|:---------|:--------|
+|'User Account Locked’, ‘User Logged to Multiple Hosts’, ‘New Email Sender',10 User Accounts Locked in Last 1 Hour','Unsual Process Detected’, ‘Apt Threat Notified'|5|
+|'User Privilage Access Exceeded’, ‘User Accessed from New Country','User Accessed from New City'|4|
+|'User Added to Security Enabled Global Group', 'User Removed from Security Enabled Global Group','Watchguard Event and Alarms Malware  Detected’, ‘User Accessed Multiple Websites'|3|
+|'AuLgCs ','User Accessed New Destination Port ','User Accessed New Source Port’, ’ New Port Accessed Globally’|2|
+|'New Windows User','GlNwCt'|1| 
+
+
+
+**Alerts by Type:**
+The alert type describes last one day it displays the alert abbreviation name, sum of count of alert type   group by latitude in the descending order. It displays the New Alerts for last 1 day. Metric is volume.
+
+**Alerts by Source:**
+The sum of count of Alerts from the particular type of source are displayed as volume.
+It displays for the event time,corresponding to Source name of alert_type is displayed. It displays for the last 30 days.
 
 ![alertsdashboard1](alertsdashboard1.PNG)
 
@@ -1256,9 +1278,19 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 	
 ## 6. Alert creation and manage alert rules   <span id="alertcreationandmanagement"><span>
 	
-	- Behaviour Based
+Updates for “Manage Alert Rules” Page : 
+•	A new option to add severity of five levels (Info, Low, Medium, High, Critical) to the new rules has been implemented.
+•	Ability to configure the email recipient list for each alert rule
+•	Option to activate immediate notification for each alert rule
+•	Feature to configure a schedule for the alert report
+•	Option to trigger an alert report manually for a particular day
+•	Ability to activate and deactivate a particular alert rule
+•	Ability to delete a particular alert rule
 	
+
+* Behaviour Based    <span id="behaviouralerts"><span>
 	
+![behavioural](behavioural.PNG)
 	
 * Aggregate Based    <span id="AggregateBased"><span>
 
@@ -1267,8 +1299,9 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 ![aggregatebasedalerts](aggregatebasedalerts.PNG)
 
 
-* TIME SERIES
+* TIME SERIES   <span id="timeseriesalerts"><span>
 
+![timeseries](timeseries.PNG)
 
 * Rulebased   	<span id="Rulebased"><span>
 
@@ -1287,10 +1320,25 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 	
 ![alerttable](alerttable.PNG)	
 ## 8. Alert Notification   <span id="alertnotification"><span>
-	
+
+Alert email Notfication can be done iterms of three ways based on type of alert, severity, context, count, action.
+1. Immediate Notification/ Real Time Alerts 
+2. Scheduled Email Report
+3. Manual Email Report
+
+1. Immediate Notification/ Real Time Alerts 
+It is a configuration available for each individual alert rule. With this active, the users in the email recipient list will receive real time email notification whenever an alert is triggered for the particular alert rule. There is a toggle button to enable and disable the immediate notification.
+
+2. Scheduled Email Report
+It is a configuration that sends you an alert report periodically for the new alerts based on the frequency chosen. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. For example, for a job running every 8 hours, the email report will contain details of all the alerts in the past 8 hours.
+
+
+3. Manual Email Report
+It is an option using which you can send yourself the alert report for a particular date. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. 
 	
 ## 9. Drill Down Alerts    <span id="drilldownalerts"><span>
 
+The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ Username, Alert Type(alert names),Alert Desc(description of the alerts),Alert_ABBR_NM_ Nm(alert abbreviation),Alert Count(the count of a particular alert in a particular event time).
 
 ![alertdashboard4](alertdashboard4.PNG)
 
@@ -1386,3 +1434,11 @@ Overview of the Tiles in Dashboard
 9. [Drill Down Alerts](#drilldownalerts)
 10. [Report Scheduler](#Scheduledsearches)
 	
+
+
+
+ [Behaviour Based](behaviouralerts)
+	* [Aggregate Based](#AggregateBased)
+	* [TIME SERIES](timeseriesalerts)
+	* [Rulebased](#Rulebased)
+	* [Profilebased](#Profilebased)
