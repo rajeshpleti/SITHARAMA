@@ -1228,10 +1228,20 @@ Logstash Network traffic Dashboard describes start time, endtime by each source 
 
 ## 8. Alerts
 
+* Elysium alerts Monitors continuously query your data to monitor and send notifications when specific events occur, thresholds, critical, warning, and missing data and also gives aggregation based results.
 
+* Elysium offers a set of correlation rules and behavioral analytics to alert on specific sequence of events or pattern using machine learning and statistical analysis. 
+The alerting feature notifies you when alert rule triggred or conditions are met. 
+
+* For example, you might want to receive an email if your application logs more than five HTTP 503 errors in one hour, or you might want to page a developer if no new records have been processed in the past 20 minutes.
 
 ## 1. Alerts monitoring  <span id="alertmonitoring"><span>
-	
+An alert specifies a background task that runs on the snowflake to check for specific conditions. It consists of three main parts:
+
+Conditions: what needs to be detected?
+Schedule: when/how often should detection checks run?
+Actions: what happens when a condition is detected?
+
 ![mainalerts](mainalerts.PNG)	
 ## 2. Alerts by Severity,Type, Source    <span id="AlertsbySeverityTypeSource"><span> 
 	
@@ -1274,7 +1284,7 @@ Based on the alert description and alert identifier alerts origination is mapped
 	
 ## 4. Alert rules   <span id="alertrules"><span>
 	
-	
+The alert Rules control all the rules in a space, and provides tools to create and manage connectors so that rules can trigger actions like notification.
 ![MITRE1](MITRE1.PNG)	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
@@ -1284,13 +1294,13 @@ Based on the alert description and alert identifier alerts origination is mapped
 ## 6. Alert creation and manage alert rules   <span id="alertcreationandmanagement"><span>
 	
 Updates for “Manage Alert Rules” Page : 
-•	A new option to add severity of five levels (Info, Low, Medium, High, Critical) to the new rules has been implemented.
-•	Ability to configure the email recipient list for each alert rule
-•	Option to activate immediate notification for each alert rule
-•	Feature to configure a schedule for the alert report
-•	Option to trigger an alert report manually for a particular day
-•	Ability to activate and deactivate a particular alert rule
-•	Ability to delete a particular alert rule
+* A new option to add severity of five levels (Info, Low, Medium, High, Critical) to the new rules has been implemented.
+* Ability to configure the email recipient list for each alert rule
+* Option to activate immediate notification for each alert rule
+* Feature to configure a schedule for the alert report
+* Option to trigger an alert report manually for a particular day
+* Ability to activate and deactivate a particular alert rule
+* Ability to delete a particular alert rule
 	
 
 * Behaviour Based    <span id="behaviouralerts"><span>
@@ -1331,16 +1341,20 @@ Alert email Notfication can be done iterms of three ways based on type of alert,
 2. Scheduled Email Report
 3. Manual Email Report
 
+
 1. Immediate Notification/ Real Time Alerts 
 It is a configuration available for each individual alert rule. With this active, the users in the email recipient list will receive real time email notification whenever an alert is triggered for the particular alert rule. There is a toggle button to enable and disable the immediate notification.
 
 2. Scheduled Email Report
 It is a configuration that sends you an alert report periodically for the new alerts based on the frequency chosen. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. For example, for a job running every 8 hours, the email report will contain details of all the alerts in the past 8 hours.
 
+![scheduledalert](scheduledalert.PNG)
 
 3. Manual Email Report
 It is an option using which you can send yourself the alert report for a particular date. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. 
-	
+
+![manuvalalert](manuvalalert.png)
+
 ## 9. Drill Down Alerts    <span id="drilldownalerts"><span>
 
 The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ Username, Alert Type(alert names),Alert Desc(description of the alerts),Alert_ABBR_NM_ Nm(alert abbreviation),Alert Count(the count of a particular alert in a particular event time).
