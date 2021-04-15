@@ -1303,31 +1303,31 @@ Updates for “Manage Alert Rules” Page :
 * Ability to delete a particular alert rule
 	
 
-* Behaviour Based    <span id="behaviouralerts"><span>
+** Behaviour Based **  <span id="behaviouralerts"><span>
 	
 ![behavioural](behavioural.PNG)
 	
-* Aggregate Based    <span id="AggregateBased"><span>
+**Aggregate Based**   <span id="AggregateBased"><span>
 
 
 	
 ![aggregatebasedalerts](aggregatebasedalerts.PNG)
 
 
-* TIME SERIES   <span id="timeseriesalerts"><span>
+**TIME SERIES **   <span id="timeseriesalerts"><span>
 
 ![timeseries](timeseries.PNG)
 
-* Rulebased   	<span id="Rulebased"><span>
+**Rulebased **  	<span id="Rulebased"><span>
 
 
 ![Rulebased](Rulebased.PNG)
 
-* Profilebased   <span id="Profilebased"><span>
+**Profilebased**  <span id="Profilebased"><span>
 
 ![profilebased](profilebased.PNG)
 
-* Custom alert Creation   <span id="customalert"><span>
+** Custom alert Creation**   <span id="customalert"><span>
 
 ![Customqueryalert](Customqueryalert.PNG)
 
@@ -1342,15 +1342,15 @@ Alert email Notfication can be done iterms of three ways based on type of alert,
 3. Manual Email Report
 
 
-1. Immediate Notification/ Real Time Alerts 
+** 1.Immediate Notification/ Real Time Alerts **
 It is a configuration available for each individual alert rule. With this active, the users in the email recipient list will receive real time email notification whenever an alert is triggered for the particular alert rule. There is a toggle button to enable and disable the immediate notification.
 
-2. Scheduled Email Report
+** 2. Scheduled Email Report **
 It is a configuration that sends you an alert report periodically for the new alerts based on the frequency chosen. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. For example, for a job running every 8 hours, the email report will contain details of all the alerts in the past 8 hours.
 
 ![scheduledalert](scheduledalert.PNG)
 
-3. Manual Email Report
+** 3. Manual Email Report**
 It is an option using which you can send yourself the alert report for a particular date. This report will contain all the new alerts for the alert rules where the user is configured in its email recipient list. 
 
 ![manuvalalert](manuvalalert.png)
