@@ -1258,6 +1258,11 @@ The alert type describes last one day it displays the alert abbreviation name, s
 The sum of count of Alerts from the particular type of source are displayed as volume.
 It displays for the event time,corresponding to Source name of alert_type is displayed. It displays for the last 30 days.
 
+**Alerts Origination from geo**
+It displays the count of alerts by the geo location. 
+The location comes under country, city, latitude, longitude. 
+Based on the alert description and alert identifier alerts origination is mapped
+
 ![alertsdashboard1](alertsdashboard1.PNG)
 
 ![alertsdashboard2.PNG](alertsdashboard2.PNG)
