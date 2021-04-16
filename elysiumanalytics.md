@@ -118,7 +118,7 @@
 6. [Alert creation and manage alert rules](#alertcreationandmanagement)
 	* [Behaviour Based](#behaviouralerts)
 	* [Aggregate Based](#AggregateBased)
-	* [TIME SERIES](#timeseriesalerts)
+	* [Time Series](#timeseriesalerts)
 	* [Rulebased](#Rulebased)
 	* [Profilebased](#Profilebased)
 	* [Custom alert Creation](#customalert)
@@ -1238,9 +1238,9 @@ The alerting feature notifies you when alert rule triggred or conditions are met
 ## 1. Alerts monitoring  <span id="alertmonitoring"><span>
 An alert specifies a background task that runs on the snowflake to check for specific conditions. It consists of three main parts:
 
-Conditions: what needs to be detected?
-Schedule: when/how often should detection checks run?
-Actions: what happens when a condition is detected?
+* Conditions: what needs to be detected?
+* Schedule: when/how often should detection checks run?
+* Actions: what happens when a condition is detected?
 
 ![mainalerts](mainalerts.PNG)	
 ## 2. Alerts by Severity,Type, Source    <span id="AlertsbySeverityTypeSource"><span> 
@@ -1280,11 +1280,12 @@ Based on the alert description and alert identifier alerts origination is mapped
 ## 3. Alert Filters by Users/Entity's based on Time Intervals   <span id="alertuserenity"><span> 
 	
 	
-	*  Top 10 Risky Users and Enity's   <span id=""><span>   (#top10risky)
+*  Top 10 Risky Users and Enity's   <span id=""><span>   (#top10risky)
 	
 ## 4. Alert rules   <span id="alertrules"><span>
 	
-The alert Rules control all the rules in a space, and provides tools to create and manage connectors so that rules can trigger actions like notification.
+The alert Rules control all the rules in a space, and provides to create and manage connectors so that rules can trigger actions like notification.
+Elysium periodically queried and the data is passed to the rule type and is configured by a set of rules, each of which defines a query, a rule type, and a set of alerts.
 ![MITRE1](MITRE1.PNG)	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
@@ -1332,11 +1333,12 @@ Updates for “Manage Alert Rules” Page :
 ![Customqueryalert](Customqueryalert.PNG)
 
 ## 7. Alert action         <span id="alertaction"><span>
+An alert config defines the conditions under which action for the particular alert should be taken. It also defines a corresponding alert action, which lists the specific action(s) need to be taken. Multiple alert configs can point to the same alert action. it also includes based on Custom Actions.
 	
 ![alerttable](alerttable.PNG)	
 ## 8. Alert Notification   <span id="alertnotification"><span>
 
-Alert email Notfication can be done iterms of three ways based on type of alert, severity, context, count, action.
+Alert email Notfication can be done iterms of three ways based on type of alert, severity, context, count, action. It also aggregate the alert notification based on recipient mail id before sending.
 1. Immediate Notification/ Real Time Alerts 
 2. Scheduled Email Report
 3. Manual Email Report
@@ -1357,7 +1359,7 @@ It is an option using which you can send yourself the alert report for a particu
 
 ## 9. Drill Down Alerts    <span id="drilldownalerts"><span>
 
-The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ Username, Alert Type(alert names),Alert Desc(description of the alerts),Alert_ABBR_NM_ Nm(alert abbreviation),Alert Count(the count of a particular alert in a particular event time).
+The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ Username, Alert Type(alert names),Alert Desc(description of the alerts),Alert_ABBR_NM_ Nm(alert abbreviation),Alert Count(the count of a particular alert in a particular event time).  It shows information about  alerts,ID,Parent Alert ID,user name,source,IP’ s of both source and destination, Hostname.
 
 ![alertdashboard4](alertdashboard4.PNG)
 
@@ -1365,7 +1367,7 @@ The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ 
 ![Dashboard5](Dashboard5.PNG)
 	
 ## 10. Report Scheduler   <span id="Scheduledsearches"><span>
-	
+Report Scheduler is like a cron job used for scheduling alert tasks and to be executed  normally used to schedule a alert notfication job periodically.  for example, to send out a notification every morning.
 
 
 ## 6. Alerts tiles
