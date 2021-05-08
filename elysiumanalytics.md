@@ -1235,6 +1235,8 @@ The alerting feature notifies you when alert rule triggred or conditions are met
 
 * For example, you might want to receive an email if your application logs more than five HTTP 503 errors in one hour, or you might want to page a developer if no new records have been processed in the past 20 minutes.
 
+* EA-SAAS app, currently have several clients like Ionis, Innominds, RedSky etc detects data anomalies and sends alerts notifications on various channels.
+
 ## 1. Alerts monitoring  <span id="alertmonitoring"><span>
 An alert specifies a background task that runs on the snowflake to check for specific conditions. It consists of three main parts:
 
@@ -1242,7 +1244,20 @@ An alert specifies a background task that runs on the snowflake to check for spe
 * Schedule: when/how often should detection checks run?
 * Actions: what happens when a condition is detected?
 
+* The sources to monitor alerting differ from client to client, Examples of sources include - Windows Security, Dell Boomi, Microsoft Azure, Watchguard Firewall etc. 
+
 ![mainalerts](mainalerts.PNG)	
+
+1. Manage Alert Rules : Shows all the alert rules have been defined for various sources, along with their status, properties etc. It also allows user to create new alert rules and configure their properties.
+
+2. Alerts Table : Shows all the alerts that have been triggered so far from the alert rules defined in the ‘Manage Alert Rules’ page.
+
+3. Source-specific alert pages like -
+
+	- Boomi Alerts : Looker dashboard to show the alerts for Dell Boomi source
+
+	- Azure Alerts : Looker dashboard to show the alerts for Azure source
+
 ## 2. Alerts by Severity,Type, Source    <span id="AlertsbySeverityTypeSource"><span> 
 	
 **Alerts by Severity:**
@@ -1286,6 +1301,26 @@ Based on the alert description and alert identifier alerts origination is mapped
 	
 The alert Rules control all the rules in a space, and provides to create and manage connectors so that rules can trigger actions like notification.
 Elysium periodically queried and the data is passed to the rule type and is configured by a set of rules, each of which defines a query, a rule type, and a set of alerts.
+
+
+The alert rules we define appear here with -
+
+ID : Auto-increment sequence number
+
+Category : Type of the alert. Rule-based, profile-based, time series-based and aggregate-based are the four alert types.
+
+Rule - Shows the source name and a semi SQL-like condition describing the configured rule
+
+Properties - Shows other properties of the alert rule such as severity, rollup window, message, additional comments & email recipients. Severity of the alert can be low/medium/high. Rollup window tells us the time window for clubbing the alerts as alert count in the email notifications. 
+
+Immediate Notifications -: In immediate notification, mail is sent immediately after an alert is triggered.
+
+In scheduled notification (report scheduler), a consolidated list of all alerts that have occurred within a user-defined time period is mailed (say every hour or day or week or month)
+
+Status - Shows whether the alert rule is in active or inactive state
+
+Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
+
 ![MITRE1](MITRE1.PNG)	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
@@ -1303,6 +1338,24 @@ Updates for “Manage Alert Rules” Page :
 * Ability to activate and deactivate a particular alert rule
 * Ability to delete a particular alert rule
 	
+How to add a new alert rule?
+The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Rules’ page, where you can define a new alert rule step-by-step. There are currently two categories of alerts. Select either of the two options.
+
+1. Behavior-Based : Alerts based on the behavior of a user or system. These are of three types -
+
+	* Aggregates - Alerts based on a numerical measure or condition
+
+	* Time-Series - Alerts based on time range
+
+	* Profiles - Alerts based on whether a specific set of conditions are met or not
+
+2. Rule-Based : Alerts based on a pre-defined rule. We can define multiple combinations of rules using AND, OR operators corresponding to the sources (Boomi, Azure) 
+
+	* Azure sources - Azure SQL Metrics, Azure Function Metrics sources are currently being tracked
+
+	* Boomi sources - Atmosphere Execution Log, Atmosphere Process Log are currently being tracked
+
+
 
 ** Behaviour Based **  <span id="behaviouralerts"><span>
 	
