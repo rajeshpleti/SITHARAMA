@@ -1237,6 +1237,8 @@ The alerting feature notifies you when alert rule triggred or conditions are met
 
 * EA-SAAS app, currently have several clients like Ionis, Innominds, RedSky etc detects data anomalies and sends alerts notifications on various channels.
 
+* ES-SAAS Privides powerful API, it is easy to set up, manage, and monitor alerts and automatically send notfications to stakeholders.
+
 ## 1. Alerts monitoring  <span id="alertmonitoring"><span>
 An alert specifies a background task that runs on the snowflake to check for specific conditions. It consists of three main parts:
 
