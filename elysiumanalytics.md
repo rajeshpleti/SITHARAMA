@@ -119,8 +119,8 @@
 	* [Behaviour Based](#behaviouralerts)
 	* [Aggregate Based](#AggregateBased)
 	* [Time Series](#timeseriesalerts)
-	* [Rulebased](#Rulebased)
 	* [Profilebased](#Profilebased)
+	* [Rulebased](#Rulebased)
 	* [Custom alert Creation](#customalert)
 7. [Alert action](#alertaction)
 8. [Alert Notification](#alertnotification)
@@ -1254,7 +1254,7 @@ An alert specifies a background task that runs on the snowflake to check for spe
 
 2. Alerts Table : Shows all the alerts that have been triggered so far from the alert rules defined in the ‘Manage Alert Rules’ page.
 
-3. Source-specific alert pages like -
+3. Source-specific alert like -
 
 	- Boomi Alerts : Looker dashboard to show the alerts for Dell Boomi source
 
@@ -1298,6 +1298,12 @@ Based on the alert description and alert identifier alerts origination is mapped
 	
 	
 *  Top 10 Risky Users and Enity's   <span id=""><span>   (#top10risky)
+
+It shows the top ten risky users and entitys of alerts based on time filtering to crosscheck and monitor as per client needs. It also shows the details of ML scores users/enitys, Alert type, source, destination, Alert Description.
+
+![toptenrisky](toptenrisky.PNG)
+
+![detailedalertml](detailedalertml.PNG)
 	
 ## 4. Alert rules   <span id="alertrules"><span>
 	
@@ -1306,6 +1312,8 @@ Elysium periodically queried and the data is passed to the rule type and is conf
 
 
 The alert rules we define appear here with -
+
+![alertrule.png](alertrule.png)
 
 ID : Auto-increment sequence number
 
@@ -1323,12 +1331,21 @@ Status - Shows whether the alert rule is in active or inactive state
 
 Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 
-![MITRE1](MITRE1.PNG)	
+
+
+
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
 	
-![alertsdashboard3](alertsdashboard3.PNG)	
-	
+![alertsdashboard3](alertsdashboard3.PNG)
+
+MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK).
+The MITRE ATT&CK framework is a curated knowledge base and model for cyber adversary behavior, reflecting the various phases of an adversary's attack.
+It helps cybersecurity teams assess the effectiveness of their security operations center (SOC) processes and defensive measures to identify areas for improvement.
+The Enterprise ATT&CK matrix is Elysium's priority interest and focuses primarily on hosts using Microsoft Windows and Microsoft Windows Server operating systems. The Enterprise matrix include techniques applicable to Linux and MacOS hosts also.
+
+![MITRE1](MITRE1.PNG)	
+
 ## 6. Alert creation and manage alert rules   <span id="alertcreationandmanagement"><span>
 	
 Updates for “Manage Alert Rules” Page : 
@@ -1365,7 +1382,6 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 	
 **Aggregate Based**   <span id="AggregateBased"><span>
 
-
 	
 ![aggregatebasedalerts](aggregatebasedalerts.PNG)
 
@@ -1374,14 +1390,14 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 
 ![timeseries](timeseries.PNG)
 
-**Rulebased **  	<span id="Rulebased"><span>
-
-
-![Rulebased](Rulebased.PNG)
 
 **Profilebased**  <span id="Profilebased"><span>
 
 ![profilebased](profilebased.PNG)
+
+**Rulebased **  	<span id="Rulebased"><span>
+
+![Rulebased](Rulebased.PNG)
 
 ** Custom alert Creation**   <span id="customalert"><span>
 
@@ -1391,6 +1407,7 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 An alert config defines the conditions under which action for the particular alert should be taken. It also defines a corresponding alert action, which lists the specific action(s) need to be taken. Multiple alert configs can point to the same alert action. it also includes based on Custom Actions.
 	
 ![alerttable](alerttable.PNG)	
+
 ## 8. Alert Notification   <span id="alertnotification"><span>
 
 Alert email Notfication can be done iterms of three ways based on type of alert, severity, context, count, action. It also aggregate the alert notification based on recipient mail id before sending.
