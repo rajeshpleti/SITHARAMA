@@ -1020,12 +1020,35 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 
 ![cloudapps1](cloudapps1.PNG)
 
+
 ![microsoftconnectors](microsoft1.PNG)
 
+
+
+
 **create custom connectors:**
-Elysium connectors allow users and provides flexibility  to create own connectors to collect the data.
+Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data according  .
 ![createconnector](createconnector.PNG)
 
+Intial Information: 
+![createcustomdatatype](createcustomdatatype.PNG)
+
+Data Type selection:
+![datatypeselection](datatypeselection.PNG)
+
+
+Mapping: 
+![connectormapping](connectormapping.PNG)
+
+
+Confirmation: 
+![connectorconfirmation](connectorconfirmation.PNG)
+
+testing
+
+![testconnectorresults](testconnectorresults.PNG)
+
+![createconnector](createconnector.PNG)
 
 **Elysium Plugins**
 
