@@ -1028,7 +1028,6 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 
 **create custom connectors:**
 Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data according  .
-![createconnector](createconnector.PNG)
 
 Intial Information: 
 ![createcustomdatatype](createcustomdatatype.PNG)
