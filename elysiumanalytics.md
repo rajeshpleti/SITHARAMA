@@ -1357,15 +1357,13 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 
 **sample alert rules :** 
 	
-|Alert abbreviation name|Source_Name|Alert_Type|Alert_COND_SQL|
-|:--------|:--------|:--------|:--------|
-|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|CASE WHEN event_id = '4624'  AND array_size(ULMuH.val)>1 THEN 'User has logged onto muliple hosts in last 6 hours. Hostnames are :'or array_to_string(ULMuH.val,',') END|
-|User Account Locked|MS_WIN_SECURITYAUDITING|rule|CASE WHEN SUBJECTUSERNAME is not null and SUBJECTUSERNAME <> '-'and not SUBJECTUSERNAME ilike any ('umfd%','dwm%','%sql%') and SUBJECTUSERNAME not in (select name from ENTITY_BLACKLIST_LOOKUP) and event_id in (4740,6279)THEN'user account locked'END|
-|User Download Bytes Exceeded 24hr Limit for WG_FW_NETFLOW|WG_FW_NETFLOW|aggregate|CASE WHEN  UDwByEc.val:dwnld_bytes :: numeric >= 10000000 THEN 'User Download Bytes Exceeded limit: ' UDwByEc.val:dwnld_bytes :: varchar END|
-|Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|CASE WHEN  EcUl.val:out_bytes :: numeric >= 10000000 THEN 'Session exceeded the Upload Bytes Limit: 'EcUl.val:out_bytes :: varchar END|
-|persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|case when (TO_VARCHAR(ORIGINAL_STRING['category']) ilike ('process'))and (TO_VARCHAR(ORIGINAL_STRING['EventType']) ilike any( 'start', 'process_started' )  or EVENT_DESC ilike any( 'start', 'process_started' ) ) and (PARENTIMAGE ilike any( '%CompatTelRunner.exe%', '%compattelrunner.exe%' )  or PARENTCOMMANDLINE ilike any( '%CompatTelRunner.exe%', '%compattelrunner.exe%' ) ) and not (IMAGE ilike any
-('%conhost.exe%', '%DeviceCensus.exe%', '%devicecensus.exe%', '%CompatTelRunner.exe%', '%compattelrunner.exe%', '%DismHost.exe%', '%dismhost.exe%', '%rundll32.exe%' ) ) 
-   then  'ES_persistence_via_telemetrycontroller_scheduledtask_hijack' END|
+|Alert abbreviation name|Source_Name|Alert_Type|
+|:--------|:--------|:--------|
+|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|
+|User Account Locked|MS_WIN_SECURITYAUDITING|rule|
+|User Download Bytes Exceeded 24hr Limit for WG_FW_NETFLOW|WG_FW_NETFLOW|aggregate|
+|Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|
+|persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|
 
 	
 	
