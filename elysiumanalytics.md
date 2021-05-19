@@ -1409,26 +1409,35 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 
 
 ** Behaviour Based **  <span id="behaviouralerts"><span>
+
+* Behavior-based alerts is a proactive approach to security in which all relevant activity is monitored so that deviations from normal behavior patterns can be identified and dealt with quickly.
+
+* user Entity behavior's can be identified using Machine learning algorithms, advanced statistical models by analyzing user and entity actions.
 	
 ![behavioural](behavioural.PNG)
 	
 **Aggregate Based**   <span id="AggregateBased"><span>
-
+* The alert aggregation capability enhances Event Management with alert data analysis and alert aggregation, Correlate alerts according to timestamps. 
+* Alert aggregation helps organize incoming real-time alerts and reduce alert noise.
+* modern applications consist of a large set of components, from containers to serverless to ensure collect metrics, diagnostics, Alerting.
 	
 ![aggregatebasedalerts](aggregatebasedalerts.PNG)
 
 
 **TIME SERIES **   <span id="timeseriesalerts"><span>
-
+Alerts based on time range  and make use of real-time alert to monitor events or event patterns
 ![timeseries](timeseries.PNG)
 
 
 **Profilebased**  <span id="Profilebased"><span>
-
+*User and entity behavior analytics refers to technology for profiling user and entity behavior and detecting anomalies.
+* profile describes characteristics and behavioral patterns of individuals or groups
+* profiles are used to create a baseline of user behavior. This baseline helps the system detect abnormal user actions identifies malicious activity, compromised accounts, potential attackers, privilege misuse,access misuse.
 ![profilebased](profilebased.PNG)
 
 **Rulebased **  	<span id="Rulebased"><span>
-
+Rule-based alerts can cause specific actions to occur when conditions are detected in the search runtime environment, such as automatically sending email when the number of search results exceeds a specified threshold.
+	
 ![Rulebased](Rulebased.PNG)
 
 ** Custom alert Creation**   <span id="customalert"><span>
