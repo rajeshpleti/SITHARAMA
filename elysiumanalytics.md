@@ -1425,7 +1425,9 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 
 
 **TIME SERIES **   <span id="timeseriesalerts"><span>
-Alerts based on time range  and make use of real-time alert to monitor events or event patterns
+
+* Alerts based on time range  and make use of real-time alert to monitor events or event patterns
+	
 ![timeseries](timeseries.PNG)
 
 
@@ -1436,7 +1438,8 @@ Alerts based on time range  and make use of real-time alert to monitor events or
 ![profilebased](profilebased.PNG)
 
 **Rulebased **  	<span id="Rulebased"><span>
-Rule-based alerts can cause specific actions to occur when conditions are detected in the search runtime environment, such as automatically sending email when the number of search results exceeds a specified threshold.
+	
+* Rule-based alerts can cause specific actions to occur when conditions are detected in the search runtime environment, such as automatically sending email when the number of search results exceeds a specified threshold.
 	
 ![Rulebased](Rulebased.PNG)
 
