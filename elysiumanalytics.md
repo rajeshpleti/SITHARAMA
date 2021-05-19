@@ -112,7 +112,7 @@
 1. [Alerts monitoring](#alertmonitoring)
 2. [Alerts by Severity,Type, Source](#AlertsbySeverityTypeSource)
 3. [Alert Filters by Users/Entity's based on Time Intervals](#alertuserenity) 
-	* [Top 10 Risky Users and Enity's](#top10risky)
+	* [Top 10 Risky Users and Enity's](#toprisky)
 4. [Alert rules](#alertrules)
 5. [Alert Dashboards](#alertdashboard)
 6. [Alert creation and manage alert rules](#alertcreationandmanagement)
@@ -1319,7 +1319,7 @@ Based on the alert description and alert identifier alerts origination is mapped
 ## 3. Alert Filters by Users/Entity's based on Time Intervals   <span id="alertuserenity"><span> 
 	
 	
-*  Top 10 Risky Users and Enity's   <span id=""><span>   (#top10risky)
+*  Top 10 Risky Users and Enity's   <span id="toprisky"><span>  
 
 It shows the top ten risky users and entitys of alerts based on time filtering to crosscheck and monitor as per client needs. It also shows the details of ML scores users/enitys, Alert type, source, destination, Alert Description.
 
@@ -1355,7 +1355,13 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 
 
 
+**sample alert rules :** 
+	
+|Alert abbreviation name|Source_Name|Alert_Type|Alert_COND_SQL|
+|:---------|:--------|:--------|:--------|
+|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|CASE WHEN event_id = '4624'  AND array_size(ULMuH.val) >1 THEN 'User has logged onto muliple hosts in last 6 hours. Hostnames are : ' || array_to_string(ULMuH.val,',') END|
 
+	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
 	
