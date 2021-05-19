@@ -1359,7 +1359,13 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 	
 |Alert abbreviation name|Source_Name|Alert_Type|Alert_COND_SQL|
 |:---------|:--------|:--------|:--------|
-|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|CASE WHEN event_id = '4624'  AND array_size(ULMuH.val) >1 THEN 'User has logged onto muliple hosts in last 6 hours. Hostnames are :'|| array_to_string(ULMuH.val,',') END|
+|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|CASE WHEN event_id = '4624'  AND array_size(ULMuH.val) >1 THEN 'User has logged onto muliple hosts in last 6 hours. Hostnames are :'or array_to_string(ULMuH.val,',') END|
+|User Account Locked|MS_WIN_SECURITYAUDITING|rule|CASE WHEN SUBJECTUSERNAME is not null 
+                                         and SUBJECTUSERNAME <> '-' 
+                                         and not SUBJECTUSERNAME ilike any ('umfd%','dwm%','%sql%') 
+                                         and SUBJECTUSERNAME not in (select name from ENTITY_BLACKLIST_LOOKUP) 
+                                         and event_id in (4740,6279) 
+                                         THEN 'user account locked' END|
 
 	
 	
