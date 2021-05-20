@@ -1027,23 +1027,31 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 
 
 **create custom connectors:**
-Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data according  .
 
-Intial Information: 
+* Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data according  .
+
+* It also provides flexibility in custom schema model preparation and  also supports dynamic changes of fields, data type at runtime.
+
+Intial Information:  
+	
+* It provides information related to custom connectors name, Source location, format of the data type, loading data.
 ![createcustomdatatype](createcustomdatatype.PNG)
 
 Data Type selection:
+
+* It allows to add or delete attributes, change the order of  attributes  and data type values. 
 ![datatypeselection](datatypeselection.PNG)
 
 
 Mapping: 
+* It transfers mapping of custom sample data fields with ODM Elysium schema and custom data fields.
 ![connectormapping](connectormapping.PNG)
 
 
-Confirmation: 
+Confirmation:  It provides Verification and validation of fileds and values.
 ![connectorconfirmation](connectorconfirmation.PNG)
 
-testing
+testing: After checking the data filed values run the rest to validate schema and then click create connector button to create custom connector
 
 ![testconnectorresults](testconnectorresults.PNG)
 
