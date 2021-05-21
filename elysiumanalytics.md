@@ -1028,7 +1028,7 @@ The following Eysium Data collection dashboards describes the sum of ingeated co
 
 **create custom connectors:**
 
-* Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data according  .
+* Elysium connectors allow users and provides flexibility  to create custom connectors to collect and load the data accordingly.
 
 * It also provides flexibility in custom schema model preparation and  also supports dynamic changes of fields, data type at runtime.
 
@@ -1051,7 +1051,7 @@ Mapping:
 Confirmation:  It provides Verification and validation of fileds and values.
 ![connectorconfirmation](connectorconfirmation.PNG)
 
-testing: After checking the data filed values run the rest to validate schema and then click create connector button to create custom connector
+Testing: After checking the data filed values run the rest to validate schema and then click create connector button to create custom connector,after creation of custom connector we can also check that in feed manager. 
 
 ![testconnectorresults](testconnectorresults.PNG)
 
@@ -1376,6 +1376,13 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
+	
+* Alert Dashboards provide a high-level overview of various system endpoint components, making it easy to identify trends and patterns.
+	
+* Alerts are only apparent when a specific condition arises or a certain threshold is passed.
+
+* Alerts allow you to quickly respond to potential problems with your infrastructure
+	
 	
 ![alertsdashboard3](alertsdashboard3.PNG)
 
