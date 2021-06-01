@@ -263,6 +263,24 @@ Protect your network and users from malware downloads, drive-by attacks, and phi
 
 Build your own analytics dashboards with Looker or connect to 3rd party applications through our API.
 
+	
+	
+#2.[Quick Start of Elysium]  <span id="quickstart"><span>
+1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
+2. Setup Client access using AWS Demo cloud <span id="qsawsdemoaccess"><span>
+3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
+	* Elysium Data Connectors <span id="qsconnectors"><span>
+	* Operational <span id="qsoperational"><span>
+	* search for log data <span id="qssearch"><span>
+	* Security(#qsecurity) <span id="qsecurity"><span>
+	* Behavior Analytics <span id="qsbehaviour"><span>
+	* ML and ITD UI Dashboards <span id="qsmlitd"><span>
+	* Compilances  <span id="qscomplilances"><span>
+	* Alerts <span id="qsalerts"><span>
+4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
+5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
+6. Get Help  <span id="qsgethelp"><span>
+	
 
 # 3. APP’S Integration  <span id="APPS"><span>
 	
