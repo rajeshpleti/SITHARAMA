@@ -265,7 +265,8 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 
 	
 	
-#2.[Quick Start of Elysium]  <span id="quickstart"><span>
+#2.Quick Start of Elysium  <span id="quickstart"><span>
+	
 1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
 2. Setup Client access using AWS Demo cloud <span id="qsawsdemoaccess"><span>
 3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
