@@ -122,12 +122,45 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 |male.gmail.com|male|yes|
 |amale.gmail.com|male|no|
 				 
+### 4. Wildcard search
+
+* Wildcard search is allowed only with the free text
+|COLUMN_FIELD|	INPUT|	MATCH|
+|---------|--------|--------|
+|male	|*ale|yes|
+|female	|male*|no|
+|female|*male|yes|
+|amale.gmail.com|*male|	yes|
 	
-### 4. Numeric Search	
+WHEN TO USE:
+1.When you are not sure with the order 
+Ex: a) response: quick brown fox
+b) response: quick fox brown
+
+2.While using wildcard
+Ex: a) response: quick b* for
+
+THINGS TO REMEMBER:
+
+1.Use field name if you are aware of that the expected results are from expected field
+
+Ex: a) response: quick brown fox
+
+This query searches only in the response field
+
+b) quick brown fox
+
+This query searchers all the fields and take longer time
+
+2.If your search term contains “:” add \ to escape Ex: a) cd://something
+This will look for //something in field cd The right syntax would be cd\://
+
 	
-### 5. Date Search
+### 5. Numeric Search	
 	
-### 6. REGEX Search
+### 6. Date Search
+	
+### 7. REGEX Search
 	
 ### Search multiple fields <span id="Searchmutiplefields"><span>
 
