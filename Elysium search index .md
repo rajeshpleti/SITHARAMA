@@ -113,7 +113,7 @@ The following search basics and rules that applies to input of search strings as
 * Wildcard searches do not work in single quoted searches
 * Speed reduces from top to bottom
 
-![searcspeed hierarchy](searcspeed hierarchy.PNG)
+![searcspeedhierarchy](searcspeed hierarchy.PNG)
 	
 |COLUMN_FIELD|	INPUT|	MATCH|
 |---------|--------|--------|
@@ -253,12 +253,12 @@ This query searchers all the fields and take longer time
 
 * Always use double quote and column field to search dates Ex: timestamp:”2020-03-28”
 * Supported formats
-	1.“yyyy-MM-dd hh:mm:ss”
-	2.“yyyy-MM-dd hh:mm”
-	3.“yyyy-MM-dd hh”
-	4.“yyyy-MM-dd”
-	5.“yyyy-MM”
-	6.“yyyy”
+	1. “yyyy-MM-dd hh:mm:ss”
+	2. “yyyy-MM-dd hh:mm”
+	3. “yyyy-MM-dd hh”
+	4. “yyyy-MM-dd”
+	5. “yyyy-MM”
+	6. “yyyy”
 * Use operators like >,<,>=,<= as required
 				
 			
