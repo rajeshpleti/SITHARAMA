@@ -113,7 +113,7 @@ The following search basics and rules that applies to input of search strings as
 * Wildcard searches do not work in single quoted searches
 * Speed reduces from top to bottom
 
-![searcspeedhierarchy](searcspeed hierarchy.PNG)
+![searcspeedhierarchy](searcspeed.PNG)
 	
 |COLUMN_FIELD|	INPUT|	MATCH|
 |---------|--------|--------|
