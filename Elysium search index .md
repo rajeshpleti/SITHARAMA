@@ -277,7 +277,7 @@ This query searchers all the fields and take longer time
 	
 * Don’t use free text searches unless you are using wildcard
 
-* 
+* Instead of searching on large volumes of data, initially better to search on small time range of data, to identify the corresponding value  of field. Once you are aware of the column field search using column field if the input is exact match then use single quote else use double quote on larger time range / larger data sets for faster results.
 	
 	
 	
