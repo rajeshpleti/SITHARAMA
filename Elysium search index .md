@@ -5,6 +5,7 @@
 1.	[Search basics](#Searchbasics)
 2.	[Search query language (KQL)](#KQL)
 	* [KQL Introduction](#kqlintroduction)
+	* [preliminary Basics and search rules](#preliminaryBasicsandsearchrules)
 	* [Search multiple fields](#Searchmutiplefields)
 	* [Grouped together](#groupedtogether)
 	* [Terms query](#termquery)
@@ -98,7 +99,36 @@ Kibana Query Language (KQL) also supports parentheses to group sub-queries.
 INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 ```bash
 (method: INSERT OR method: UPDATE) AND event.duration >= 30000000
+	
+	
 ```
+
+### preliminary Basics and search rules    <span id="preliminaryBasicsandsearchrules"><span>    
+	
+### 1. Single Quoted Search	
+	
+### 2. Double Quoted Search
+
+### 3. Free Text Search
+
+	* Space between words is considered as an OR operator ex: Brigitte cross searches Brigitte OR cross
+
+	* Search matches the field containing the given input without any neighbouring alphanumerical character
+
+|<--------->|<-------->|<-------->|
+|COLUMN_FIELD|INPUT|MATCH|
+|male|	male|yes|			 
+|female	|male|no|
+|male.gmail.com|male|yes|
+|amale.gmail.com|male|no|
+				 
+	
+### 4. Numeric Search	
+	
+### 5. Date Search
+	
+### 6. REGEX Search
+	
 ### Search multiple fields <span id="Searchmutiplefields"><span>
 
 The idea of running the query_string query against multiple fields is to expand each query term to an OR clause like this
