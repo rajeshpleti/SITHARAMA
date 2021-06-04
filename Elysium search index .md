@@ -106,9 +106,42 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 ### Preliminary Basics and search rules    <span id="preliminaryBasicsandsearchrules"><span>    
 	
 ### 1. Single Quoted Search	
+
+	
 	
 ### 2. Double Quoted Search
 
+* Matches when the input is in same sequential order as field term
+* Wildcard searches do not work in Double quotes.
+	
+|COLUMN_FIELD|	INPUT|	MATCH|
+|---------|--------|--------|
+|solar power source|“solar power”|yes|
+|solar power source|“power source”|yes|
+|solar power source|“source power solar”|no|
+|solar power source|“power solar”|no|
+
+**WHEN TO USE:**
+
+* When you are sure with the order Ex: a) response: “quick brown fox”
+* While your input has special characters Ex: a) response: “cd://path/something-new-2020:03:05”
+
+**THINGS TO REMEMBER:**
+
+1. Use field name if you are aware of that the expected results are from expected field
+
+a) response: “quick brown fox”
+
+	This query searches only in the response field
+
+b) “quick brown fox”
+
+	This query searchers all the fields and take longer time
+
+2. If your search term contains “ add \ to escape Ex: a) response: “this is a \“tuff\” call”
+	
+	
+	
 ### 3. Free Text Search
 
 * Space between words is considered as an OR operator ex: Brigitte cross searches Brigitte OR cross
