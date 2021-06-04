@@ -115,8 +115,8 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 
 	* Search matches the field containing the given input without any neighbouring alphanumerical character
 
-|---------|--------|--------|
 |COLUMN_FIELD|INPUT|MATCH|
+|---------|--------|--------|
 |male|	male|yes|			 
 |female	|male|no|
 |male.gmail.com|male|yes|
