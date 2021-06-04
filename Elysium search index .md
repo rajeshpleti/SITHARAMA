@@ -104,10 +104,42 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 ```
 
 ### Preliminary Basics and search rules    <span id="preliminaryBasicsandsearchrules"><span>    
+The following search basics and rules that applies to input of search strings as you type into the Kibana search input box.  There are 3 categories of rules: Free-Text, Double-Quoted, and Single-Quoted. There are also special rules for numeric search, date search, and REGEX search. 
 	
 ### 1. Single Quoted Search	
 
+* Matches the entire word or phrase exactly
+* Single Quoted search query will fetch must faster results
+* Wildcard searches do not work in single quoted searches
+* Speed reduces from top to bottom
+
+![searcspeed hierarchy](searcspeed hierarchy.PNG)
 	
+|COLUMN_FIELD|	INPUT|	MATCH|
+|---------|--------|--------|
+|solar power source|“power source”|yes|
+|solar power source|‘solar power source’|Yes|
+|2020-03-04|‘2020-03-04’|yes|
+
+
+**WHEN TO USE:**
+
+1. When you are sure that the fields value is exact match Ex: a) response: ‘quick brown fox’
+
+**THINGS TO REMEMBER:**
+
+1. Use field name if you are aware of that the expected results are from expected field
+
+	a) response: ‘quick brown fox’
+
+This query searches only in the response field
+
+	b) ‘quick brown fox‘
+
+This query searchers all the fields and take longer time
+
+2. If your search term contains “:” or “”” or “’” add \ to escape Ex: a) ‘men\’s’
+
 	
 ### 2. Double Quoted Search
 
@@ -130,13 +162,13 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 
 1. Use field name if you are aware of that the expected results are from expected field
 
-a) response: “quick brown fox”
+	a) response: “quick brown fox”
 
-	This query searches only in the response field
+This query searches only in the response field
 
-b) “quick brown fox”
+	b) “quick brown fox”
 
-	This query searchers all the fields and take longer time
+This query searchers all the fields and take longer time
 
 2. If your search term contains “ add \ to escape Ex: a) response: “this is a \“tuff\” call”
 	
@@ -195,9 +227,61 @@ b) “quick brown fox”
 	
 ### 5. Numeric Search	
 	
+* Only when we mention the column field the input is treated as numeric
+	
+	a) value: 1 will return values like +1,001,1.0,+1.0000 etc
+	
+* When we do not mention column field then the input will be a string
+	
+ 	a) input 01 will return values like 01,10.01 etc but do not return 1,1.0 etc
+
+**THINGS TO REMEMBER:**
+
+* Using single quote with column field with match exact value Ex: value:’123’ only matches 123 but not 0123
+
+* Using wildcard also makes it a string search Ex:*21* will match 21,0215,11.21.35 etc
+
+* Use operators like >,<,>=,<= as required
+
+
+	
 ### 6. Date Search
+
+* Typically, Kibana’s time filter is sufficient for setting a time range, but in some cases, you might need to search on dates, including the date range in quotes.
+				
+**THINGS TO REMEMBER:**
+
+* Always use double quote and column field to search dates Ex: timestamp:”2020-03-28”
+* Supported formats
+	1.“yyyy-MM-dd hh:mm:ss”
+	2.“yyyy-MM-dd hh:mm”
+	3.“yyyy-MM-dd hh”
+	4.“yyyy-MM-dd”
+	5.“yyyy-MM”
+	6.“yyyy”
+* Use operators like >,<,>=,<= as required
+				
+			
 	
 ### 7. REGEX Search
+
+* Syntax for regex search is “rex <regex pattern>”  Ex: a) email:"rex .*gmail\.com”    This is match all the google email id’s
+
+**THINGS TO REMEMBER:**
+
+* Always use double quote “rex <pattern>”
+
+### 8. Best  Practices
+	
+* Use the column field when are you are aware of the input column field
+	
+* Don’t use free text searches unless you are using wildcard
+
+* 
+	
+	
+	
+	
 	
 ### Search multiple fields <span id="Searchmutiplefields"><span>
 
