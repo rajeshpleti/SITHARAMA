@@ -5,7 +5,7 @@
 1.	[Search basics](#Searchbasics)
 2.	[Search query language (KQL)](#KQL)
 	* [KQL Introduction](#kqlintroduction)
-	* [preliminary Basics and search rules](#preliminaryBasicsandsearchrules)
+	* [Preliminary Basics and search rules](#preliminaryBasicsandsearchrules)
 	* [Search multiple fields](#Searchmutiplefields)
 	* [Grouped together](#groupedtogether)
 	* [Terms query](#termquery)
@@ -103,7 +103,7 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 	
 ```
 
-### preliminary Basics and search rules    <span id="preliminaryBasicsandsearchrules"><span>    
+### Preliminary Basics and search rules    <span id="preliminaryBasicsandsearchrules"><span>    
 	
 ### 1. Single Quoted Search	
 	
@@ -111,9 +111,8 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 
 ### 3. Free Text Search
 
-	* Space between words is considered as an OR operator ex: Brigitte cross searches Brigitte OR cross
-
-	* Search matches the field containing the given input without any neighbouring alphanumerical character
+* Space between words is considered as an OR operator ex: Brigitte cross searches Brigitte OR cross
+* Search matches the field containing the given input without any neighbouring alphanumerical character
 
 |COLUMN_FIELD|INPUT|MATCH|
 |---------|--------|--------|
@@ -134,28 +133,31 @@ INSERT or UPDATE queries with a response time greater than or equal to 30ms:
 |amale.gmail.com|*male|	yes|
 	
 **WHEN TO USE:**
-1.When you are not sure with the order 
-	Ex: a) response: quick brown fox
+	
+1.When you are not sure with the order for example:
+	
+	a) response: quick brown fox
 	b) response: quick fox brown
 
-2. While using wildcard
-	Ex: a) response: quick b* for
+2. While using wildcard for Ex:
+	
+	a) response: quick b* for
 
 **THINGS TO REMEMBER:**
 
-1. Use field name if you are aware of that the expected results are from expected field
+1. Use field name if you are aware of that the expected results are from expected field for Ex:
 
-	Ex: a) response: quick brown fox
+	a) response: quick brown fox
 
-This query searches only in the response field
+	This query searches only in the response field
 
 	b) quick brown fox
 
-This query searchers all the fields and take longer time
+	This query searchers all the fields and take longer time
 
 2. If your search term contains “:” add \ to escape Ex: a) cd://something
 	
-This will look for //something in field cd The right syntax would be cd\://
+	This will look for //something in field cd The right syntax would be cd\://
 
 	
 ### 5. Numeric Search	
