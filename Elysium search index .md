@@ -110,8 +110,9 @@ The following search basics and rules that applies to input of search strings as
 
 * Matches the entire word or phrase exactly
 * Single Quoted search query will fetch must faster results
-* Wildcard searches do not work in single quoted searches
+* Wildcards are NOT supported in single quoted searches (Wildcards are also not supported in double quoted searches)
 * Speed reduces from top to bottom
+* Single Quoted Searches employed as Elysium-added feature to Kibana
 
 ![searcspeedhierarchy](searcspeed.PNG)
 	
@@ -144,7 +145,7 @@ This query searchers all the fields and take longer time
 ### 2. Double Quoted Search
 
 * Matches when the input is in same sequential order as field term
-* Wildcard searches do not work in Double quotes.
+* Wildcards are NOT supported in Double quotes.
 	
 |COLUMN_FIELD|	INPUT|	MATCH|
 |---------|--------|--------|
@@ -408,7 +409,7 @@ response:*
 
 ### Wildcard queries <span id="wildcardqueries"><span>
 
-To match documents where machine.os starts with win, such as "windows 7" and "windows 10":
+To match documents where machine.os starts with win, such as windows 7 and windows 10  :
 
 ```
 machine.os:win*
