@@ -689,9 +689,12 @@ Saved queries don’t include information specific to Discover, such as the curr
 
 * Note: Granting Access to Kibana, If you have insufficient privileges to save queries, the Save current query button isn’t visible in the saved query management popover
 
+![savedquery.PNG](savedquery.PNG)	
+![savedquer](savedquer.PNG)	
+	
 To save the current query text, filters, and time filter:
 
-1. Click # in the search bar, next to the query text input.
+1. Click #(It was changed as save button in next versions as above) in the search bar, next to the query text input.
 2. Click Save current query in the popover.
 
 ![Search](saved-query-management-component-all-privileges.png)
@@ -791,13 +794,8 @@ An index pattern can match one rollup index. For a combination rollup index patt
 ```bash
 rollup_logstash,kibana_sample_data_logs
 ```
-###  Create an index pattern that searches across clusters
-If your Elysiumsearch clusters are configured for cross-cluster search, you can create an index pattern to search across the clusters of your choosing. 
-
-```bash
-<cluster-names>:<pattern>
-cluster_one:logstash-*,cluster_two:logstash-*
-```
+###  search for a value among two or more indices 
+you can allowed to search for a value among two or more indices of snowflake tables using union, filter options  
 
 ###  Explore and configure the data fields
 To explore and configure the data fields in your index pattern, open the main menu, then click Stack Management > Index Patterns. Each field has a mapping,indicates the type of data the field contains in Elysiumsearch, such as strings or boolean values. The field mapping also determines how you can use the field as searched or aggregated data.
