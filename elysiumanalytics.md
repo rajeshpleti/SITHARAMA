@@ -1495,12 +1495,36 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 
 ![Customqueryalert](Customqueryalert.PNG)
 
-## 7. Alert action         <span id="alertaction"><span>
-An alert config defines the conditions under which action for the particular alert should be taken. It also defines a corresponding alert action, which lists the specific action(s) need to be taken. Multiple alert configs can point to the same alert action. it also includes based on Custom Actions.
-	
-![alerttable](alerttable.PNG)	
 	
 ## Alert 1.75
+
+The new alerting version brings upon a critical change in the way we fire alerts. It’s a shift from saving alert information in the source tables during data ingestion to firing alerts as a post-processing step of data ingestion.
+	
+## Behavioural Alerts :
+
+* The first option gives the flexibility of tying each triggered to an event in the source table (“Real-time”) or triggering it independent of a particular event(“Schedule”)
+	
+* The second option helps you to either compare the calculated metric to an absolute value or to another calculated metric.
+
+	
+*The second section of the alert definition page lets you define the metrics to be calculated on the go. You can choose from various options to build metrics over custom time ranges. We can also filter the base data for the metrics by adding a filter condition section which lets you build any complex rule combinations.
+The essence of the alert being created can be captured by the dynamic condition preview being built at the end of the section.
+	
+* Important Point: A Special context “GLOBAL” is also given as an option in certain use cases which allows you to calculate the metric on all the new data rather than to split it up for each context. For example, you can choose “src_user_name” as context if you want the max(event_id) for each src_user_name, however, to choose the max(event_id) for the entire dataset, you can choose GLOBAL as the context.
+
+**Properties section**
+
+you choose the way you want your rule to behave which the severity and comments attach to it along with the frequency of triggering the alerts.
+	
+**Notification section**
+
+define how you want to be notified about the new alerts popping up in the system and who all should be notified about it. You can also define the time frame over which you would want the alerts to be rolled up in the notifications.
+	
+Rule Based Alerts :
+	
+These are relatively simpler alert rules, where you can create a simple to a very complex nested rule conditions which are checked across each event in the source table. You can see the sample UI below where by choosing “Add Group” option, you add a nested conditional branch whereas the “ADD Rule”optio just adds another condition to the same branch.
+
+
 
 ![alertfirst](alertfirst.PNG)
 
@@ -1512,6 +1536,13 @@ An alert config defines the conditions under which action for the particular ale
 	
 ![alertfiverule](alertfiverule.PNG)
 	
+
+## 7. Alert action         <span id="alertaction"><span>
+An alert config defines the conditions under which action for the particular alert should be taken. It also defines a corresponding alert action, which lists the specific action(s) need to be taken. Multiple alert configs can point to the same alert action. it also includes based on Custom Actions.
+	
+![alerttable](alerttable.PNG)	
+	
+
 
 	
 
