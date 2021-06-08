@@ -268,6 +268,9 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 #2.Quick Start of Elysium  <span id="quickstart"><span>
 	
 1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
+	
+![bookdemo](bookdemo.png)
+	
 2. Setup Client access using AWS Demo cloud <span id="qsawsdemoaccess"><span>
 3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
 	* Elysium Data Connectors <span id="qsconnectors"><span>
@@ -1083,6 +1086,9 @@ Testing: After checking the data filed values run the rest to validate schema an
 ![testconnectorresults](testconnectorresults.PNG)
 
 ![createconnector](createconnector.PNG)
+	
+![feedsmanager](feedsmanager.PNG)
+
 
 **Elysium Plugins**
 
@@ -1493,6 +1499,24 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 An alert config defines the conditions under which action for the particular alert should be taken. It also defines a corresponding alert action, which lists the specific action(s) need to be taken. Multiple alert configs can point to the same alert action. it also includes based on Custom Actions.
 	
 ![alerttable](alerttable.PNG)	
+	
+## Alert 1.75
+
+![alertfirst](alertfirst.PNG)
+
+![alertsecond](alertsecond.PNG)
+	
+![alertthird](alertthird.PNG)
+	
+![alertfour](alertfour.PNG)
+	
+![alertfiverule](alertfiverule.PNG)
+	
+
+	
+
+
+
 
 ## 8. Alert Notification   <span id="alertnotification"><span>
 
