@@ -130,6 +130,8 @@
 	* [Profilebased](#Profilebased)
 	* [Rulebased](#Rulebased)
 	* [Custom alert Creation](#customalert)
+	* [Alert 1.75](#alert75)
+
 7. [Alert action](#alertaction)
 8. [Alert Notification](#alertnotification)
 9. [Drill Down Alerts](#drilldownalerts)
@@ -1496,25 +1498,34 @@ The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Ru
 ![Customqueryalert](Customqueryalert.PNG)
 
 	
-## Alert 1.75
+## Alert 1.75   <span id="alert75"><span>
 
-The new alerting version brings upon a critical change in the way we fire alerts. It’s a shift from saving alert information in the source tables during data ingestion to firing alerts as a post-processing step of data ingestion.
+The new alerting version brings upon a critical change in the way we fire alerts. It’s a shift from saving alert information in the source tables during data ingestion to firing alerts as a post-processing step of data ingestion.Elysium already processing custom alerts as client data IONIS, StubHub, Redsky and additional features of alert 1.75 are
+	
+* Major workflow shift by decoupling alerting from data ingestion.
+* Empowering more flexible and dynamic alerting.
+* Enabling new behavioural alert options by dynamic definition of aggregates.
+* Data column reference changed to ODM names.
+* Introducing event independent alerting.
+* Complete UI overall with single step Alert rule definition.
+
+
 	
 ## Behavioural Alerts :
 
 * The first option gives the flexibility of tying each triggered to an event in the source table (“Real-time”) or triggering it independent of a particular event(“Schedule”)
 	
-* The second option helps you to either compare the calculated metric to an absolute value or to another calculated metric.
+* The second option helps you to either compare the calculated metric to an absolute value or to another calculated metric (relative Metric like mean, min,max).
 
 	
-*The second section of the alert definition page lets you define the metrics to be calculated on the go. You can choose from various options to build metrics over custom time ranges. We can also filter the base data for the metrics by adding a filter condition section which lets you build any complex rule combinations.
-The essence of the alert being created can be captured by the dynamic condition preview being built at the end of the section.
-	
+*The second section of the alert definition page lets you define the metrics to be calculated. You can choose from various options to build metrics over custom time ranges.
+* We can also filter the base data for the metrics by adding a filter condition section which support to build any complex rule combinations.
+
 * Important Point: A Special context “GLOBAL” is also given as an option in certain use cases which allows you to calculate the metric on all the new data rather than to split it up for each context. For example, you can choose “src_user_name” as context if you want the max(event_id) for each src_user_name, however, to choose the max(event_id) for the entire dataset, you can choose GLOBAL as the context.
 
 **Properties section**
 
-you choose the way you want your rule to behave which the severity and comments attach to it along with the frequency of triggering the alerts.
+This section provides an ability to select alert severity, rule of alert behaviour, description of alerts, frequency of triggering the alerts.
 	
 **Notification section**
 
@@ -1522,10 +1533,13 @@ define how you want to be notified about the new alerts popping up in the system
 	
 Rule Based Alerts :
 	
-These are relatively simpler alert rules, where you can create a simple to a very complex nested rule conditions which are checked across each event in the source table. You can see the sample UI below where by choosing “Add Group” option, you add a nested conditional branch whereas the “ADD Rule”optio just adds another condition to the same branch.
+Rule Based Alerts are relatively simpler alert rules, can able to create a simple to a very complex nested rule conditions to check across each event in the source table. sample UI below provides “Add Group” option, you can add nested conditional branch whereas the “ADD Rule”optio just adds another condition to the same branch.
 
 
 
+	The essence of the alert being created can be captured by the dynamic condition preview being built at the end of the section.
+	
+	
 ![alertfirst](alertfirst.PNG)
 
 ![alertsecond](alertsecond.PNG)
