@@ -1513,42 +1513,53 @@ The new alerting version brings upon a critical change in the way we fire alerts
 	
 ## Behavioural Alerts :
 
+![alertfirst](alertfirst.PNG)
+
+![alertsecond](alertsecond.PNG)
+
 * The first option gives the flexibility of tying each triggered to an event in the source table (“Real-time”) or triggering it independent of a particular event(“Schedule”)
 	
 * The second option helps you to either compare the calculated metric to an absolute value or to another calculated metric (relative Metric like mean, min,max).
 
 	
-*The second section of the alert definition page lets you define the metrics to be calculated. You can choose from various options to build metrics over custom time ranges.
+* The second section of the alert definition page lets you define the metrics to be calculated. You can choose from various options to build metrics over custom time ranges.
+	
 * We can also filter the base data for the metrics by adding a filter condition section which support to build any complex rule combinations.
 
 * Important Point: A Special context “GLOBAL” is also given as an option in certain use cases which allows you to calculate the metric on all the new data rather than to split it up for each context. For example, you can choose “src_user_name” as context if you want the max(event_id) for each src_user_name, however, to choose the max(event_id) for the entire dataset, you can choose GLOBAL as the context.
+	
+
 
 **Properties section**
 
 This section provides an ability to select alert severity, rule of alert behaviour, description of alerts, frequency of triggering the alerts.
+
+![alertthird](alertthird.PNG)
 	
 **Notification section**
 
-define how you want to be notified about the new alerts popping up in the system and who all should be notified about it. You can also define the time frame over which you would want the alerts to be rolled up in the notifications.
+![alertfour](alertfour.PNG)
+	
+This section decribes sending notification of new alerts to intended person through mails by providing alert type, alert severity, description of alerts.
+scheduling alert tasks by an alert notfication job periodically over time frame. 	
+	
 	
 Rule Based Alerts :
+
+![alertfiverule](alertfiverule.PNG)	
 	
 Rule Based Alerts are relatively simpler alert rules, can able to create a simple to a very complex nested rule conditions to check across each event in the source table. sample UI below provides “Add Group” option, you can add nested conditional branch whereas the “ADD Rule”optio just adds another condition to the same branch.
 
 
 
-	The essence of the alert being created can be captured by the dynamic condition preview being built at the end of the section.
 	
-	
-![alertfirst](alertfirst.PNG)
 
-![alertsecond](alertsecond.PNG)
 	
-![alertthird](alertthird.PNG)
+
 	
-![alertfour](alertfour.PNG)
+
 	
-![alertfiverule](alertfiverule.PNG)
+
 	
 
 ## 7. Alert action         <span id="alertaction"><span>
@@ -1594,7 +1605,7 @@ The Alerts data is displayed  like Event Time Minutes in UTC is displayed ,Src_ 
 ![Dashboard5](Dashboard5.PNG)
 	
 ## 10. Report Scheduler   <span id="Scheduledsearches"><span>
-Report Scheduler is like a cron job used for scheduling alert tasks and to be executed  normally used to schedule a alert notfication job periodically.  for example, to send out a notification every morning.
+Report Scheduler is like a cron job used for scheduling alert tasks and to be executed  normally  schedule an alert notfication job periodically.  for example, to send out a notification every morning.
 
 
 ## 6. Alerts tiles
