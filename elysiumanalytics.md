@@ -1521,8 +1521,17 @@ The new alerting version brings upon a critical change in the way we fire alerts
 
 * The first option gives the flexibility of tying each triggered to an event in the source table (“Real-time”)[For each result] or triggering it independent of a particular event(“Schedule”)[Once]
 	
+ 
+	
+* **Real-Time vs Schedule Triggers:** The main difference is that Real-Time Triggers are generated after each event and compared with previous events within the specified rolling time window whereas Scheduled Triggers are generated as per the run frequency specified by the users for all the events that occur inside the specified rolling time window.
+	
 * The second option helps you to either compare the calculated metric to an absolute value or to another calculated metric (relative Metric like mean, min,max).
-
+	
+* **Absolute vs Relative Thresholds:** Absolute Thresholds are specific numeric values that are entered by the user when defining the alerts which then compared with the Metric. Relative Thresholds are thresholds where an aggregate or a grouping function is applied on the Threshold and is then compared to the specific value for that event.
+	
+* An example of an alert condition with an Absolute Threshold is Avg(duration)>1000. Here 1000 is the threshold as defined by the user. 
+	
+* An example of an alert condition with a Relative Threshold is Duration > (avg(duration) * 2). Here (avg(duration) * 2) is the threshold as defined by the user.
 	
 * The second section of the alert definition page lets you define the metrics to be calculated. You can choose from various options to build metrics over custom time ranges.
 	
@@ -1530,12 +1539,107 @@ The new alerting version brings upon a critical change in the way we fire alerts
 
 * Important Point: A Special context “GLOBAL” is also given as an option in certain use cases which allows you to calculate the metric on all the new data rather than to split it up for each context. For example, you can choose “src_user_name” as context if you want the max(event_id) for each src_user_name, however, to choose the max(event_id) for the entire dataset, you can choose GLOBAL as the context.
 	
+	
+**Absolute Threshold**:
+	
+* These are alerts that have a threshold as an absolute value as defined by the user, it will encountered value is >=, <=, =, etc. than the threshold value defined.
+	
+* create a Real-time alert with an Absolute threshold: WHEN sum(duration) FOR EACH Domain > 1000 IN LAST 10 Hours FOR EACH RESULT
+	
+	
+1.Source
+Shows all the source systems from which we receive logs for a particular client. Examples of sources include - Windows Security, Dell Boomi, Microsoft Azure, Watchguard Firewall, etc. The sources differ from client to client.
 
+2.Feature
+Feature lists the different fields for each source over which metric can be formed. The fields in Feature can either be of type string or number and each type is associated with its own set of metrics ( specified below ).	
+
+3.Metrics
+Metrics are the different mathematical aggregate or grouping functions that can be applied over a feature. The different Metrics currently available in Version 1.75 are sum, avg, min, max, count, P90, P10, Rate, and median. All the Metrics are applicable for Features with type number whereas only count and Rate are applicable for strings since not all mathematical groupings are suited for strings. 
+
+* The usage for all metrics except P90, P10, and Rate are self-explanatory and straightforward. P90 and P10 compute the 90th and 10th percentile of the selected Feature
+* Metric Rate: Creating an alert for different url paths when the error rate is greater than 5%.
+	
+4.Context
+Context is the attribute/column from the source with which you group the Metrics. The results will be calculated/grouped by each value in the context field.
+
+“GLOBAL” context is also given as an option that allows you to calculate the metric on all the new data rather than to split it up for each context. 
+	
+	
+5.Operator
+This is the comparison operator which has to be specified between the Metric and the Threshold. Eg: >, >=, =, etc.
+
+6.Threshold
+The threshold is the number value defined by the user which will be compared with the Metrics value.	
+	
+7.Timeframe
+The timeframe is the rolling time window entered by the user associated with the particular alert.
+
+8.Timeunit
+The timeunit is the measure of timeframe entered. The current options are minutes and hours.	
+	
+	
+the below representation Absolute Threshold alert highlights all the components that users would have entered on the alert condition that was built.	
+	
+	
+**Relative Threshold**	
+
+* For Relative Thresholds, the actual value set in the Feature for the event is compared with an aggregated value of the feature in the defined timeframe. 	
+	
+	
+* Real-time alert with a Relative threshold: WHEN duration FOR EACH Domain > IT'S avg * 2 IN LAST 10 Hours FOR EACH RESULT 
+	
+* Marked below are the parameters specific to setting up an alert with a Relative threshold.
+	
+	
+1. Feature
+Feature is the value based on which the alert is set up. The difference between Feature in Absolute and Relative thresholds is that for relative thresholds the feature value will be used as it is for comparison whereas for absolute thresholds a metric ( aggregate function) will be applied to the Feature. So the Metric option is not provided with Feature in Relative thresholds for this reason.
+
+2. Measure
+Measure is the aggregate function used for setting up the threshold.
+
+3. Arithmetic
+These are arithmetic operators which the users would have to use when setting up a relative Threshold.
+
+4. Threshold
+Threshold is the number value that the users enter to set up a relative Threshold.
+
+The below representation of Relative Threshold highlights all the specific components that users would have entered on the alert condition that was built.
+	
+	
+	
+	
+**Schedule Trigger Alerts**
+	
+* As mentioned previously Schedule Triggers are time-based triggers with a schedule/Run Frequency specified by the user which takes into account all the events that occur inside the specified rolling time window.
+
+* All the parameters that need to be entered by the user would be the same for both Scheduled and real-time for creating the Alert condition.
+
+* Below is the condition preview text for a Schedule Trigger.
+
+* WHEN sum(duration) FOR EACH Domain > 1000 IN LAST 10 Hours
+
+* Currently, Scheduled triggers don't have a Relative Threshold type option. This feature will be made available in the upcoming versions.	
+	
+	
+	
+**Condition Preview** 
+	
+The essence of the alert being created can be captured by the dynamic condition preview being built at the end of the section. The condition preview built has been used numerous times in this document for describing the various alerts.	
+	
+	
+	
+	
+	
+	
+	
+	
 **Properties section**
 
 This section provides an ability to select alert severity, rule of alert behaviour, description of alerts, frequency of triggering the alerts.
 
 ![alertthird](alertthird.PNG)
+	
+The Run Frequency (Cron Expression) by design has been made available only to Schedule trigger alerts since a Run frequency is mandatory is only valid for Scheduled Alerts. The rest of the alerts are event-based and hence a run frequency is not required.
 	
 **Notification section**
 
