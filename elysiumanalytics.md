@@ -1511,7 +1511,7 @@ The new alerting version brings upon a critical change in the way we fire alerts
 * Introducing event independent alerting.
 * Complete UI overall with single step Alert rule definition.
 
-
+![alerttypes](alerttypes.png)
 	
 ## Behavioural Alerts :
 
@@ -1546,6 +1546,8 @@ The new alerting version brings upon a critical change in the way we fire alerts
 	
 * create a Real-time alert with an Absolute threshold: WHEN sum(duration) FOR EACH Domain > 1000 IN LAST 10 Hours FOR EACH RESULT
 	
+
+![alertconfigabs](alertconfigabs.png)
 	
 1.Source
 Shows all the source systems from which we receive logs for a particular client. Examples of sources include - Windows Security, Dell Boomi, Microsoft Azure, Watchguard Firewall, etc. The sources differ from client to client.
@@ -1578,7 +1580,9 @@ The timeframe is the rolling time window entered by the user associated with the
 The timeunit is the measure of timeframe entered. The current options are minutes and hours.	
 	
 	
-the below representation Absolute Threshold alert highlights all the components that users would have entered on the alert condition that was built.	
+* The below representation Absolute Threshold alert highlights all the components that users would have entered on the alert condition that was built.	
+	
+![absexample](absexample.png)
 	
 	
 **Relative Threshold**	
@@ -1590,6 +1594,7 @@ the below representation Absolute Threshold alert highlights all the components 
 	
 * Marked below are the parameters specific to setting up an alert with a Relative threshold.
 	
+![rulealertconfig](rulealertconfig.png)	
 	
 1. Feature
 Feature is the value based on which the alert is set up. The difference between Feature in Absolute and Relative thresholds is that for relative thresholds the feature value will be used as it is for comparison whereas for absolute thresholds a metric ( aggregate function) will be applied to the Feature. So the Metric option is not provided with Feature in Relative thresholds for this reason.
@@ -1603,9 +1608,9 @@ These are arithmetic operators which the users would have to use when setting up
 4. Threshold
 Threshold is the number value that the users enter to set up a relative Threshold.
 
-The below representation of Relative Threshold highlights all the specific components that users would have entered on the alert condition that was built.
+* The below representation of Relative Threshold highlights all the specific components that users would have entered on the alert condition that was built.
 	
-	
+![alertruleexample](alertruleexample.png)	
 	
 	
 **Schedule Trigger Alerts**
