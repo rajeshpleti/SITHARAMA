@@ -1511,6 +1511,12 @@ The new alerting version brings upon a critical change in the way we fire alerts
 * Introducing event independent alerting.
 * Complete UI overall with single step Alert rule definition.
 
+**Add a new alert rule**
+
+The ‘Add New Rule’ link is at the top right corner of the ‘Manage Alert Rules’ page, where you can define a new alert rule step-by-step. There are currently two categories of alerts. Select either of the two options
+
+**Category:** Type of the alerts, Rule-based and Behaviour Alerts
+
 ![alerttypes](alerttypes.png)
 	
 ## Behavioural Alerts :
