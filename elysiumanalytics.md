@@ -269,27 +269,65 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 
 	
 	
-#2.Quick Start of Elysium  <span id="quickstart"><span>
+# 2.Quick Start of Elysium  <span id="quickstart"><span>
+	
+**Elysium Product Overview** 
+	
+* Elysium Analytics is a machine learning based log analysis solution for security minded mid-sized to large enterprises, built on top of Snowflake.
+* Unlike the other log analysis vendors in this market, our SaaS solution is a cloud scale security analytics platform offering that is licensed on a usage basis lowering cost and reduces financial risk. 
+* Additionally, we have an open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models.
+* Elysium Analytics provides a single pane of glass through an SOC analyst identifies, observes aggregated views of all activity of users and entities across an enterprise.
+* Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework
+
 	
 1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
 	
+* To book a demo, the Client form can be accessed at https://elysiumanalytics.ai/about-us/#form
+	
+* For Elysium Sales related enquiries - sales@elysiumanalytics.ai
+
 ![bookdemo](bookdemo.png)
 	
-2. Setup Client access using AWS Demo cloud <span id="qsawsdemoaccess"><span>
-3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
-	* Elysium Data Connectors <span id="qsconnectors"><span>
-	* Operational <span id="qsoperational"><span>
-	* search for log data <span id="qssearch"><span>
-	* Security(#qsecurity) <span id="qsecurity"><span>
-	* Behavior Analytics <span id="qsbehaviour"><span>
-	* ML and ITD UI Dashboards <span id="qsmlitd"><span>
-	* Compilances  <span id="qscomplilances"><span>
-	* Alerts <span id="qsalerts"><span>
-4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
-5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
-6. Get Help  <span id="qsgethelp"><span>
+2. Setup Client access using Elysium AWS Demo cloud <span id="qsawsdemoaccess"><span>
+	
+* Elysium AWS Demo cloud Acess at   https://aws-demo.elysiumanalytics.ai/#/
+	
+* The client can avail a free trial of Elysium Prodct  at https://aws-demo.elysiumanalytics.ai/#/freetrial
 	
 
+3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
+	
+The following are the major functional services:
+
+![apps](appstoremain.PNG)
+	
+##  Elysium Data Connectors <span id="qsconnectors"><span>
+
+	
+![maincollection](maincollection.png)
+	
+	
+## Operational <span id="qsoperational"><span>
+## search for log data <span id="qssearch"><span>
+## Security(#qsecurity) <span id="qsecurity"><span>
+## Behavior Analytics <span id="qsbehaviour"><span>
+## ML and ITD UI Dashboards <span id="qsmlitd"><span>
+## Compilances  <span id="qscomplilances"><span>
+## Alerts <span id="qsalerts"><span>
+	
+	
+	
+4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
+	
+5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
+
+* Elysium Resources and Datasheets can be avail at https://elysiumanalytics.ai/resources/
+	
+6. Get Help  <span id="qsgethelp"><span>
+	
+Elysium Support: support@elysiumanalytics.ai
+	
+	
 # 3. APP’S Integration  <span id="APPS"><span>
 	
 Elysium APP'S Integration 
