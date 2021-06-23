@@ -280,7 +280,7 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework
 
 	
-1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
+## 1. Fill the client form and Request a Demo of Elysium Product <span id="qsclientform"><span>
 	
 * To book a demo, the Client form can be accessed at https://elysiumanalytics.ai/about-us/#form
 	
@@ -288,16 +288,19 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 
 ![bookdemo](bookdemo.png)
 	
-2. Setup Client access using Elysium AWS Demo cloud <span id="qsawsdemoaccess"><span>
+## 2. Setup Client access using Elysium AWS Demo cloud <span id="qsawsdemoaccess"><span>
 	
-* Elysium AWS Demo cloud Acess at   https://aws-demo.elysiumanalytics.ai/#/
+* If an already existing customer then Elysium AWS Demo cloud Acess will be at   https://aws-demo.elysiumanalytics.ai/#/
 	
-* The client can avail a free trial of Elysium Prodct  at https://aws-demo.elysiumanalytics.ai/#/freetrial
+![customer](customer.PNG)
 	
-
-3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
+*  If not a Elysium customer , The client can avail a free trial of Elysium Prodct  at https://aws-demo.elysiumanalytics.ai/#/freetrial  and and client can load data using their own snowflake account 
 	
-The following are the major functional services:
+![freetrail](freetrail.PNG)  
+	
+## 3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
+	
+The following are the major functional services of Elysium:
 
 ![apps](appstoremain.PNG)
 	
@@ -314,16 +317,30 @@ The following are the major functional services:
 ## ML and ITD UI Dashboards <span id="qsmlitd"><span>
 ## Compilances  <span id="qscomplilances"><span>
 ## Alerts <span id="qsalerts"><span>
+
+* Elysium alerts Monitors continuously query your data to monitor and send notifications when specific events occur, thresholds, critical, warning, and missing data and also gives aggregation based results.
+
+* Elysium offers a set of correlation rules and behavioral analytics to alert on specific sequence of events or pattern using machine learning and statistical analysis. The alerting feature notifies you when alert rule triggred or conditions are met.
+
+* For example, you might want to receive an email if your application logs more than five HTTP 503 errors in one hour, or you might want to page a developer if no new records have been processed in the past 20 minutes.
+
+* EA-SAAS app, currently have several clients like Ionis, Innominds, RedSky etc detects data anomalies and sends alerts notifications on various channels.
+
+* ES-SAAS Privides powerful API, it is easy to set up, manage, and monitor alerts and automatically send notfications to stakeholders.
 	
+![mainalerts](mainalerts.PNG)	
 	
+![alerttypes](alerttypes.png)	
 	
-4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
+![alertrule](alertrule.png)	
 	
-5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
+## 4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
+	
+## 5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
 
 * Elysium Resources and Datasheets can be avail at https://elysiumanalytics.ai/resources/
 	
-6. Get Help  <span id="qsgethelp"><span>
+## 6. Get Help  <span id="qsgethelp"><span>
 	
 Elysium Support: support@elysiumanalytics.ai
 	
