@@ -312,6 +312,14 @@ The following are the major functional services of Elysium:
 	
 ## Operational <span id="qsoperational"><span>
 ## search for log data <span id="qssearch"><span>
+
+* Elysium search is based on Kibana’s standard query language (KQL) features,  autocomplete, simple, easy-to-use syntax.
+	
+* Elysium search  serves as a user interface for Elysium Security , Alerting and Index State Management.
+* The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators, Supports wildcards, Logical Operations, Dates, Ranges, an upper and lower bound values.
+	
+* Elysium search also supports Free-Text search, Double-Quoted search, and Single-Quoted search, rules for numeric search, date search, and REGEX search.
+
 ## Security(#qsecurity) <span id="qsecurity"><span>
 ## Behavior Analytics <span id="qsbehaviour"><span>
 ## ML and ITD UI Dashboards <span id="qsmlitd"><span>
@@ -1785,9 +1793,11 @@ Report Scheduler is like a cron job used for scheduling alert tasks and to be ex
 
 
 
-To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, you’ll use Kibana’s standard query language (KQL), which features autocomplete and a simple, easy-to-use syntax. Kibana is the default visualization tool for data in Elysiumsearch. It also serves as a user interface for Elysium Security , Alerting  and Index State Management.
+* To search the indices that match the current index pattern, enter your search criteria in the query bar. By default, Kibana’s standard query language (KQL) features autocomplete and a simple, easy-to-use syntax to serch comple queries. Kibana is the default visualization tool for data in Elysiumsearch. 
 	
+* Elysium KQL search also serves as a user interface for Elysium Security , Alerting  and Index State Management.
 	
+* Elysium search also supports Free-Text search, Double-Quoted search, and Single-Quoted search, rules for numeric search, date search, and REGEX search.
 
 ### About Search Basics
 Elysium search syntax is based on "pipeline" concept and it uses logical and familiar operators letting you to create ad hoc queries quickly.
@@ -1823,10 +1833,10 @@ If your search results contain JSON logs, you can expand or collapse the view on
 ## 2.  Kibana Query Language <span id="KQL"><span>
 ### KQL Introduction <span id="kqlintroduction"><span>
 
-The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
+* The Kibana Query Language (KQL) makes it easy to retrieve events from indexes or filter the results based on fields, values and operators. 
 By placing cursor in the Search field, It will give suggestions to retrive the data as per Index pattern.
 
-Supports wildcards, Logical Operations, Dates, Ranges, an upper and lower bound values, not case sensitive, _exists_(searching fo existing of a field), autocomplete feature suggests search syntax
+* Elysium search supports wildcards, Logical Operations, Dates, Ranges, an upper and lower bound values, not case sensitive, _exists_(searching fo existing of a field), autocomplete feature suggests search syntax
 
 ```bash
 Field:value
