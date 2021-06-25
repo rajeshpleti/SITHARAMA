@@ -294,7 +294,7 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 	
 ![customer](customer.PNG)
 	
-*  If not a Elysium customer , The client can avail a free trial of Elysium Prodct  at https://aws-demo.elysiumanalytics.ai/#/freetrial  and and client can load data using their own snowflake account 
+*  If not a Elysium customer , The client can avail a free trial of Elysium Prodct  at https://aws-demo.elysiumanalytics.ai/#/freetrial  and and client can load data using their own snowflake account details.
 	
 ![freetrail](freetrail.PNG)  
 	
@@ -312,12 +312,13 @@ The following are the major functional services of Elysium:
 	
 ![maincollection](maincollection.png)
 	
-* Elysium provides various cloud connectors to load the data without any preconfigurations tasks 	
+* Elysium provides various cloud connectors to load the data without any preconfigurations tasks 
+	
 ![cloudapps](cloudapps.PNG)	
 	
 ## Operational <span id="qsoperational"><span>
 
-*Elysium supports operationa data by mapping, parse, and store your data in Elysium Analytics Open Data Model for full context and fast analytics. We have an Operational folder in our App's Integration , we can find Data Collection Reports, Data Investigation, snowflake anlytics and dashboards.
+* Elysium supports operationa data by mapping, parse, and store your data in Elysium Analytics Open Data Model for full context and fast analytics. We have an Operational folder in our App's Integration , we can find Data Collection Reports, Data Investigation, snowflake anlytics and dashboards.
 
 * Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage account details, identifying abnormal behaviour, anomoly scoring, alerting.
 	
@@ -327,10 +328,10 @@ The following are the major functional services of Elysium:
 
 ![dataingestion](dataingestion.PNG)
 	
-![datatracking](datatracking.PNG)
+
 
 	
-## search for log data <span id="qssearch"><span>
+## Search for log data <span id="qssearch"><span>
 
 * Elysium search is based on Kibana’s standard query language (KQL) features,  autocomplete, simple, easy-to-use syntax.
 	
@@ -343,6 +344,7 @@ The following are the major functional services of Elysium:
 	
 	
 ## Security(#qsecurity) <span id="qsecurity"><span>
+	
 ## Behavior Analytics <span id="qsbehaviour"><span>	
 
 * UEBA utilizes Machine Learning and Advanced Artificial Intelligence (AI) analytics aand machine learning approaches.
@@ -371,7 +373,7 @@ The following are the major functional services of Elysium:
 	
 * Elysium was developed based on many software companies requirements as of IT regulations, standards, and laws: NISPOM, NIST, HIPAA, PCI DSS, and others.
 	
-* Companies that provide products and services to the government have to follow some policies set by the National Institute of Standards and Technology (NIST). NIST has two common mandates (NIST 800-53 AND NIST 800-171) upported by Elysium.
+* Companies that provide products and services to the government have to follow some policies set by the National Institute of Standards and Technology (NIST). NIST has two common mandates (NIST 800-53 AND NIST 800-171) supported by Elysium.
 	
 ## Alerts <span id="qsalerts"><span>
 
