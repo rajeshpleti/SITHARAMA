@@ -305,12 +305,31 @@ The following are the major functional services of Elysium:
 ![apps](appstoremain.PNG)
 	
 ##  Elysium Data Connectors <span id="qsconnectors"><span>
+	
+* Combine all your on-prem IT logs, enterprise network logs, cloud logs and network traffic data into one scalable data lake and combine your in-cloud and on-prem data silos into one scalable Snowflake data lake.
 
+* Elysium connectors and plugins reduces the client configuration setups requirements to collect the data from various log sources.
 	
 ![maincollection](maincollection.png)
 	
+* Elysium provides various cloud connectors to load the data without any preconfigurations tasks 	
+![cloudapps](cloudapps.PNG)	
 	
 ## Operational <span id="qsoperational"><span>
+
+*Elysium supports operationa data by mapping, parse, and store your data in Elysium Analytics Open Data Model for full context and fast analytics. We have an Operational folder in our App's Integration , we can find Data Collection Reports, Data Investigation, snowflake anlytics and dashboards.
+
+* Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage account details, identifying abnormal behaviour, anomoly scoring, alerting.
+	
+* snowflake anlytics and dashboards 
+
+* Data Investigation dashboards represents data stream processing of statistics, counts by each source, min, max, average time in hours to process events. It also provides time delay Notfications, alerts during failures of ingestion of data.
+
+![dataingestion](dataingestion.PNG)
+	
+![datatracking](datatracking.PNG)
+
+	
 ## search for log data <span id="qssearch"><span>
 
 * Elysium search is based on Kibana’s standard query language (KQL) features,  autocomplete, simple, easy-to-use syntax.
@@ -320,10 +339,40 @@ The following are the major functional services of Elysium:
 	
 * Elysium search also supports Free-Text search, Double-Quoted search, and Single-Quoted search, rules for numeric search, date search, and REGEX search.
 
+![savedquery.PNG](savedquery.PNG)
+	
+	
 ## Security(#qsecurity) <span id="qsecurity"><span>
-## Behavior Analytics <span id="qsbehaviour"><span>
+## Behavior Analytics <span id="qsbehaviour"><span>	
+
+* UEBA utilizes Machine Learning and Advanced Artificial Intelligence (AI) analytics aand machine learning approaches.
+ to detect threats and simplify the work of technical professionals focused on security.
+
+
+* Elysium UEBA (User and Entity Behavior Analytics) provides solutions for profile users, their peer groups and other entities, employ advanced analytics to detect anomalous transactions, behaviors and User/Entity endpoints.
+
+* Algorithm,anomaly score range,anomaly outliers threshold, Count of Users,Information,Outliers,Details are common in all the UEBA’s.They vary with respective UEBA view used and All the tiles in dashboards changes according to the Parameters of the UEBA, Those parameters appear in the Information tile.
+
+![overviewUEBA](overviewUEBA.PNG)
+	
 ## ML and ITD UI Dashboards <span id="qsmlitd"><span>
+	
+* Elysium Analytics provides a unique AI-driven security analytics platform that comes with a wide array of advanced ML-based security outcomes and behavioural models to help organizations detect and respond to advanced cyber-attacks.
+	
+* Inside Threat Detection identifies abnormal behaviors of user/entity using unsupervised learning algorithms and provides statistical anomalies scores ,outliers and indicators of compromise threshold values of risk factors.
+	
+* An Elysium insider threat program is a efficient core part of modern cybersecurity strategy. Elysium ITD controls in place to detect, deter, and respond to insider attacks and inadvertent data leaks is a necessity for any organization that strives to protect its sensitive data.
+	
+![threatusersandentity](riskscoreofuserentity.PNG)
+	
+![top10users](top10users.PNG)
+	
 ## Compilances  <span id="qscomplilances"><span>
+	
+* Elysium was developed based on many software companies requirements as of IT regulations, standards, and laws: NISPOM, NIST, HIPAA, PCI DSS, and others.
+	
+* Companies that provide products and services to the government have to follow some policies set by the National Institute of Standards and Technology (NIST). NIST has two common mandates (NIST 800-53 AND NIST 800-171) upported by Elysium.
+	
 ## Alerts <span id="qsalerts"><span>
 
 * Elysium alerts Monitors continuously query your data to monitor and send notifications when specific events occur, thresholds, critical, warning, and missing data and also gives aggregation based results.
@@ -335,6 +384,8 @@ The following are the major functional services of Elysium:
 * EA-SAAS app, currently have several clients like Ionis, Innominds, RedSky etc detects data anomalies and sends alerts notifications on various channels.
 
 * ES-SAAS Privides powerful API, it is easy to set up, manage, and monitor alerts and automatically send notfications to stakeholders.
+
+The following diagrams describes alerts dashboard, alert types and management of alert rules: 
 	
 ![mainalerts](mainalerts.PNG)	
 	
@@ -428,7 +479,7 @@ Furthermore it offers a signatureless approach for detecting emerging threats wi
 Specifically Elysium offers canned UEBA reports that map specific techniques and tactics from MITRE ATT@CK vectors, encoding them into behavior profiles that detect unusual behaviors.
 
 ### 11.	Snowflake analytics <span id="snowflakeanalytics"><span>
-Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage aacount details, identifying abnormal behaviour, anomoly scoring, alerting. 
+Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage account details, identifying abnormal behaviour, anomoly scoring, alerting. 
 1. Snowflake audit logs
 1. Snowflake login history
 1. Alert scoring
@@ -1100,7 +1151,7 @@ output {
 
 ```
 
-The following Eysium Data collection dashboards describes the sum of ingeated count by source, Total count of events per host, Data Collection for last 24 Hours and it can also provides filter the data collection events using time intervals.
+The following Eysium Data collection dashboards describes the sum of ingested count by source, Total count of events per host, Data Collection for last 24 Hours and it can also provides filter the data collection events using time intervals.
 
  
 ![datacollection](datacollection1.PNG)
