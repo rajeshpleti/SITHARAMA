@@ -273,7 +273,8 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 	
 **Elysium Product Overview** 
 	
-* Elysium Analytics is a machine learning based log analysis solution for security minded mid-sized to large enterprises, built on top of Snowflake.
+* Elysium Analytics is Cloud Native running on Snowflake
+* Elysium Analytics is a machine learning based log analysis solution for security minded, mid-sized to large enterprises, built on top of Snowflake.
 * Unlike the other log analysis vendors in this market, our SaaS solution is a cloud scale security analytics platform offering that is licensed on a usage basis lowering cost and reduces financial risk. 
 * Additionally, we have an open platform with no vendor lock-in, customizable analytics models, as well as APIs for end user development of analytics models.
 * Elysium Analytics provides a single pane of glass through an SOC analyst identifies, observes aggregated views of all activity of users and entities across an enterprise.
@@ -300,9 +301,11 @@ Build your own analytics dashboards with Looker or connect to 3rd party applicat
 	
 ## 3. Providing major functional services  of Elysium  <span id="qsfunctionalservices"><span>
 	
-The following are the major functional services of Elysium:
+The following are the major functional services of Elysium: 
 
 ![apps](appstoremain.PNG)
+	
+* Adjust the Elysium Analytics models for your specific environment or build your own proprietary models.
 	
 ##  Elysium Data Connectors <span id="qsconnectors"><span>
 	
