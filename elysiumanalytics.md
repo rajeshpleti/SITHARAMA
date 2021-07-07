@@ -318,6 +318,10 @@ The following are the major functional services of Elysium:
 * Elysium provides various cloud connectors to load the data without any preconfigurations tasks 
 	
 ![cloudapps](cloudapps.PNG)	
+
+* Elysium open data model 
+	
+![datamodel](datamodel.PNG)
 	
 ## Operational <span id="qsoperational"><span>
 
@@ -325,7 +329,11 @@ The following are the major functional services of Elysium:
 
 * Snowflake audit dashboards can be provided using Advanced Machine learning techniques to provide descriptive statistics of user usage account details, identifying abnormal behaviour, anomoly scoring, alerting.
 	
-* snowflake anlytics and dashboards 
+* snowflake audit , security anlytics dashboards 
+	
+![snowflake.PNG](snowflake.PNG)
+
+![snowflakeaudit.PNG](snowflakeaudit.PNG)
 
 * Data Investigation dashboards represents data stream processing of statistics, counts by each source, min, max, average time in hours to process events. It also provides time delay Notfications, alerts during failures of ingestion of data.
 
@@ -399,14 +407,20 @@ The following diagrams describes alerts dashboard, alert types and management of
 ![alertrule](alertrule.png)	
 	
 ## 4. Create,modify,Share custom dashboards <span id="qscreatemodifydashboard"><span>
+
+* Elysium visualize your data into dashboards, combining tables, charts in useful and interesting layouts, aggregations to the axes, filtering data interactively based on logical conditions, choose modes and colors of charts, and place legends and labels.
+	
+* Elysium provides access to Create,modify,Share custom dashboards interms of looker with predefined 200 templates Dashboards for various data sources to Intended persons and it also supports Kibana dashboards, visualizations and  elysium connect for custom supports
+
+![newdashboard2](newdashboard2.PNG)
 	
 ## 5. Elysium Resources and Datasheets <span id="qsresourcesdatasheet"><span>
 
-* Elysium Resources and Datasheets can be avail at https://elysiumanalytics.ai/resources/
+* Elysium Resources and Datasheets can be avail at https://elysiumanalytics.ai/resources/ and describes various features of elysium data collection, ingestion, Anlaytics, security aspects, ML, ITD aspects, cloud scaling, Search, comparative based benfits,migrations from other platforms etc. 
 	
 ## 6. Get Help  <span id="qsgethelp"><span>
 	
-Elysium Support: support@elysiumanalytics.ai
+Any questions regarding Elysium licensing or pricing? or want to partner with us? Please fill out the Bookademo form and we will get back to you as soon as possible.Elysium Support mail ID: support@elysiumanalytics.ai
 	
 	
 # 3. APP’S Integration  <span id="APPS"><span>
@@ -1529,7 +1543,15 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 |Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|
 |persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|
 
+
 	
+**Profile alerts**
+|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
+|:--------|:--------|:--------|:--------|
+	
+**Security alerts**
+
+**MITRE ATTACK TECHNIQUES LIST**
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
 	
