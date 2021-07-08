@@ -354,7 +354,7 @@ The following are the major functional services of Elysium:
 ![savedquery.PNG](savedquery.PNG)
 	
 	
-## Security(#qsecurity) <span id="qsecurity"><span>
+## Security  <span id="qsecurity"><span>
 
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 	
@@ -1568,15 +1568,38 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 |Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|
 |persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|
 
-
+![image](https://user-images.githubusercontent.com/61886843/124935380-39046a80-e023-11eb-8033-1c328975ea2a.png)
 	
 **Profile alerts**
+	
+|S.No|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
+|:--------|:--------|:--------|:--------|:--------|
+|1|User Logged to Multiple Hosts|windowsnxlog|profile|
+|2|10 User Accounts Locked in Last 1 Hour|windowsnxlog|profile|
+|3|New Windows User|windowsnxlog|profile|
+|4|User Accessed Multiple Websites|wgtraffic|profile|
+|5|New Watchguard Traffic User|wgtraffic|profile|
+|6|User Accessed from New City|windowsnxlog|profile|
+|7|User Accessed from New Country|windowsnxlog|profile|
+|8|User Accessed New Destination Port|wgtrafficprofile||
+|9|User Accessed New Source Port|wgtraffic|profile|
+|10|New Port Accessed Globally|wgtraffic|profile|
+|11|New City Accessed Globally|windowsnxlog|profile|
+|12|New Email Sender|msexchange|profile|
+	
+	
+
+	
+**Security alerts**
 |Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
 |:--------|:--------|:--------|:--------|
 	
-**Security alerts**
-
+	
 **MITRE ATTACK TECHNIQUES LIST**
+|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
+|:--------|:--------|:--------|:--------|	
+	
+	
 	
 ## 5. Alert Dashboards  <span id="alertdashboard"><span>
 	
