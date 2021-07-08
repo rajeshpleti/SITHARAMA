@@ -355,6 +355,31 @@ The following are the major functional services of Elysium:
 	
 	
 ## Security(#qsecurity) <span id="qsecurity"><span>
+
+* Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
+	
+* Elysium security  covers VPN/AntiVirus/Threat Detection/Unusual/Alarming Incidents/Alerting/Notifications  and also detects abnormal behaviour of user or entity in using Ml pipeline in secure log analysis
+	
+1. Insider Threat Detection
+2. Privileged Account Usage	
+3. DNS Tunneling
+4. VPN Monitoring
+5. Unusual File Access
+6. Data Exfiltration
+7. Bot Attack
+8. Unusual File Downloads
+9. Leverage data science platforms (Advanced AI/ML Techniques)
+10. Phishing Attack:
+11. New IP Addresses:
+12. DDOS Attacks, SQL Injections
+13. Lateral movement with RDP
+14. Ransomware running on an endpoint
+15. Large Data exfiltration from multiple endpoints,Degrade Network Performance
+16. Beaconing of multiple endpoints
+17. DGA (Domain Generation Algorithms (DGAs))
+18. Brute force login attack
+19. Shared VPN account between users in different geos
+20. Port scans
 	
 ## Behavior Analytics <span id="qsbehaviour"><span>	
 
