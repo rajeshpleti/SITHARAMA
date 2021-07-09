@@ -1581,7 +1581,7 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 |5|New Watchguard Traffic User|wgtraffic|profile|
 |6|User Accessed from New City|windowsnxlog|profile|
 |7|User Accessed from New Country|windowsnxlog|profile|
-|8|User Accessed New Destination Port|wgtrafficprofile||
+|8|User Accessed New Destination Port|wgtraffic|profile|
 |9|User Accessed New Source Port|wgtraffic|profile|
 |10|New Port Accessed Globally|wgtraffic|profile|
 |11|New City Accessed Globally|windowsnxlog|profile|
@@ -1593,6 +1593,21 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 **Security alerts**
 |Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
 |:--------|:--------|:--------|:--------|
+|1|User Account Locked|MS_WIN_SECURITYAUDITING|rule| |	
+|2|User Addded to Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |		
+|3|User Removed from Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |	
+|4|User Privilage Access Exceeded|MS_WIN_SECURITYAUDITING|aggregate||
+|5|Audit Log Cleared|MS_WIN_SECURITYAUDITING|rule| |	
+|6|Watchguard Event and Alarms Malware Detected|WG_FW_EVENTSALARMS|rule|
+|7|Unsual Process Detected|SYM_ES_ENDPOINTPROTECTIONCLIENT|rule||
+|8|Apt Threat Notified|WG_FW_EVENTSALARMS|rule||
+|9|Watchguard Event and Alarm loses ISP signal|WG_FW_EVENTSALARMS|rule||
+|10|Copy Files|MS_WIN_SECURITYAUDITING|rule||
+|11|Copy Files|	MS_WIN_SYSMON|rule||
+|12|Deleted files|MS_WIN_SECURITYAUDITING|rule||	
+|13|User Download Bytes Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate||
+|14|User Bandwidth Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate||
+|15|Threat Intel Identified for SourceIP|WG_FW_NETWORKTRAFFIC|rule||
 	
 	
 **MITRE ATTACK TECHNIQUES LIST**
