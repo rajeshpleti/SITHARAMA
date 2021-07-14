@@ -358,7 +358,7 @@ The following are the major functional services of Elysium:
 
 * Elysium is committed to providing open security framework deployments with add-ons that enable our customers to utilize analytics created by security framework.
 	
-* Elysium security  covers VPN/AntiVirus/Threat Detection/Unusual/Alarming Incidents/Alerting/Notifications  and also detects abnormal behaviour of user or entity in using Ml pipeline in secure log analysis
+* Elysium security  covers VPN/AntiVirus/Threat Detection/Unusual/Alarming Incidents/Alerting/Notifications  and also detects abnormal behaviour of user or entity in using Ml pipeline in secure log analysis. The following are different different security usecase scenarios that cane be supported by elysium to identify, prevent  abnormal behaviour of intruder.  
 	
 1. Insider Threat Detection
 2. Privileged Account Usage	
@@ -1560,21 +1560,21 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 
 **sample alert rules :** 
 	
-|Alert abbreviation name|Source_Name|Alert_Type|
-|:--------|:--------|:--------|
-|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|
-|User Account Locked|MS_WIN_SECURITYAUDITING|rule|
-|User Download Bytes Exceeded 24hr Limit for WG_FW_NETFLOW|WG_FW_NETFLOW|aggregate|
-|Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|
-|persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|
+|S.No|Alert abbreviation name|Source_Name|Alert_Type|
+|:--------|:--------|:--------|:--------|
+|1|User Logged to Multiple Hosts|MS_WIN_SECURITYAUDITING|profile|
+|2|User Account Locked|MS_WIN_SECURITYAUDITING|rule|
+|3|User Download Bytes Exceeded 24hr Limit for WG_FW_NETFLOW|WG_FW_NETFLOW|aggregate|
+|4|Session exceeded the Upload Bytes Limit for WG_FW_NETWORKTRAFFIC|WG_FW_NETWORKTRAFFIC|custom|
+|5|persistence_via_telemetrycontroller_scheduledtask_hijack.toml|MS_WIN_SYSMON|rule|
 
-![image](https://user-images.githubusercontent.com/61886843/124935380-39046a80-e023-11eb-8033-1c328975ea2a.png)
+
 	
 **Profile alerts**
 	
 |S.No|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
 |:--------|:--------|:--------|:--------|:--------|
-|1|User Logged to Multiple Hosts|windowsnxlog|profile|
+|1|User Logged to Multiple Hosts|windowsnxlog|profile|User accounts that log in to multiple machines, especially over a short period of time, may be compromised. Remote logins among multiple machines may be an indicator of Lateral Movement.|
 |2|10 User Accounts Locked in Last 1 Hour|windowsnxlog|profile|
 |3|New Windows User|windowsnxlog|profile|
 |4|User Accessed Multiple Websites|wgtraffic|profile|
@@ -1591,8 +1591,8 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 
 	
 **Security alerts**
-|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
-|:--------|:--------|:--------|:--------|
+|S.No|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
+|:--------|:--------|:--------|:--------|:--------|
 |1|User Account Locked|MS_WIN_SECURITYAUDITING|rule| |	
 |2|User Addded to Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |		
 |3|User Removed from Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |	
