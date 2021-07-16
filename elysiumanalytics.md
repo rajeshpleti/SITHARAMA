@@ -445,7 +445,7 @@ The following diagrams describes alerts dashboard, alert types and management of
 	
 ## 6. Get Help  <span id="qsgethelp"><span>
 	
-Any questions regarding Elysium licensing or pricing? or want to partner with us? Please fill out the Bookademo form and we will get back to you as soon as possible.Elysium Support mail ID: support@elysiumanalytics.ai
+Any questions regarding Elysium licensing or pricing? or want to partner with us? Please fill out the Bookademo form and we will get back to you as soon as possible. For Elysium Sales related enquiries - sales@elysiumanalytics.ai, Elysium Support mail ID: support@elysiumanalytics.ai.
 	
 	
 # 3. APP’S Integration  <span id="APPS"><span>
@@ -1575,17 +1575,17 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 |S.No|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
 |:--------|:--------|:--------|:--------|:--------|
 |1|User Logged to Multiple Hosts|windowsnxlog|profile|User accounts that log in to multiple machines, especially over a short period of time, may be compromised. Remote logins among multiple machines may be an indicator of Lateral Movement.|
-|2|10 User Accounts Locked in Last 1 Hour|windowsnxlog|profile|
-|3|New Windows User|windowsnxlog|profile|
-|4|User Accessed Multiple Websites|wgtraffic|profile|
-|5|New Watchguard Traffic User|wgtraffic|profile|
-|6|User Accessed from New City|windowsnxlog|profile|
-|7|User Accessed from New Country|windowsnxlog|profile|
-|8|User Accessed New Destination Port|wgtraffic|profile|
-|9|User Accessed New Source Port|wgtraffic|profile|
-|10|New Port Accessed Globally|wgtraffic|profile|
-|11|New City Accessed Globally|windowsnxlog|profile|
-|12|New Email Sender|msexchange|profile|
+|2|10 User Accounts Locked in Last 1 Hour|windowsnxlog|profile| It triggers alert  when More than 10 user account got locked in last 1 hour|
+|3|New Windows User|windowsnxlog|profile| This Alert Describes when user not seen in last 7 days|
+|4|User Accessed Multiple Websites|wgtraffic|profile|It alerts when user has accessed onto muliple websites in last 7 days|
+|5|New Watchguard Traffic User|wgtraffic|profile|It alerts when new user for Watchguard source in last 7 days|
+|6|User Accessed from New City|windowsnxlog|profile|It alerts when user accessed from different city since last 7 days|
+|7|User Accessed from New Country|windowsnxlog|profile|It alerts when user accessed from different country since last 7 days|
+|8|User Accessed New Destination Port|wgtraffic|profile| It alerts when user accessed new destination port
+|9|User Accessed New Source Port|wgtraffic|profile|It alerts when 'user accessed new source port|
+|10|New Port Accessed Globally|wgtraffic|profile| It alerts when New Port Accessed Globally|
+|11|New City Accessed Globally|windowsnxlog|profile|It alerts when New City Accessed Globally|
+|12|New Email Sender|msexchange|profile|It alerts when New Email Received from SENDER_ADDRESSin last 11 days|
 	
 	
 
