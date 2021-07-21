@@ -1593,21 +1593,21 @@ Action - Has options to Edit, Delete, Activate & Deactivate the alert rule
 **Security alerts**
 |S.No|Alert abbreviation name|Source_Name|Alert_Type|Alert Description|
 |:--------|:--------|:--------|:--------|:--------|
-|1|User Account Locked|MS_WIN_SECURITYAUDITING|rule| |	
-|2|User Addded to Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |		
-|3|User Removed from Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule| |	
-|4|User Privilage Access Exceeded|MS_WIN_SECURITYAUDITING|aggregate||
-|5|Audit Log Cleared|MS_WIN_SECURITYAUDITING|rule| |	
-|6|Watchguard Event and Alarms Malware Detected|WG_FW_EVENTSALARMS|rule|
-|7|Unsual Process Detected|SYM_ES_ENDPOINTPROTECTIONCLIENT|rule||
-|8|Apt Threat Notified|WG_FW_EVENTSALARMS|rule||
-|9|Watchguard Event and Alarm loses ISP signal|WG_FW_EVENTSALARMS|rule||
-|10|Copy Files|MS_WIN_SECURITYAUDITING|rule||
-|11|Copy Files|	MS_WIN_SYSMON|rule||
-|12|Deleted files|MS_WIN_SECURITYAUDITING|rule||	
-|13|User Download Bytes Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate||
-|14|User Bandwidth Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate||
-|15|Threat Intel Identified for SourceIP|WG_FW_NETWORKTRAFFIC|rule||
+|1|User Account Locked|MS_WIN_SECURITYAUDITING|rule| It alerts when locked the user account due to repeated failed authentication attempts|	
+|2|User Addded to Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule|It alerts when A member was added to a security-enabled global group |		
+|3|User Removed from Security Enabled Global Group|MS_WIN_SECURITYAUDITING|rule|It alerts when A member Removed from Security Enabled Global Group|	
+|4|User Privilage Access Exceeded|MS_WIN_SECURITYAUDITING|aggregate|It alerts when User exceeded Privilege access limit|
+|5|Audit Log Cleared|MS_WIN_SECURITYAUDITING|rule|It alerts when The audit log was cleared|	
+|6|Watchguard Event and Alarms Malware Detected|WG_FW_EVENTSALARMS|rule| It alerts when Watchguard Event and Alarms Detected Malware |
+|7|Unsual Process Detected|SYM_ES_ENDPOINTPROTECTIONCLIENT|rule| It alerts when Unsual Process Detected|
+|8|Apt Threat Notified|WG_FW_EVENTSALARMS|rule| It alerts when advanced persistent threat (APT) Notified|
+|9|Watchguard Event and Alarm loses ISP signal|WG_FW_EVENTSALARMS|rule| It alerts when Watchguard Event and Alarm loses ISP signal|
+|10|Copy Files|MS_WIN_SECURITYAUDITING|rule| It alerts when  MS_WIN_SECURITYAUDITING event Copy Files|
+|11|Copy Files|	MS_WIN_SYSMON|rule|It alerts when MS_WIN_SYSMON event Copy Files|
+|12|Deleted files|MS_WIN_SECURITYAUDITING|rule|It alerts when event Deleted files|	
+|13|User Download Bytes Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate|It alerts when User Download Bytes Exceeded 24hr Limit|
+|14|User Bandwidth Exceeded 24hr Limit|WG_FW_NETWORKTRAFFIC|aggregate|It alerts when User Bandwidth Exceeded 24hr Limit|
+|15|Threat Intel Identified for SourceIP|WG_FW_NETWORKTRAFFIC|rule|It alerts when  Threat Intel Source IP with type Identified |
 	
 	
 **MITRE ATTACK TECHNIQUES LIST**
